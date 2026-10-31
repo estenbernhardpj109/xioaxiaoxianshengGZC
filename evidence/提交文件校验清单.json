@@ -258,6 +258,11 @@
       "sha256": "56a8f72cc6a12be979141d80e1515e255811dc82c9d4b643a9041237bd5eb8dd"
     },
     {
+      "path": "docs/平台上传说明.md",
+      "bytes": 2271,
+      "sha256": "9659e11d040e663a2ece7aeb864f7b05007c154a82594391c8e8cc00adcc4c70"
+    },
+    {
       "path": "docs/开源说明.md",
       "bytes": 2321,
       "sha256": "36e197b505f05a54d5d63b9ec273273fd81ec815157e0263883fe78d5cc46ead"
@@ -274,8 +279,8 @@
     },
     {
       "path": "docs/提交前登记表.md",
-      "bytes": 881,
-      "sha256": "484b07019c2c42318f83e88e139fc83967b441e63d05e179363ea5793fff1405"
+      "bytes": 961,
+      "sha256": "b4bf90a00d1fdfa28ff473a3d79d4856e117602d564a8d066d5877d5c05a919e"
     },
     {
       "path": "docs/界面设计规范.md",
@@ -284,28 +289,28 @@
     },
     {
       "path": "docs/答辩PPT.pptx",
-      "bytes": 195980,
-      "sha256": "d8385f8ad09a0f3c43fbd98df474964127c7a6d83bddf6fa3e404c9bacce0c0a"
+      "bytes": 196000,
+      "sha256": "65f76815512d4f85488a044fd5a28f2585c5f6709732640abcbfcedcb894600e"
     },
     {
       "path": "docs/答辩讲稿.json",
-      "bytes": 5095,
-      "sha256": "52a80bfcc2bef8e7794344a8804214f05f3e51e64063a62438aca1ff6fd6d47d"
+      "bytes": 5170,
+      "sha256": "354eb279b3b9e25b02e0edf9b3c00ac3ce3c508fdb622f46421b5a35a216bce1"
     },
     {
       "path": "docs/答辩讲稿.md",
-      "bytes": 4842,
-      "sha256": "2907c0835588e875303b59bec71ba4cb2ade1ec3ef1963096b824a446195df0d"
+      "bytes": 4866,
+      "sha256": "318f06717b9fc640ee0233dfae20456a0db0c6646c218a71343a2afb1b745abb"
     },
     {
       "path": "docs/规则与提交清单.pdf",
-      "bytes": 123887,
-      "sha256": "e8688332d6a7b864d970f524ad0562af3802256ae00874826fe0eb60788b9fa7"
+      "bytes": 125961,
+      "sha256": "5485e6905d24a8c87fafdbe7ad9bbc49c8a6883532c672d25261420b9cffbe01"
     },
     {
       "path": "docs/规则核对与提交清单.md",
-      "bytes": 4783,
-      "sha256": "a4b5e5102ddae4241aad7710b4e385148a65e57b8b044edbe2e0bdbea5d1e2b0"
+      "bytes": 5609,
+      "sha256": "9e7970d8f5da0fab22e1da2635c10356c46f0742180eab71f751ca5750ab705c"
     },
     {
       "path": "docs/部署文档.md",
@@ -353,9 +358,14 @@
       "sha256": "79fa0110045b8cd65796d6a62ab020bee076915c38f497e917308af9f72fda06"
     },
     {
+      "path": "evidence/材料完整性检查.md",
+      "bytes": 3180,
+      "sha256": "8c1df11051498099faf8046182c7be15e5591d680a112322566771075c762fdf"
+    },
+    {
       "path": "evidence/验收记录.md",
-      "bytes": 1539,
-      "sha256": "5df2d5278a38626edc9e2e93337c1465d55f4018036c6f0b35edec9ddb66c948"
+      "bytes": 1551,
+      "sha256": "6461a5ee3c12f2a1bc6734ffd7190830ecc5c38fad74af276e5ef871a2bf5ea9"
     },
     {
       "path": "frontend/app.js",
@@ -414,8 +424,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5414,
-      "sha256": "ae0920151f3cfe3039853df6b8af80c01a523999f97cde15bc77d5134da153fa"
+      "bytes": 5752,
+      "sha256": "427dce5389b20f1f55d2e130b7f5cc531f9cdb2147ea79c1c9bb39d9fdb6e0e1"
     },
     {
       "path": "requirements.txt",
