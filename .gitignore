@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.runtime/
+.env
+.env.*
+!.env.example
+*.log
+.build/
+
+# Authoring and local operating artifacts
+node_modules/
+.chart-data-*/
+*.tmp
+*.bak

@@ -1,0 +1,275 @@
+{
+  "scope": "本轮修改前本地文件备份目录，历史自述不作为验证依据",
+  "files": [
+    {
+      "path": "参赛作品/README.md",
+      "bytes": 7700,
+      "sha256": "7088895eb18403d70dd2cb466a692207f0d4c68350d220dae849cbe9c2259511",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/requirements.txt",
+      "bytes": 913,
+      "sha256": "69a7ca1b7f60bd4f7ee2f871a91cc777b6f44e1b2b2c2c33449982abea17df08",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/__init__.py",
+      "bytes": 121,
+      "sha256": "7e91d37f14679d9cdf9db0b950227f069b4f01a9e79a508097c8d25d7dcf8c08",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/audit.log",
+      "bytes": 951,
+      "sha256": "b291ad70a753a3ffc1f8c221f013f6638d6adf709d2ab26ce3336b9f11953853",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/server.py",
+      "bytes": 5894,
+      "sha256": "db3ea927df8675c71c85fc43b3a29d7a865e36b781ee555b522ef2e14e32300a",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/__init__.py",
+      "bytes": 77,
+      "sha256": "ec77b3328c03ebc0713a1a86b26e9e79bfbaca8fc17d6ce9f93c0da4f22905b1",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/agent.py",
+      "bytes": 19719,
+      "sha256": "3726ba9e04e6da17051cbff74719eb2476874c3d3c4d344e33ec53c2660be723",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/context.py",
+      "bytes": 1771,
+      "sha256": "8142f9741762723cd48a5ef57a1d379a7aadf7c744ce30876c1536adc7ec0c2c",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/executor.py",
+      "bytes": 10353,
+      "sha256": "46d715b6f2bce7a49728aa5e3dc46813ab778cdaff2310492b6768c97cf72f72",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/llm.py",
+      "bytes": 6592,
+      "sha256": "3198f03086a7860fa019537d9445c72b510b3af2614f0384247b7c9a2d4ac772",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/nlu.py",
+      "bytes": 12356,
+      "sha256": "e92482c5bc8c7e81fbc7c1df2da1f2e1e6c0c52b031909d522ec8225a1a4c2ce",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/planner.py",
+      "bytes": 6101,
+      "sha256": "a5a7d790dcab01ca0e29f5b6b66daef6c0023c7f73db2e20e8f564ddaa24d71b",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/security.py",
+      "bytes": 8034,
+      "sha256": "1a14a1ca31d4b1b7e2303c405a970c5fd41150cba41e32a0f918dfca6c00edcc",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/tools.py",
+      "bytes": 11825,
+      "sha256": "9f53714bb26a8db13c9dcd385e9fc10afe739286ace837d984cef6a91ebe5fce",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/agent/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 312,
+      "sha256": "42c252cab754563149fa9714c910f9b5d214397a8c7f0e1c160eb4cb0204e395",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/agent/__pycache__/agent.cpython-312.pyc",
+      "bytes": 22189,
+      "sha256": "110f9850ca9bc418295e5ab8fb88ebe38456a7714a9b59659a87202457454132",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/agent/__pycache__/context.cpython-312.pyc",
+      "bytes": 3516,
+      "sha256": "bba29d881a8b8f74a40b9b2f47aee05c4e4adc370aa7c02c282f671c9c715948",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/agent/__pycache__/executor.cpython-312.pyc",
+      "bytes": 15636,
+      "sha256": "fd5a46daa5c48399793321d1e0b59382bbbbf92e9d319be0414f26848d9fbaeb",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/agent/__pycache__/llm.cpython-312.pyc",
+      "bytes": 8827,
+      "sha256": "8e9d8e16ccc9277b1c10a94fd1e82c21737ed657abf60192150f1d291fbd28f7",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/agent/__pycache__/nlu.cpython-312.pyc",
+      "bytes": 15836,
+      "sha256": "611b27fb8b1811422d5ed4797dedf50c5b64f30ad21b3bf59f9e25062ccd454d",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/agent/__pycache__/planner.cpython-312.pyc",
+      "bytes": 7945,
+      "sha256": "e3b153f0309223b6ea26b20e38560ae81273f23ac81c526b681c6cac3ff016c6",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/agent/__pycache__/security.cpython-312.pyc",
+      "bytes": 9148,
+      "sha256": "effc2294a9b429edaea66fed2bb4c5d8d371ec536bb6de82141a433e039e0a87",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/agent/__pycache__/tools.cpython-312.pyc",
+      "bytes": 14797,
+      "sha256": "042829cfc113dfbba3e7e20bc086d7c95431f4e1cfbf8916215b7dd057cf3ab8",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/bank/__init__.py",
+      "bytes": 145,
+      "sha256": "51a17780be62a478536f5c12712dbf99c8354198fe623b013b96524cb8ba3f55",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/bank/core.py",
+      "bytes": 16789,
+      "sha256": "23eb762263e4f63562b860fa95fc3f404932a2140c84605da4b08dba42acd0c8",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/bank/data.py",
+      "bytes": 8270,
+      "sha256": "34c65dbca11c66b92a3db46386ba48856a12e36548a80ca6c8dc0dd1070b7b2b",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/backend/bank/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 405,
+      "sha256": "ba8a400cacb0dc62577b9d07f4a6a15904f1226a5057d8f8e43e08c3d7328dc6",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/bank/__pycache__/core.cpython-312.pyc",
+      "bytes": 26100,
+      "sha256": "08e60521514492d3f5973d20cbe64698e6e25d94bc2bfdbc96bc75bb042cae33",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/bank/__pycache__/data.cpython-312.pyc",
+      "bytes": 6434,
+      "sha256": "b4102eee2b340c37527c8c235ce366ad9564c48b654093f37374dc05dfc53bb9",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/backend/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 350,
+      "sha256": "274870b9a2e956f350f31df5ffca1b25a520571ec8abe8e6a60bd729776c5089",
+      "category": "runtime_cache"
+    },
+    {
+      "path": "参赛作品/demo/演示视频.mp4",
+      "bytes": 2130937,
+      "sha256": "012511bf04bd260a6c93fae47393903e6d6dac832a2e4dab9df4da62a009bcff",
+      "category": "media"
+    },
+    {
+      "path": "参赛作品/demo/演示说明.md",
+      "bytes": 3633,
+      "sha256": "572a061f615f92cf6007ecd82528e52946d73cbfb6e6818bd0e3825527b8d162",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/demo/make_video.py",
+      "bytes": 26848,
+      "sha256": "7559875a082351e3d8af201ef2b2ce1f31664ea27d5089d74e8e7b5e643d3ef8",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/docs/部署文档.md",
+      "bytes": 5712,
+      "sha256": "f4250666dad101816d709a7801ed7131e722c4c1043149c74bea210a8c7ed091",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/docs/开源说明.md",
+      "bytes": 2706,
+      "sha256": "c238a54da23bce233772cda243132fba6f041d104b3a6497529a5328b77590a6",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/docs/作品报告.md",
+      "bytes": 11627,
+      "sha256": "ce343d2e64bde2750b29c01e75006883ca37838a77c500b4304bb1db17b2da95",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/frontend/app.js",
+      "bytes": 6369,
+      "sha256": "68b79c36b57d0c46da75d3eb15fdf62be5e0ecf1bf4e7d7541ea673705a0bb22",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/frontend/index.html",
+      "bytes": 4423,
+      "sha256": "ef3cb41212bc91dea779408eb40f4b5e6b751f28a8dddf83a3fa3cbbfb441ad0",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/frontend/style.css",
+      "bytes": 8224,
+      "sha256": "d4c51edc49e7e49ea10b654343dc4acb1fa6b1dd1e52f84f836261ebb15d425c",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/frontend/viz.js",
+      "bytes": 8633,
+      "sha256": "2cdb4b3f35279a5aeec7cc2f02b61e3b0ca575d58112cd22bdc1009fbce7da14",
+      "category": "source_or_document"
+    },
+    {
+      "path": "参赛作品/frontend/vendor/echarts.min.js",
+      "bytes": 1030855,
+      "sha256": "e84270bd0cd5bdf60fefc26d00c2a391cb2e81f4d26a7a9ee16185a54773a3cf",
+      "category": "vendor"
+    },
+    {
+      "path": "参赛作品/tests/test_agent.py",
+      "bytes": 7205,
+      "sha256": "804a28520d473faf8f4643ee787aea2a167e98ee9410d13307b63f409a23e5f8",
+      "category": "source_or_document"
+    },
+    {
+      "path": ".workbuddy/memory/2026-10-31.md",
+      "bytes": 4662,
+      "sha256": "73c792cbef3444daacba6b025033236b7eed1a59133c963e11b1b121c25e832b",
+      "category": "source_or_document"
+    },
+    {
+      "path": "2b33465d05f907be6ca2a12c4308de28.png",
+      "bytes": 82500,
+      "sha256": "73ef0d0a5f61ac2f356fb54e39f630546c4c3f850bb9a3388710fceac296eb5d",
+      "category": "media"
+    },
+    {
+      "path": "9e1bd73c4c48a59bd6fb6e72d42de14d.png",
+      "bytes": 322617,
+      "sha256": "81d4158c9d87b90bbec788878aa316df30ef2c7c34993211d9fe9aafa616c3c0",
+      "category": "media"
+    }
+  ]
+}

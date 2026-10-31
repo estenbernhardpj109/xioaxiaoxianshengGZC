@@ -1,0 +1,6 @@
+{
+ "private": true,
+ "description": "Optional UI capture only; not required to run the banking agent",
+ "type": "module",
+ "devDependencies": { "playwright": "1.62.1" }
+}

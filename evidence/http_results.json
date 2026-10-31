@@ -1,0 +1,67 @@
+{
+  "suite": "http_integration",
+  "run": 15,
+  "passed": 15,
+  "checks": [
+    {
+      "name": "health and CSRF issued",
+      "pass": true
+    },
+    {
+      "name": "no CSRF rejected",
+      "pass": true
+    },
+    {
+      "name": "yellow waits for confirmation",
+      "pass": true
+    },
+    {
+      "name": "cross-browser session rejected",
+      "pass": true
+    },
+    {
+      "name": "string boolean rejected",
+      "pass": true
+    },
+    {
+      "name": "confirmed transfer changes balance",
+      "pass": true
+    },
+    {
+      "name": "confirmation replay rejected",
+      "pass": true
+    },
+    {
+      "name": "cross-origin rejected",
+      "pass": true
+    },
+    {
+      "name": "path traversal rejected",
+      "pass": true
+    },
+    {
+      "name": "malformed text rejected",
+      "pass": true
+    },
+    {
+      "name": "oversized body rejected",
+      "pass": true
+    },
+    {
+      "name": "tool schemas published",
+      "pass": true
+    },
+    {
+      "name": "dashboard joins and aggregates",
+      "pass": true
+    },
+    {
+      "name": "state persisted",
+      "pass": true
+    },
+    {
+      "name": "restart restores balance",
+      "pass": true
+    }
+  ]
+}

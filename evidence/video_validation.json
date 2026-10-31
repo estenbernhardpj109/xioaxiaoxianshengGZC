@@ -1,0 +1,15 @@
+{
+  "file": "demo/演示视频.mp4",
+  "duration_seconds": 248,
+  "width": 1280,
+  "height": 912,
+  "fps": 25,
+  "codec": "h264",
+  "scenes": 22,
+  "kind": "actual_UI_action_stills_with_captions",
+  "audio": "local synthetic Chinese narration",
+  "under_5_minutes": true,
+  "full_decode_passed": true,
+  "bytes": 5399648,
+  "media_probe": "h264 1280x912 25fps, AAC mono narration, duration 248.00s"
+}

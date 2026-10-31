@@ -1,0 +1,4112 @@
+{
+  "source": {
+    "kind": "synthetic",
+    "seed": 2026,
+    "as_of": "2026-10-31T12:00:00+08:00",
+    "scope": "当前演示用户 U1001，交易历史不与初始余额对账",
+    "join_keys": [
+      "user_id",
+      "product_id",
+      "merchant",
+      "reservation_id"
+    ]
+  },
+  "observation": {
+    "environment": "local_digital_bank_sandbox",
+    "data_kind": "synthetic",
+    "observed_at": 1793415293.7322133,
+    "balance": 86532.5,
+    "held": 0,
+    "daily_committed": 0,
+    "cards": [
+      {
+        "card_id": "C1001",
+        "type": "借记卡",
+        "status": "正常",
+        "daily_limit": 50000,
+        "used_today": 2306.2
+      },
+      {
+        "card_id": "C1002",
+        "type": "信用卡",
+        "status": "正常",
+        "credit_limit": 30000,
+        "used_limit": 8600,
+        "available": 21400
+      }
+    ],
+    "holdings": [
+      {
+        "product_id": "W001",
+        "amount": 20000,
+        "buy_ts": 1790827200.0
+      },
+      {
+        "product_id": "W004",
+        "amount": 5000,
+        "buy_ts": 1792382400.0
+      }
+    ],
+    "subscriptions": [
+      {
+        "sub_id": "S001",
+        "merchant": "腾讯视频会员",
+        "amount": 25.0,
+        "cycle": "月",
+        "next_charge": 1793678400.0,
+        "status": "生效中"
+      },
+      {
+        "sub_id": "S002",
+        "merchant": "网易云音乐",
+        "amount": 15.0,
+        "cycle": "月",
+        "next_charge": 1794110400.0,
+        "status": "生效中"
+      },
+      {
+        "sub_id": "S003",
+        "merchant": "某云盘超级会员",
+        "amount": 198.0,
+        "cycle": "年",
+        "next_charge": 1795147200.0,
+        "status": "生效中"
+      }
+    ],
+    "scheduled": [],
+    "orders": [
+      {
+        "order_id": "O1001",
+        "product": "蓝牙耳机",
+        "amount": 299.0,
+        "status": "已发货",
+        "progress": "运输中-派送",
+        "refund_status": "无",
+        "ts": 1793073600.0
+      },
+      {
+        "order_id": "O1002",
+        "product": "机械键盘",
+        "amount": 459.0,
+        "status": "已完成",
+        "progress": "已签收",
+        "refund_status": "无",
+        "ts": 1791864000.0
+      },
+      {
+        "order_id": "O1003",
+        "product": "运动鞋",
+        "amount": 528.0,
+        "status": "退款中",
+        "progress": "商家已同意-退款到账",
+        "refund_status": "退款中-预计3日",
+        "ts": 1793246400.0
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "txn_id": "T0008",
+      "user_id": "U1001",
+      "counterparty": "未知商户X",
+      "amount": 4999.0,
+      "direction": "out",
+      "category": "疑似异常",
+      "channel": "深夜支付",
+      "ts": 1793408400.0
+    },
+    {
+      "txn_id": "T0007",
+      "user_id": "U1001",
+      "counterparty": "星巴克",
+      "amount": 39.0,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1793332800.0
+    },
+    {
+      "txn_id": "T0001",
+      "user_id": "U1001",
+      "counterparty": "盒马鲜生",
+      "amount": 218.4,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1793246400.0
+    },
+    {
+      "txn_id": "T0002",
+      "user_id": "U1001",
+      "counterparty": "滴滴出行",
+      "amount": 36.0,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1793246400.0
+    },
+    {
+      "txn_id": "SYN10015",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 29.54,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1793188800.0
+    },
+    {
+      "txn_id": "SYN10009",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 45.87,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1793181600.0
+    },
+    {
+      "txn_id": "SYN10007",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 468.58,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1793008800.0
+    },
+    {
+      "txn_id": "T0004",
+      "user_id": "U1001",
+      "counterparty": "美团外卖",
+      "amount": 45.5,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "APP",
+      "ts": 1792987200.0
+    },
+    {
+      "txn_id": "SYN10018",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 38.97,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1792922400.0
+    },
+    {
+      "txn_id": "SYN10027",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 4.37,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1792922400.0
+    },
+    {
+      "txn_id": "SYN10024",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 474.43,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1792886400.0
+    },
+    {
+      "txn_id": "SYN10001",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 445.76,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1792749600.0
+    },
+    {
+      "txn_id": "SYN10013",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 66.6,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1792749600.0
+    },
+    {
+      "txn_id": "T0005",
+      "user_id": "U1001",
+      "counterparty": "京东商城",
+      "amount": 1299.0,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1792728000.0
+    },
+    {
+      "txn_id": "SYN10002",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 38.82,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1792663200.0
+    },
+    {
+      "txn_id": "T0003",
+      "user_id": "U1001",
+      "counterparty": "工资代发",
+      "amount": 15800.0,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1792555200.0
+    },
+    {
+      "txn_id": "SYN10023",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 251.5,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1792555200.0
+    },
+    {
+      "txn_id": "SYN10003",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 211.96,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1792497600.0
+    },
+    {
+      "txn_id": "SYN10021",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 12.59,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1792497600.0
+    },
+    {
+      "txn_id": "SYN10005",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 203.11,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1792404000.0
+    },
+    {
+      "txn_id": "SYN10019",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 219.87,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1792324800.0
+    },
+    {
+      "txn_id": "SYN10026",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 121.25,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1792209600.0
+    },
+    {
+      "txn_id": "T0006",
+      "user_id": "U1001",
+      "counterparty": "国家电网",
+      "amount": 168.3,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1792123200.0
+    },
+    {
+      "txn_id": "SYN10022",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 60.62,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1792065600.0
+    },
+    {
+      "txn_id": "DEB10S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1792036800.0
+    },
+    {
+      "txn_id": "DEB10S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1792036800.0
+    },
+    {
+      "txn_id": "SYN10020",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 25.35,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1791972000.0
+    },
+    {
+      "txn_id": "SYN10029",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 500.13,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1791849600.0
+    },
+    {
+      "txn_id": "SYN10004",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 57.17,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1791806400.0
+    },
+    {
+      "txn_id": "SYN10008",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 41.96,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1791806400.0
+    },
+    {
+      "txn_id": "SYN10030",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 32.01,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1791763200.0
+    },
+    {
+      "txn_id": "T0009",
+      "user_id": "U1001",
+      "counterparty": "淘宝",
+      "amount": 320.0,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1791691200.0
+    },
+    {
+      "txn_id": "SYN10011",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 75.5,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1791626400.0
+    },
+    {
+      "txn_id": "SAL10",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1791604800.0
+    },
+    {
+      "txn_id": "SYN10028",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 37.77,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1791374400.0
+    },
+    {
+      "txn_id": "SYN10025",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 291.75,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1791367200.0
+    },
+    {
+      "txn_id": "SYN10031",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 7.07,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1791367200.0
+    },
+    {
+      "txn_id": "T0010",
+      "user_id": "U1001",
+      "counterparty": "房租转账",
+      "amount": 3500.0,
+      "direction": "out",
+      "category": "居住",
+      "channel": "转账",
+      "ts": 1791259200.0
+    },
+    {
+      "txn_id": "SYN10010",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 40.17,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1791108000.0
+    },
+    {
+      "txn_id": "SYN10014",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 140.04,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1791072000.0
+    },
+    {
+      "txn_id": "SYN10016",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 69.94,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1791072000.0
+    },
+    {
+      "txn_id": "SYN10017",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 174.18,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1790913600.0
+    },
+    {
+      "txn_id": "SYN10012",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 6.75,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1790899200.0
+    },
+    {
+      "txn_id": "SYN10006",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 302.26,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1790848800.0
+    },
+    {
+      "txn_id": "SYN10000",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 11.21,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1790827200.0
+    },
+    {
+      "txn_id": "SYN09002",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 455.52,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1790503200.0
+    },
+    {
+      "txn_id": "SYN09014",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 63.39,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1790481600.0
+    },
+    {
+      "txn_id": "SYN09001",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 13.61,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1790157600.0
+    },
+    {
+      "txn_id": "SYN09007",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 181.4,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1789905600.0
+    },
+    {
+      "txn_id": "SYN09004",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 267.18,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1789898400.0
+    },
+    {
+      "txn_id": "SYN09026",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 34.26,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1789812000.0
+    },
+    {
+      "txn_id": "SYN09005",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 8.27,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1789732800.0
+    },
+    {
+      "txn_id": "SYN09017",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 57.06,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1789732800.0
+    },
+    {
+      "txn_id": "SYN09000",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 491.3,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1789725600.0
+    },
+    {
+      "txn_id": "SYN09020",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 243.12,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1789552800.0
+    },
+    {
+      "txn_id": "SYN09013",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 5.19,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1789473600.0
+    },
+    {
+      "txn_id": "SYN09010",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 50.89,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1789466400.0
+    },
+    {
+      "txn_id": "DEB09S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1789444800.0
+    },
+    {
+      "txn_id": "DEB09S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1789444800.0
+    },
+    {
+      "txn_id": "SYN09029",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 227.33,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1789380000.0
+    },
+    {
+      "txn_id": "SYN09008",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 8.49,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1789358400.0
+    },
+    {
+      "txn_id": "SYN09011",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 34.36,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1789358400.0
+    },
+    {
+      "txn_id": "SYN09021",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 39.98,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1789358400.0
+    },
+    {
+      "txn_id": "SYN09025",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 8.93,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1789171200.0
+    },
+    {
+      "txn_id": "SYN09015",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 103.04,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1789099200.0
+    },
+    {
+      "txn_id": "SAL09",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1789012800.0
+    },
+    {
+      "txn_id": "SYN09024",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 470.08,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1788955200.0
+    },
+    {
+      "txn_id": "SYN09031",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 186.34,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1788948000.0
+    },
+    {
+      "txn_id": "SYN09022",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 39.79,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1788926400.0
+    },
+    {
+      "txn_id": "SYN09016",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 326.21,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1788840000.0
+    },
+    {
+      "txn_id": "SYN09027",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 361.58,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1788840000.0
+    },
+    {
+      "txn_id": "SYN09030",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 258.32,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1788688800.0
+    },
+    {
+      "txn_id": "SYN09023",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 499.75,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1788652800.0
+    },
+    {
+      "txn_id": "SYN09006",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 28.8,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1788494400.0
+    },
+    {
+      "txn_id": "SYN09009",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 28.91,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1788480000.0
+    },
+    {
+      "txn_id": "SYN09012",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 57.49,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1788480000.0
+    },
+    {
+      "txn_id": "SYN09019",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 187.02,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1788436800.0
+    },
+    {
+      "txn_id": "SYN09018",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 12.23,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1788393600.0
+    },
+    {
+      "txn_id": "SYN09028",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 361.48,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1788343200.0
+    },
+    {
+      "txn_id": "SYN09003",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 10.31,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1788264000.0
+    },
+    {
+      "txn_id": "SYN08002",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 14.45,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1787832000.0
+    },
+    {
+      "txn_id": "SYN08017",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 265.3,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1787702400.0
+    },
+    {
+      "txn_id": "SYN08001",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 69.0,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1787544000.0
+    },
+    {
+      "txn_id": "SYN08010",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 440.06,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1787544000.0
+    },
+    {
+      "txn_id": "SYN08028",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 33.27,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1787544000.0
+    },
+    {
+      "txn_id": "SYN08031",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 475.84,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1787529600.0
+    },
+    {
+      "txn_id": "SYN08005",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 50.54,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1787486400.0
+    },
+    {
+      "txn_id": "SYN08022",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 234.44,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1787486400.0
+    },
+    {
+      "txn_id": "SYN08026",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 153.22,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1787479200.0
+    },
+    {
+      "txn_id": "SYN08003",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 6.11,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1787392800.0
+    },
+    {
+      "txn_id": "SYN08029",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 175.09,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1787371200.0
+    },
+    {
+      "txn_id": "SYN08030",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 228.21,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1787313600.0
+    },
+    {
+      "txn_id": "SYN08007",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 29.99,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1787306400.0
+    },
+    {
+      "txn_id": "SYN08012",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 5.36,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1787227200.0
+    },
+    {
+      "txn_id": "SYN08024",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 11.73,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1787220000.0
+    },
+    {
+      "txn_id": "SYN08006",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 174.95,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1786960800.0
+    },
+    {
+      "txn_id": "SYN08020",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 268.5,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1786874400.0
+    },
+    {
+      "txn_id": "SYN08018",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 445.72,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1786795200.0
+    },
+    {
+      "txn_id": "DEB08S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1786766400.0
+    },
+    {
+      "txn_id": "DEB08S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1786766400.0
+    },
+    {
+      "txn_id": "SYN08000",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 4.23,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1786752000.0
+    },
+    {
+      "txn_id": "SYN08015",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 9.33,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1786579200.0
+    },
+    {
+      "txn_id": "SAL08",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1786334400.0
+    },
+    {
+      "txn_id": "SYN08009",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 15.67,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1786320000.0
+    },
+    {
+      "txn_id": "SYN08019",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 450.64,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1786276800.0
+    },
+    {
+      "txn_id": "SYN08011",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 56.9,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1786190400.0
+    },
+    {
+      "txn_id": "SYN08008",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 208.8,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1786183200.0
+    },
+    {
+      "txn_id": "SYN08027",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 189.45,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1786161600.0
+    },
+    {
+      "txn_id": "SYN08025",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 280.19,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1786096800.0
+    },
+    {
+      "txn_id": "SYN08023",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 236.54,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1785974400.0
+    },
+    {
+      "txn_id": "SYN08004",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 60.26,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1785888000.0
+    },
+    {
+      "txn_id": "SYN08016",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 61.18,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1785816000.0
+    },
+    {
+      "txn_id": "SYN08021",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 6.45,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1785801600.0
+    },
+    {
+      "txn_id": "SYN08014",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 395.58,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1785585600.0
+    },
+    {
+      "txn_id": "SYN08013",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 5.77,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1785578400.0
+    },
+    {
+      "txn_id": "SYN07021",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 51.65,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1785211200.0
+    },
+    {
+      "txn_id": "SYN07012",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 154.53,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1785196800.0
+    },
+    {
+      "txn_id": "SYN07002",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 55.95,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1784937600.0
+    },
+    {
+      "txn_id": "SYN07003",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 268.95,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1784779200.0
+    },
+    {
+      "txn_id": "SYN07005",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 165.01,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1784779200.0
+    },
+    {
+      "txn_id": "SYN07029",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 113.6,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1784692800.0
+    },
+    {
+      "txn_id": "SYN07008",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 183.64,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1784462400.0
+    },
+    {
+      "txn_id": "SYN07014",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 10.66,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1784419200.0
+    },
+    {
+      "txn_id": "SYN07026",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 29.49,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1784368800.0
+    },
+    {
+      "txn_id": "SYN07025",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 9.94,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1784347200.0
+    },
+    {
+      "txn_id": "SYN07030",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 10.06,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1784347200.0
+    },
+    {
+      "txn_id": "SYN07010",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 58.69,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1784289600.0
+    },
+    {
+      "txn_id": "SYN07013",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 10.75,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1784246400.0
+    },
+    {
+      "txn_id": "SYN07024",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 21.24,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1784196000.0
+    },
+    {
+      "txn_id": "SYN07009",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 37.7,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1784174400.0
+    },
+    {
+      "txn_id": "SYN07007",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 13.23,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1784088000.0
+    },
+    {
+      "txn_id": "DEB07S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1784088000.0
+    },
+    {
+      "txn_id": "DEB07S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1784088000.0
+    },
+    {
+      "txn_id": "SYN07027",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 129.51,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1784073600.0
+    },
+    {
+      "txn_id": "SYN07028",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 46.68,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1784030400.0
+    },
+    {
+      "txn_id": "SYN07006",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 345.36,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1783987200.0
+    },
+    {
+      "txn_id": "SYN07031",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 553.1,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1783936800.0
+    },
+    {
+      "txn_id": "SYN07015",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 255.39,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1783900800.0
+    },
+    {
+      "txn_id": "SYN07016",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 129.97,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1783900800.0
+    },
+    {
+      "txn_id": "SYN07020",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 61.65,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1783857600.0
+    },
+    {
+      "txn_id": "SAL07",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1783656000.0
+    },
+    {
+      "txn_id": "SYN07017",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 45.05,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1783569600.0
+    },
+    {
+      "txn_id": "SYN07023",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 17.88,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1783569600.0
+    },
+    {
+      "txn_id": "SYN07004",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 236.32,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1783504800.0
+    },
+    {
+      "txn_id": "SYN07011",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 252.27,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1783504800.0
+    },
+    {
+      "txn_id": "SYN07019",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 64.72,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1783382400.0
+    },
+    {
+      "txn_id": "SYN07018",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 210.4,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1783072800.0
+    },
+    {
+      "txn_id": "SYN07000",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 195.32,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1783051200.0
+    },
+    {
+      "txn_id": "SYN07022",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 95.5,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1782986400.0
+    },
+    {
+      "txn_id": "SYN07001",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 454.55,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1782864000.0
+    },
+    {
+      "txn_id": "SYN06010",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 9.07,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1782604800.0
+    },
+    {
+      "txn_id": "SYN06027",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 33.08,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1782554400.0
+    },
+    {
+      "txn_id": "SYN06025",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 546.28,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1782381600.0
+    },
+    {
+      "txn_id": "SYN06003",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 53.2,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1782360000.0
+    },
+    {
+      "txn_id": "SYN06013",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 178.36,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1782302400.0
+    },
+    {
+      "txn_id": "SYN06016",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 5.39,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1782273600.0
+    },
+    {
+      "txn_id": "SYN06014",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 546.74,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1782187200.0
+    },
+    {
+      "txn_id": "SYN06004",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 280.29,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1782043200.0
+    },
+    {
+      "txn_id": "SYN06018",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 6.27,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1782043200.0
+    },
+    {
+      "txn_id": "SYN06030",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 196.68,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1781956800.0
+    },
+    {
+      "txn_id": "SYN06028",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 21.19,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1781827200.0
+    },
+    {
+      "txn_id": "SYN06029",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 161.9,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1781827200.0
+    },
+    {
+      "txn_id": "SYN06015",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 95.65,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1781784000.0
+    },
+    {
+      "txn_id": "SYN06023",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 15.64,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1781755200.0
+    },
+    {
+      "txn_id": "SYN06021",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 274.52,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1781697600.0
+    },
+    {
+      "txn_id": "SYN06022",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 185.13,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1781582400.0
+    },
+    {
+      "txn_id": "SYN06006",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 25.64,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1781524800.0
+    },
+    {
+      "txn_id": "SYN06026",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 35.66,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1781524800.0
+    },
+    {
+      "txn_id": "DEB06S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1781496000.0
+    },
+    {
+      "txn_id": "DEB06S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1781496000.0
+    },
+    {
+      "txn_id": "SYN06024",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 284.41,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1781308800.0
+    },
+    {
+      "txn_id": "SYN06017",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 23.55,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1781236800.0
+    },
+    {
+      "txn_id": "SYN06031",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 4.32,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1781150400.0
+    },
+    {
+      "txn_id": "SYN06009",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 208.8,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1781136000.0
+    },
+    {
+      "txn_id": "SYN06020",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 307.29,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1781085600.0
+    },
+    {
+      "txn_id": "SYN06005",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 44.52,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1781064000.0
+    },
+    {
+      "txn_id": "SAL06",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1781064000.0
+    },
+    {
+      "txn_id": "SYN06000",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 66.9,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1780999200.0
+    },
+    {
+      "txn_id": "SYN06012",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 110.67,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1780826400.0
+    },
+    {
+      "txn_id": "SYN06011",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 129.25,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1780804800.0
+    },
+    {
+      "txn_id": "SYN06002",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 210.68,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1780660800.0
+    },
+    {
+      "txn_id": "SYN06001",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 15.56,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1780653600.0
+    },
+    {
+      "txn_id": "SYN06007",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 337.75,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1780617600.0
+    },
+    {
+      "txn_id": "SYN06008",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 48.27,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1780567200.0
+    },
+    {
+      "txn_id": "SYN06019",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 220.84,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1780286400.0
+    },
+    {
+      "txn_id": "SYN05003",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 266.55,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1779883200.0
+    },
+    {
+      "txn_id": "SYN05020",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 62.8,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1779883200.0
+    },
+    {
+      "txn_id": "SYN05016",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 155.42,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1779876000.0
+    },
+    {
+      "txn_id": "SYN05031",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 13.62,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1779753600.0
+    },
+    {
+      "txn_id": "SYN05028",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 197.42,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1779710400.0
+    },
+    {
+      "txn_id": "SYN05024",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 15.57,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1779703200.0
+    },
+    {
+      "txn_id": "SYN05011",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 5.01,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1779530400.0
+    },
+    {
+      "txn_id": "SYN05012",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 99.31,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1779508800.0
+    },
+    {
+      "txn_id": "SYN05000",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 170.5,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1779422400.0
+    },
+    {
+      "txn_id": "SYN05005",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 11.93,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1779321600.0
+    },
+    {
+      "txn_id": "SYN05025",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 283.24,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1779321600.0
+    },
+    {
+      "txn_id": "SYN05015",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 247.25,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1779278400.0
+    },
+    {
+      "txn_id": "SYN05019",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 267.71,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1779019200.0
+    },
+    {
+      "txn_id": "SYN05007",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 215.14,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1779012000.0
+    },
+    {
+      "txn_id": "SYN05027",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 190.58,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1778990400.0
+    },
+    {
+      "txn_id": "SYN05014",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 8.12,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1778925600.0
+    },
+    {
+      "txn_id": "SYN05022",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 417.43,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1778925600.0
+    },
+    {
+      "txn_id": "SYN05021",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 498.28,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1778889600.0
+    },
+    {
+      "txn_id": "SYN05010",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 11.27,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1778817600.0
+    },
+    {
+      "txn_id": "DEB05S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1778817600.0
+    },
+    {
+      "txn_id": "DEB05S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1778817600.0
+    },
+    {
+      "txn_id": "SYN05013",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 217.81,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1778716800.0
+    },
+    {
+      "txn_id": "SYN05029",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 363.74,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1778587200.0
+    },
+    {
+      "txn_id": "SYN05004",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 83.44,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1778457600.0
+    },
+    {
+      "txn_id": "SYN05006",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 467.5,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1778457600.0
+    },
+    {
+      "txn_id": "SAL05",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1778385600.0
+    },
+    {
+      "txn_id": "SYN05018",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 223.47,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1778328000.0
+    },
+    {
+      "txn_id": "SYN05002",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 24.36,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1778320800.0
+    },
+    {
+      "txn_id": "SYN05023",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 555.32,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1778025600.0
+    },
+    {
+      "txn_id": "SYN05030",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 12.74,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1777953600.0
+    },
+    {
+      "txn_id": "SYN05017",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 183.15,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1777939200.0
+    },
+    {
+      "txn_id": "SYN05009",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 34.82,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1777867200.0
+    },
+    {
+      "txn_id": "SYN05008",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 366.36,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1777780800.0
+    },
+    {
+      "txn_id": "SYN05001",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 444.26,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1777723200.0
+    },
+    {
+      "txn_id": "SYN05026",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 6.89,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1777636800.0
+    },
+    {
+      "txn_id": "SYN04012",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 20.84,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1777284000.0
+    },
+    {
+      "txn_id": "SYN04026",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 274.41,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1777248000.0
+    },
+    {
+      "txn_id": "SYN04019",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 58.34,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1777204800.0
+    },
+    {
+      "txn_id": "SYN04020",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 210.7,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1777089600.0
+    },
+    {
+      "txn_id": "SYN04025",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 172.04,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1777003200.0
+    },
+    {
+      "txn_id": "SYN04008",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 14.17,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1776988800.0
+    },
+    {
+      "txn_id": "SYN04010",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 6.16,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1776988800.0
+    },
+    {
+      "txn_id": "SYN04031",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 281.47,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1776859200.0
+    },
+    {
+      "txn_id": "SYN04016",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 286.08,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1776729600.0
+    },
+    {
+      "txn_id": "SYN04018",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 93.57,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1776592800.0
+    },
+    {
+      "txn_id": "SYN04002",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 541.33,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1776556800.0
+    },
+    {
+      "txn_id": "SYN04005",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 270.38,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1776506400.0
+    },
+    {
+      "txn_id": "SYN04001",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 62.12,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1776484800.0
+    },
+    {
+      "txn_id": "SYN04003",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 292.16,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1776484800.0
+    },
+    {
+      "txn_id": "SYN04021",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 147.61,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1776420000.0
+    },
+    {
+      "txn_id": "DEB04S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1776225600.0
+    },
+    {
+      "txn_id": "DEB04S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1776225600.0
+    },
+    {
+      "txn_id": "SYN04024",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 229.41,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1776168000.0
+    },
+    {
+      "txn_id": "SYN04009",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 257.73,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1776160800.0
+    },
+    {
+      "txn_id": "SYN04022",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 114.77,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1776074400.0
+    },
+    {
+      "txn_id": "SYN04030",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 198.69,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1776038400.0
+    },
+    {
+      "txn_id": "SYN04007",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 548.56,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1775966400.0
+    },
+    {
+      "txn_id": "SAL04",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1775793600.0
+    },
+    {
+      "txn_id": "SYN04029",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 47.66,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1775728800.0
+    },
+    {
+      "txn_id": "SYN04027",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 197.65,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1775707200.0
+    },
+    {
+      "txn_id": "SYN04023",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 245.74,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1775642400.0
+    },
+    {
+      "txn_id": "SYN04028",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 548.34,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1775642400.0
+    },
+    {
+      "txn_id": "SYN04013",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 391.79,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1775534400.0
+    },
+    {
+      "txn_id": "SYN04006",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 7.54,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1775469600.0
+    },
+    {
+      "txn_id": "SYN04011",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 14.65,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1775433600.0
+    },
+    {
+      "txn_id": "SYN04000",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 559.5,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1775347200.0
+    },
+    {
+      "txn_id": "SYN04014",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 15.82,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1775347200.0
+    },
+    {
+      "txn_id": "SYN04017",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 261.44,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1775275200.0
+    },
+    {
+      "txn_id": "SYN04015",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 160.77,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1775260800.0
+    },
+    {
+      "txn_id": "SYN04004",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 55.96,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1775188800.0
+    },
+    {
+      "txn_id": "SYN03030",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 474.05,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1774612800.0
+    },
+    {
+      "txn_id": "SYN03028",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 117.28,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1774519200.0
+    },
+    {
+      "txn_id": "SYN03025",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 375.87,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1774497600.0
+    },
+    {
+      "txn_id": "SYN03016",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 11.95,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1774440000.0
+    },
+    {
+      "txn_id": "SYN03024",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 12.49,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1774353600.0
+    },
+    {
+      "txn_id": "SYN03012",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 26.01,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1774310400.0
+    },
+    {
+      "txn_id": "SYN03009",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 261.61,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1774260000.0
+    },
+    {
+      "txn_id": "SYN03027",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 198.48,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1774094400.0
+    },
+    {
+      "txn_id": "SYN03021",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 35.39,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1774087200.0
+    },
+    {
+      "txn_id": "SYN03014",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 152.09,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1774000800.0
+    },
+    {
+      "txn_id": "SYN03011",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 27.87,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1773828000.0
+    },
+    {
+      "txn_id": "SYN03023",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 15.64,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1773619200.0
+    },
+    {
+      "txn_id": "DEB03S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1773547200.0
+    },
+    {
+      "txn_id": "DEB03S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1773547200.0
+    },
+    {
+      "txn_id": "SYN03002",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 164.07,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1773446400.0
+    },
+    {
+      "txn_id": "SYN03006",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 229.45,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1773446400.0
+    },
+    {
+      "txn_id": "SYN03005",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 49.41,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1773396000.0
+    },
+    {
+      "txn_id": "SYN03007",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 537.77,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1773396000.0
+    },
+    {
+      "txn_id": "SYN03015",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 8.61,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1773316800.0
+    },
+    {
+      "txn_id": "SYN03004",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 395.05,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1773230400.0
+    },
+    {
+      "txn_id": "SYN03026",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 297.39,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1773201600.0
+    },
+    {
+      "txn_id": "SYN03010",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 34.24,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1773144000.0
+    },
+    {
+      "txn_id": "SYN03000",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 25.97,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1773136800.0
+    },
+    {
+      "txn_id": "SAL03",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1773115200.0
+    },
+    {
+      "txn_id": "SYN03019",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 39.44,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1773057600.0
+    },
+    {
+      "txn_id": "SYN03018",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 126.36,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1773028800.0
+    },
+    {
+      "txn_id": "SYN03017",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 11.94,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1772755200.0
+    },
+    {
+      "txn_id": "SYN03029",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 276.1,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1772712000.0
+    },
+    {
+      "txn_id": "SYN03020",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 492.61,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1772668800.0
+    },
+    {
+      "txn_id": "SYN03013",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 24.1,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1772582400.0
+    },
+    {
+      "txn_id": "SYN03031",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 8.47,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1772532000.0
+    },
+    {
+      "txn_id": "SYN03001",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 312.89,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1772496000.0
+    },
+    {
+      "txn_id": "SYN03008",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 508.94,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1772452800.0
+    },
+    {
+      "txn_id": "SYN03022",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 403.7,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1772409600.0
+    },
+    {
+      "txn_id": "SYN03003",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 5.48,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1772359200.0
+    },
+    {
+      "txn_id": "SYN02025",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 287.71,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1772251200.0
+    },
+    {
+      "txn_id": "SYN02018",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 161.22,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1772236800.0
+    },
+    {
+      "txn_id": "SYN02022",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 496.11,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1772150400.0
+    },
+    {
+      "txn_id": "SYN02004",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 10.09,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1772100000.0
+    },
+    {
+      "txn_id": "SYN02005",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 192.01,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1772078400.0
+    },
+    {
+      "txn_id": "SYN02016",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 5.92,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1772078400.0
+    },
+    {
+      "txn_id": "SYN02020",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 139.73,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1772020800.0
+    },
+    {
+      "txn_id": "SYN02008",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 150.74,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1771977600.0
+    },
+    {
+      "txn_id": "SYN02030",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 411.3,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1771905600.0
+    },
+    {
+      "txn_id": "SYN02001",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 197.81,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1771819200.0
+    },
+    {
+      "txn_id": "SYN02027",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 10.75,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1771495200.0
+    },
+    {
+      "txn_id": "SYN02002",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 290.61,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1771473600.0
+    },
+    {
+      "txn_id": "SYN02013",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 19.29,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1771416000.0
+    },
+    {
+      "txn_id": "SYN02031",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 32.03,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1771322400.0
+    },
+    {
+      "txn_id": "SYN02010",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 47.51,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1771243200.0
+    },
+    {
+      "txn_id": "SYN02015",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 5.55,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1771200000.0
+    },
+    {
+      "txn_id": "SYN02012",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 424.97,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1771128000.0
+    },
+    {
+      "txn_id": "DEB02S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1771128000.0
+    },
+    {
+      "txn_id": "DEB02S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1771128000.0
+    },
+    {
+      "txn_id": "SYN02024",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 543.7,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1771041600.0
+    },
+    {
+      "txn_id": "SYN02017",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 9.1,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1770976800.0
+    },
+    {
+      "txn_id": "SYN02006",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 15.51,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1770940800.0
+    },
+    {
+      "txn_id": "SYN02019",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 7.16,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1770868800.0
+    },
+    {
+      "txn_id": "SYN02021",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 9.33,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1770811200.0
+    },
+    {
+      "txn_id": "SYN02009",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 176.28,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1770804000.0
+    },
+    {
+      "txn_id": "SAL02",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1770696000.0
+    },
+    {
+      "txn_id": "SYN02029",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 229.02,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1770336000.0
+    },
+    {
+      "txn_id": "SYN02011",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 9.2,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1770264000.0
+    },
+    {
+      "txn_id": "SYN02000",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 271.65,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1770249600.0
+    },
+    {
+      "txn_id": "SYN02026",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 10.67,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1770199200.0
+    },
+    {
+      "txn_id": "SYN02028",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 5.16,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1770199200.0
+    },
+    {
+      "txn_id": "SYN02003",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 420.79,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1770120000.0
+    },
+    {
+      "txn_id": "SYN02007",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 262.6,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1770076800.0
+    },
+    {
+      "txn_id": "SYN02014",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 9.42,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1769990400.0
+    },
+    {
+      "txn_id": "SYN02023",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 14.54,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1769904000.0
+    },
+    {
+      "txn_id": "SYN01010",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 170.72,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1769558400.0
+    },
+    {
+      "txn_id": "SYN01024",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 34.12,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1769508000.0
+    },
+    {
+      "txn_id": "SYN01013",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 15.55,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1769472000.0
+    },
+    {
+      "txn_id": "SYN01001",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 243.98,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1769428800.0
+    },
+    {
+      "txn_id": "SYN01021",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 155.99,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1769428800.0
+    },
+    {
+      "txn_id": "SYN01023",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 200.51,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1769428800.0
+    },
+    {
+      "txn_id": "SYN01031",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 52.6,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1769335200.0
+    },
+    {
+      "txn_id": "SYN01006",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 22.21,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1769248800.0
+    },
+    {
+      "txn_id": "SYN01014",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 42.18,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1769169600.0
+    },
+    {
+      "txn_id": "SYN01016",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 235.77,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1769083200.0
+    },
+    {
+      "txn_id": "SYN01004",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 122.3,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1769076000.0
+    },
+    {
+      "txn_id": "SYN01030",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 30.51,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1768881600.0
+    },
+    {
+      "txn_id": "SYN01017",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 421.3,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1768737600.0
+    },
+    {
+      "txn_id": "SYN01018",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 478.06,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1768737600.0
+    },
+    {
+      "txn_id": "SYN01012",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 204.49,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1768608000.0
+    },
+    {
+      "txn_id": "SYN01027",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 180.6,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1768557600.0
+    },
+    {
+      "txn_id": "SYN01025",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 41.28,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1768471200.0
+    },
+    {
+      "txn_id": "DEB01S001",
+      "user_id": "U1001",
+      "counterparty": "腾讯视频会员",
+      "amount": 25.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1768449600.0
+    },
+    {
+      "txn_id": "DEB01S002",
+      "user_id": "U1001",
+      "counterparty": "网易云音乐",
+      "amount": 15.0,
+      "direction": "out",
+      "category": "订阅服务",
+      "channel": "代扣",
+      "ts": 1768449600.0
+    },
+    {
+      "txn_id": "SYN01026",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 15.28,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1768392000.0
+    },
+    {
+      "txn_id": "SYN01019",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 141.23,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1768363200.0
+    },
+    {
+      "txn_id": "SYN01011",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 265.01,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1768298400.0
+    },
+    {
+      "txn_id": "SYN01005",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 478.16,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1768212000.0
+    },
+    {
+      "txn_id": "SYN01000",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 63.92,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1768089600.0
+    },
+    {
+      "txn_id": "SYN01007",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 199.17,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1768046400.0
+    },
+    {
+      "txn_id": "SAL01",
+      "user_id": "U1001",
+      "counterparty": "模拟工资",
+      "amount": 15800,
+      "direction": "in",
+      "category": "收入",
+      "channel": "代发",
+      "ts": 1768017600.0
+    },
+    {
+      "txn_id": "SYN01003",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 41.11,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1768003200.0
+    },
+    {
+      "txn_id": "SYN01022",
+      "user_id": "U1001",
+      "counterparty": "城市轨道",
+      "amount": 9.6,
+      "direction": "out",
+      "category": "交通出行",
+      "channel": "APP",
+      "ts": 1767960000.0
+    },
+    {
+      "txn_id": "SYN01002",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 213.2,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1767830400.0
+    },
+    {
+      "txn_id": "SYN01015",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 216.0,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1767830400.0
+    },
+    {
+      "txn_id": "SYN01028",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 281.21,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1767614400.0
+    },
+    {
+      "txn_id": "SYN01009",
+      "user_id": "U1001",
+      "counterparty": "水电服务",
+      "amount": 275.47,
+      "direction": "out",
+      "category": "生活缴费",
+      "channel": "代扣",
+      "ts": 1767441600.0
+    },
+    {
+      "txn_id": "SYN01029",
+      "user_id": "U1001",
+      "counterparty": "午间食堂",
+      "amount": 47.98,
+      "direction": "out",
+      "category": "餐饮食品",
+      "channel": "扫码支付",
+      "ts": 1767268800.0
+    },
+    {
+      "txn_id": "SYN01008",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 292.69,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1767261600.0
+    },
+    {
+      "txn_id": "SYN01020",
+      "user_id": "U1001",
+      "counterparty": "百货商城",
+      "amount": 202.93,
+      "direction": "out",
+      "category": "购物消费",
+      "channel": "APP",
+      "ts": 1767225600.0
+    }
+  ],
+  "transaction_count": 360,
+  "monthly": [
+    {
+      "month": "2026-01",
+      "income": 15800,
+      "expense": 5435.13
+    },
+    {
+      "month": "2026-02",
+      "income": 15800,
+      "expense": 4917.48
+    },
+    {
+      "month": "2026-03",
+      "income": 15800,
+      "expense": 5700.72
+    },
+    {
+      "month": "2026-04",
+      "income": 15800,
+      "expense": 6627.4
+    },
+    {
+      "month": "2026-05",
+      "income": 15800,
+      "expense": 6161.01
+    },
+    {
+      "month": "2026-06",
+      "income": 15800,
+      "expense": 4723.5
+    },
+    {
+      "month": "2026-07",
+      "income": 15800,
+      "expense": 4328.76
+    },
+    {
+      "month": "2026-08",
+      "income": 15800,
+      "expense": 5102.77
+    },
+    {
+      "month": "2026-09",
+      "income": 15800,
+      "expense": 5161.63
+    },
+    {
+      "month": "2026-10",
+      "income": 31600.0,
+      "expense": 15172.3
+    }
+  ],
+  "categories": [
+    {
+      "name": "购物消费",
+      "value": 32890.55
+    },
+    {
+      "name": "生活缴费",
+      "value": 17194.7
+    },
+    {
+      "name": "疑似异常",
+      "value": 4999.0
+    },
+    {
+      "name": "餐饮食品",
+      "value": 3630.54
+    },
+    {
+      "name": "居住",
+      "value": 3500.0
+    },
+    {
+      "name": "交通出行",
+      "value": 715.91
+    },
+    {
+      "name": "订阅服务",
+      "value": 400.0
+    }
+  ],
+  "channels": [
+    {
+      "name": "深夜支付",
+      "value": 4999.0
+    },
+    {
+      "name": "扫码支付",
+      "value": 3585.04
+    },
+    {
+      "name": "APP",
+      "value": 33651.96
+    },
+    {
+      "name": "代扣",
+      "value": 17594.7
+    },
+    {
+      "name": "转账",
+      "value": 3500.0
+    }
+  ],
+  "heatmap": [
+    [
+      5,
+      9,
+      4999.0
+    ],
+    [
+      4,
+      12,
+      2480.96
+    ],
+    [
+      3,
+      12,
+      2031.78
+    ],
+    [
+      2,
+      20,
+      2438.97
+    ],
+    [
+      2,
+      18,
+      3139.95
+    ],
+    [
+      0,
+      18,
+      2525.56
+    ],
+    [
+      0,
+      12,
+      1290.49
+    ],
+    [
+      6,
+      18,
+      1963.71
+    ],
+    [
+      6,
+      8,
+      2399.0
+    ],
+    [
+      4,
+      18,
+      2616.38
+    ],
+    [
+      3,
+      18,
+      1706.15
+    ],
+    [
+      2,
+      12,
+      986.65
+    ],
+    [
+      1,
+      20,
+      1347.4
+    ],
+    [
+      6,
+      20,
+      2894.15
+    ],
+    [
+      5,
+      12,
+      2302.93
+    ],
+    [
+      3,
+      20,
+      931.56
+    ],
+    [
+      1,
+      8,
+      2171.09
+    ],
+    [
+      0,
+      20,
+      1835.43
+    ],
+    [
+      0,
+      8,
+      2381.88
+    ],
+    [
+      6,
+      12,
+      2123.11
+    ],
+    [
+      5,
+      18,
+      1175.91
+    ],
+    [
+      1,
+      12,
+      5918.83
+    ],
+    [
+      4,
+      8,
+      1397.65
+    ],
+    [
+      4,
+      20,
+      1095.63
+    ],
+    [
+      1,
+      18,
+      741.12
+    ],
+    [
+      5,
+      8,
+      1812.91
+    ],
+    [
+      3,
+      8,
+      2376.27
+    ],
+    [
+      2,
+      8,
+      1810.5
+    ],
+    [
+      5,
+      20,
+      2435.73
+    ]
+  ],
+  "products": [
+    {
+      "product_id": "W001",
+      "name": "稳盈90天",
+      "risk_level": "低",
+      "expected_return": "2.85%",
+      "min_amount": 1000,
+      "type": "固收类",
+      "term": "90天"
+    },
+    {
+      "product_id": "W002",
+      "name": "增利180天",
+      "risk_level": "中",
+      "expected_return": "3.90%",
+      "min_amount": 5000,
+      "type": "混合类",
+      "term": "180天"
+    },
+    {
+      "product_id": "W003",
+      "name": "权益优选",
+      "risk_level": "高",
+      "expected_return": "浮动",
+      "min_amount": 10000,
+      "type": "权益类",
+      "term": "无固定"
+    },
+    {
+      "product_id": "W004",
+      "name": "货币基金A",
+      "risk_level": "低",
+      "expected_return": "1.95%",
+      "min_amount": 100,
+      "type": "货币类",
+      "term": "T+0"
+    }
+  ],
+  "holdings": [
+    {
+      "product_id": "W001",
+      "amount": 20000,
+      "buy_ts": 1790827200.0,
+      "name": "稳盈90天"
+    },
+    {
+      "product_id": "W004",
+      "amount": 5000,
+      "buy_ts": 1792382400.0,
+      "name": "货币基金A"
+    }
+  ],
+  "subscriptions": [
+    {
+      "sub_id": "S001",
+      "merchant": "腾讯视频会员",
+      "amount": 25.0,
+      "cycle": "月",
+      "next_charge": 1793678400.0,
+      "status": "生效中",
+      "monthly_equivalent": 25.0,
+      "days_until_charge": 3,
+      "matched_debits": 10
+    },
+    {
+      "sub_id": "S002",
+      "merchant": "网易云音乐",
+      "amount": 15.0,
+      "cycle": "月",
+      "next_charge": 1794110400.0,
+      "status": "生效中",
+      "monthly_equivalent": 15.0,
+      "days_until_charge": 8,
+      "matched_debits": 10
+    },
+    {
+      "sub_id": "S003",
+      "merchant": "某云盘超级会员",
+      "amount": 198.0,
+      "cycle": "年",
+      "next_charge": 1795147200.0,
+      "status": "生效中",
+      "monthly_equivalent": 16.5,
+      "days_until_charge": 20,
+      "matched_debits": 0
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "C1001",
+      "type": "借记卡",
+      "status": "正常",
+      "daily_limit": 50000,
+      "used_today": 2306.2
+    },
+    {
+      "card_id": "C1002",
+      "type": "信用卡",
+      "status": "正常",
+      "credit_limit": 30000,
+      "used_limit": 8600,
+      "available": 21400
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "O1001",
+      "product": "蓝牙耳机",
+      "amount": 299.0,
+      "status": "已发货",
+      "progress": "运输中-派送",
+      "refund_status": "无",
+      "ts": 1793073600.0
+    },
+    {
+      "order_id": "O1002",
+      "product": "机械键盘",
+      "amount": 459.0,
+      "status": "已完成",
+      "progress": "已签收",
+      "refund_status": "无",
+      "ts": 1791864000.0
+    },
+    {
+      "order_id": "O1003",
+      "product": "运动鞋",
+      "amount": 528.0,
+      "status": "退款中",
+      "progress": "商家已同意-退款到账",
+      "refund_status": "退款中-预计3日",
+      "ts": 1793246400.0
+    }
+  ],
+  "tasks": [],
+  "anomalies": {
+    "anomaly_count": 1,
+    "items": [
+      {
+        "txn_id": "T0008",
+        "counterparty": "未知商户X",
+        "amount": 4999.0,
+        "ts": 1793408400.0,
+        "reasons": [
+          "商户/类别标记为疑似异常",
+          "单笔金额偏高 ¥4999.00"
+        ]
+      }
+    ]
+  },
+  "audit": [],
+  "risk_counts": {}
+}

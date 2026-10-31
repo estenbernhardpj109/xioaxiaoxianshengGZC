@@ -1,0 +1,207 @@
+{
+  "theme": "banking-blue-white",
+  "checks": [
+    {
+      "name": "shared blue primary and neutral sidebar",
+      "pass": true,
+      "detail": {
+        "primary": "#165dce",
+        "sidebar": "rgb(255, 255, 255)",
+        "button": "rgb(22, 93, 206)"
+      }
+    },
+    {
+      "name": "localized task status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "twelve live charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "charts use banking palette",
+      "pass": true,
+      "detail": {
+        "palette": [
+          "#165dce",
+          "#087e9c",
+          "#7053b5",
+          "#a56b0a",
+          "#526b91",
+          "#b14d81"
+        ],
+        "normal": "#165dce"
+      }
+    },
+    {
+      "name": "strong validation has explicit red semantics",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "keyboard focus is visible",
+      "pass": true,
+      "detail": "rgb(22, 93, 206)"
+    },
+    {
+      "name": "mobile has no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "tablet has no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 820,
+        "scroll": 820
+      }
+    },
+    {
+      "name": "desktop has no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "mobile navigation remains available",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "contrast primary button",
+      "pass": true,
+      "detail": {
+        "ratio": 6.015293964511813,
+        "minimum": 4.5
+      }
+    },
+    {
+      "name": "contrast muted text",
+      "pass": true,
+      "detail": {
+        "ratio": 5.123143243913022,
+        "minimum": 4.5
+      }
+    },
+    {
+      "name": "contrast muted soft surface",
+      "pass": true,
+      "detail": {
+        "ratio": 4.90590600623733,
+        "minimum": 4.5
+      }
+    },
+    {
+      "name": "contrast green label",
+      "pass": true,
+      "detail": {
+        "ratio": 5.617646101669344,
+        "minimum": 4.5
+      }
+    },
+    {
+      "name": "contrast amber label",
+      "pass": true,
+      "detail": {
+        "ratio": 5.889733134986464,
+        "minimum": 4.5
+      }
+    },
+    {
+      "name": "contrast red label",
+      "pass": true,
+      "detail": {
+        "ratio": 5.92904417091413,
+        "minimum": 4.5
+      }
+    },
+    {
+      "name": "contrast red confirmation",
+      "pass": true,
+      "detail": {
+        "ratio": 6.57428861557707,
+        "minimum": 4.5
+      }
+    },
+    {
+      "name": "contrast control border",
+      "pass": true,
+      "detail": {
+        "ratio": 3.1692613401883354,
+        "minimum": 3
+      }
+    },
+    {
+      "name": "no JavaScript page errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "contrasts": [
+    {
+      "name": "primary button",
+      "fg": "#ffffff",
+      "bg": "#165dce",
+      "ratio": 6.015293964511813,
+      "minimum": 4.5
+    },
+    {
+      "name": "muted text",
+      "fg": "#5f6f85",
+      "bg": "#ffffff",
+      "ratio": 5.123143243913022,
+      "minimum": 4.5
+    },
+    {
+      "name": "muted soft surface",
+      "fg": "#5f6f85",
+      "bg": "#f8faff",
+      "ratio": 4.90590600623733,
+      "minimum": 4.5
+    },
+    {
+      "name": "green label",
+      "fg": "#167044",
+      "bg": "#edf8f1",
+      "ratio": 5.617646101669344,
+      "minimum": 4.5
+    },
+    {
+      "name": "amber label",
+      "fg": "#8c5200",
+      "bg": "#fff6e5",
+      "ratio": 5.889733134986464,
+      "minimum": 4.5
+    },
+    {
+      "name": "red label",
+      "fg": "#b42318",
+      "bg": "#fff0ed",
+      "ratio": 5.92904417091413,
+      "minimum": 4.5
+    },
+    {
+      "name": "red confirmation",
+      "fg": "#ffffff",
+      "bg": "#b42318",
+      "ratio": 6.57428861557707,
+      "minimum": 4.5
+    },
+    {
+      "name": "control border",
+      "fg": "#8292a8",
+      "bg": "#ffffff",
+      "ratio": 3.1692613401883354,
+      "minimum": 3
+    }
+  ],
+  "errors": [],
+  "scope": "selected visible semantic pairs and viewport checks; not a full WCAG certification"
+}

@@ -1,0 +1,2 @@
+# Runtime: Python >=3.10 standard library only. No pip installation required.
+# Optional media rebuilding: scripts document separate authoring dependencies.

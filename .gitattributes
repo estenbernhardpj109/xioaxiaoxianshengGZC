@@ -1,0 +1,7 @@
+# Preserve source bytes and exported artifacts across Windows/Linux checkouts.
+* -text
+*.png binary
+*.jpg binary
+*.mp4 binary
+*.pdf binary
+*.pptx binary

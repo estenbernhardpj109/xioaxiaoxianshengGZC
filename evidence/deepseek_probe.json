@@ -1,0 +1,11 @@
+{
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "kind": "read_only_tool_call",
+  "key_stored": false,
+  "success": true,
+  "operations": [
+    "query_balance"
+  ],
+  "elapsed_ms": 536
+}
