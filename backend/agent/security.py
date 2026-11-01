@@ -222,8 +222,10 @@ class AuditLog:
             prev = self._mem[-1]['hash'] if self._mem and 'hash' in self._mem[-1] else '0' * 64
             entry['prev_hash'] = prev
             entry['hash'] = hashlib.sha256(json.dumps(entry, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+            from ..storage import audit_to_mysql
+            stored_in_mysql = audit_to_mysql(entry)
             self._mem.append(entry)
-            if self.path:
+            if self.path and not stored_in_mysql:
                 try:
                     with open(self.path, "a", encoding="utf-8") as f:
                         f.write(json.dumps(entry, ensure_ascii=False) + "\n")

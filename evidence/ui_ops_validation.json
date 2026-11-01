@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-01",
+  "surface": "in-app browser",
+  "page": "http://127.0.0.1:8011/ops",
+  "canvas_design": [
+    1920,
+    1080
+  ],
+  "native_canvas_DOM": [
+    1920,
+    1080
+  ],
+  "charts_rendered": 6,
+  "employee_list_overflow": false,
+  "console_errors": [],
+  "interactions_verified": [
+    "B02 branch selection recomputed scoped cards and queue",
+    "indicator definitions show sources and denominators",
+    "manager password input is password type",
+    "work order drilldown shows branch status SLA and linked device",
+    "native 1:1 / fit canvas toggle"
+  ],
+  "screenshot_note": "Final 1920x1080 whole-page screenshot captured in a fresh browser session. Earlier development snapshot remains illustrative in the deck and report.",
+  "full_WCAG_audit": false,
+  "final_viewport": [
+    1920,
+    1080
+  ],
+  "final_screenshot": "docs/assets/运营大屏_当前预览.jpg",
+  "final_screenshot_time": "2026-11-01 Asia/Shanghai",
+  "ui_connection_state_checks": 4
+}

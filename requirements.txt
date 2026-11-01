@@ -1,2 +1,2 @@
-# Runtime: Python >=3.10 standard library only. No pip installation required.
-# Optional media rebuilding: scripts document separate authoring dependencies.
+mysql-connector-python==26.10.0
+psutil==7.2.2

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>知行银行 · 运营指挥中心</title><link rel="stylesheet" href="/static/operations.css"></head>
+<body><div class="wall" id="wall">
+<header class="topbar"><a class="brand" href="/"><span class="brand-icon">知</span><span>知行银行<small>ZHIXING BANK</small></span></a><div class="title"><span class="eyebrow">OPERATIONS INTELLIGENCE</span><h1>运营指挥中心</h1></div><div class="top-tools"><span id="connection" class="connection connecting">连接中</span><time id="clock"></time><button id="fullscreen" aria-label="切换全屏">全屏 ⛶</button><button id="roleButton">领导视图 ▾</button></div></header>
+<section class="kpis" aria-label="运营关键指标">
+<article class="kpi"><span>业务流水笔数 <i>01</i></span><strong id="kTransactions">—</strong><small>入账与出账流水 · <b class="period-label">近7日</b></small></article>
+<article class="kpi"><span>业务流水金额 <i>02</i></span><strong id="kTurnover">—</strong><small>人民币元 · 双向流水合计</small></article>
+<article class="kpi"><span>待处理工单 <i>03</i></span><strong id="kBacklog">—</strong><small id="kOverdue">超时工单 —</small></article>
+<article class="kpi"><span>已解决工单 SLA 达标率 <i>04</i></span><strong id="kSla">—</strong><small id="kResolution">平均处理时长 —</small></article>
+<article class="kpi"><span>设备正常率 <i>05</i></span><strong id="kDevices">—</strong><small id="kDevicesCount">当前设备快照</small></article>
+<article class="kpi"><span>AI 数字员工服务请求 <i>06</i></span><strong id="kAi">—</strong><small id="kAiSuccess">成功请求占比 —</small></article>
+</section>
+<main class="main-grid">
+<div class="column left-col">
+<section class="panel"><div class="panel-head"><h2>业务运营趋势</h2><span class="unit">笔 / 元</span></div><div id="businessChart" class="chart" role="img" aria-label="每日业务流水笔数及金额"></div></section>
+<section class="panel"><div class="panel-head"><h2>工单流转效率</h2><button class="text-button" id="ticketDetail">查看队列 ↗</button></div><div id="ticketChart" class="chart" role="img" aria-label="待分派、已分派、处理中、已解决工单分布"></div><div class="panel-bottom"><span>已解决 <b id="resolvedCount">—</b></span><span>待办超时 <b class="amber" id="overdueCount">—</b></span></div></section>
+<section class="panel queue-panel"><div class="panel-head"><h2>优先处置队列</h2><span class="pill amber-pill" id="queueCount">— 待办</span></div><div class="table-label"><span>工单 / 网点</span><span>时效与状态</span></div><div id="ticketQueue" class="ticket-queue"><p class="empty">正在读取工单</p></div><div class="panel-bottom muted">按超时、优先级与创建时间排列</div></section>
+</div>
+<div class="column center-col">
+<section class="flow-panel"><div class="flow-head"><div><span class="eyebrow">CONNECTED BANKING</span><h2>业务 · AI · 人工协同</h2></div><span class="flow-live"><i></i> 数据库实时快照</span></div><div class="flow-legend"><span>服务渠道</span><span>数字员工</span><span>执行回执</span></div><div id="flowChart" class="flow-chart" role="img" aria-label="请求来源、六类数字员工与执行状态的关联流向"></div><div class="flow-footer"><div><b id="actualRequests">—</b><span>实际应用请求</span></div><div><b id="simulatedRequests">—</b><span>演练请求</span></div><div><b id="p95">—</b><span>请求 P95 · 毫秒</span></div><button id="openWorkplace">进入银行工作台 ↗</button></div></section>
+<div class="center-bottom"><section class="panel"><div class="panel-head"><h2>网点服务负载</h2><span class="unit">请求数</span></div><div id="branchChart" class="chart" role="img" aria-label="网点服务请求及待办工单"></div></section><section class="panel"><div class="panel-head"><h2>24 小时服务节奏</h2><span class="unit">请求 / 毫秒</span></div><div id="latencyChart" class="chart" role="img" aria-label="最近24小时请求量及平均响应时长"></div></section></div>
+</div>
+<div class="column right-col">
+<section class="panel device-panel"><div class="panel-head"><h2>设备与服务健康</h2><button class="text-button" id="deviceDetail">设备明细 ↗</button></div><div class="device-overview"><div id="deviceChart" role="img" aria-label="设备当前状态分布"></div><div class="device-totals"><span><i class="dot good"></i>正常 <b id="deviceOnline">—</b></span><span><i class="dot warn"></i>预警 <b id="deviceWarn">—</b></span><span><i class="dot bad"></i>失联 <b id="deviceStale">—</b></span></div></div><div id="services" class="service-list"></div></section>
+<section class="panel employee-panel"><div class="panel-head"><h2>AI 数字员工</h2><span class="pill blue-pill">六类场景联动</span></div><div class="employee-label"><span>角色 / 服务请求</span><span>成功占比</span></div><div id="employeeList" class="employee-list"></div><div id="sourceSummary" class="source-summary"></div><div class="employee-foot">成功率含待确认与失败请求，按请求计数</div></section>
+</div>
+</main>
+<footer class="bottom-bar"><div class="filters"><label>统计范围<select id="period"><option value="today">今日</option><option value="7d" selected>近7日</option><option value="30d">近30日</option></select></label><label>网点<select id="branch"><option value="all">全部网点</option><option value="B01">深圳营业部</option><option value="B02">南山科技园</option><option value="B03">福田中心</option><option value="B04">前海合作区</option><option value="B05">罗湖口岸</option><option value="B06">宝安新安</option><option value="B07">龙华民治</option><option value="B08">线上服务中心</option></select></label><button id="resetFilters">重置</button><button id="nativeSize">1:1 画布</button></div><div class="source-state"><i id="pulse" class="pulse"></i><span id="freshness">等待数据库快照</span><span class="source-tag">模拟业务 / 真实服务监测</span></div><div class="footer-actions"><button id="simulate">演练流 · 查看</button><button id="definitions">指标口径</button><button id="export">脱敏导出 ↓</button></div></footer>
+</div>
+<div class="overlay" id="overlay" hidden><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle"><div class="drawer-head"><div><small id="drawerEyebrow">OPERATIONS DETAIL</small><h2 id="drawerTitle">运营详情</h2></div><button id="closeDrawer" aria-label="关闭详情">×</button></div><div id="drawerBody" class="drawer-body"></div><div id="drawerActions" class="drawer-actions"></div></aside></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<script src="/static/vendor/echarts.min.js"></script><script src="/static/operations.js"></script></body></html>

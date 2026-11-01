@@ -3,7 +3,7 @@ import json, sys, subprocess, tempfile, time, urllib.request, urllib.error, http
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 with tempfile.TemporaryDirectory() as td:
-    env=dict(os.environ,BANK_STATE_FILE=str(Path(td)/'bank.json'),BANK_AUDIT_FILE=str(Path(td)/'audit.jsonl'))
+    env=dict(os.environ,BANK_STORAGE='json',BANK_STATE_FILE=str(Path(td)/'bank.json'),BANK_AUDIT_FILE=str(Path(td)/'audit.jsonl'))
     sock=socket.socket();sock.bind(('127.0.0.1',0));port=sock.getsockname()[1];sock.close()
     proc=subprocess.Popen([sys.executable,str(ROOT/'backend/server.py'),'--port',str(port)],env=env,stdout=subprocess.DEVNULL)
     url=f'http://127.0.0.1:{port}';checks=[]

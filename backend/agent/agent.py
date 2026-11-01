@@ -189,6 +189,7 @@ class BankingAgent:
                     return self._clarify(session, "未匹配到对应订阅，请确认订阅名称（如：腾讯视频会员）。")
 
         # 校验后重算摘要，确保收款人等引用已解析到位
+        session.planner_source = planner_source
         scenario = intent.get("scenario") or self._infer_scenario(plan)
         summary = _make_summary(scenario, plan)
 

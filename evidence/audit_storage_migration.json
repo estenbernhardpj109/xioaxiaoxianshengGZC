@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-01",
+  "reason": "binary JSON numeric normalization and pre-sequence ordering",
+  "legacy_records_retained": 35,
+  "legacy_archive_digest_verified": true,
+  "archives": 1,
+  "bank_state_changed": false,
+  "new_audit_body": "exact serialized LONGTEXT",
+  "old_records_not_claimed_as_linear_verified_chain": true
+}

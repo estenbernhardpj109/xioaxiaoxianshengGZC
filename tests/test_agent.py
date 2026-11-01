@@ -75,7 +75,15 @@ class BankingTests(unittest.TestCase):
     def test_22_chinese_amount(self):self.assertEqual(parse_amount('给李婷转两千五百二十一元')[0],2521)
     def test_23_phone_not_amount(self):self.assertIsNone(parse_amount('给13900008830转账')[0])
     def test_24_calendar_report(self):
-        d=dashboard();m=next(x for x in d['monthly'] if x['month']=='2026-10');r=self.c.monthly_report()
+        from datetime import datetime, timezone, timedelta
+        now=datetime.now(timezone(timedelta(hours=8)))
+        boundary=now.replace(day=1,hour=0,minute=0,second=0,microsecond=0).timestamp()
+        self.c._data['transactions']=[
+            {'txn_id':'calendar-income','user_id':'U1001','counterparty':'演示收入','direction':'in','amount':100,'ts':boundary,'category':'收入','channel':'APP'},
+            {'txn_id':'calendar-expense','user_id':'U1001','counterparty':'演示支出','direction':'out','amount':25,'ts':boundary,'category':'消费','channel':'APP'},
+            {'txn_id':'prior-month','user_id':'U1001','counterparty':'上月支出','direction':'out','amount':5000,'ts':boundary-1,'category':'消费','channel':'APP'}]
+        d=dashboard();m=next(x for x in d['monthly'] if x['month']==now.strftime('%Y-%m'));r=self.c.monthly_report()
+        self.assertEqual(r['expense'],25);self.assertEqual(r['income'],100)
         self.assertEqual(m['expense'],r['expense']);self.assertEqual(m['income'],r['income'])
     def test_25_annual(self):self.assertEqual(self.a.handle('分析今年的年度账单')['viz']['period'],'year')
     def test_26_no_fabricated_rate(self):

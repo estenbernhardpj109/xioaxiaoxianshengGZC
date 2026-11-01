@@ -1,6 +1,6 @@
 import {createRequire} from 'node:module';import fs from 'node:fs/promises';import path from 'node:path';import {spawn} from 'node:child_process';import {fileURLToPath} from 'node:url';
 const require=createRequire(import.meta.url);const {chromium}=require('playwright');const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');const root=path.dirname(project);process.chdir(root);await fs.mkdir('.build/video',{recursive:true});
-const py=process.env.PYTHON || 'python';const proc=spawn(py,['参赛作品/backend/server.py','--port','8012'],{cwd:root,env:{...process.env,BANK_STATE_FILE:path.join(root,'.build/video-state-'+Date.now()+'.json'),BANK_AUDIT_FILE:path.join(root,'.build/video-audit-'+Date.now()+'.jsonl')},stdio:'ignore'});
+const py=process.env.PYTHON || 'python';const proc=spawn(py,['参赛作品/backend/server.py','--port','8012','--storage','json'],{cwd:root,env:{...process.env,BANK_STATE_FILE:path.join(root,'.build/video-state-'+Date.now()+'.json'),BANK_AUDIT_FILE:path.join(root,'.build/video-audit-'+Date.now()+'.jsonl')},stdio:'ignore'});
 let browser;const scenes=[];
 try{
  browser=await chromium.launch({channel:'msedge',headless:true});const p=await browser.newPage({viewport:{width:1280,height:912}});

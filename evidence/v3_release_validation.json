@@ -1,0 +1,50 @@
+{
+  "version": "3.0.0",
+  "date": "2026-11-01",
+  "features": [
+    "MySQL transaction persistence",
+    "operations wallboard 1920x1080",
+    "five-second server snapshots",
+    "leader and manager roles",
+    "device-business-ticket linkage",
+    "server allowlist masking",
+    "filtered JSON export"
+  ],
+  "test_suites": [
+    {
+      "suite": "business",
+      "passed": 45
+    },
+    {
+      "suite": "http",
+      "passed": 15
+    },
+    {
+      "suite": "mysql_operations",
+      "passed": 35
+    },
+    {
+      "suite": "operations_ui_connection_state",
+      "passed": 4
+    }
+  ],
+  "checks_total": 99,
+  "pdf_pages": {
+    "technical": 10,
+    "safety": 4,
+    "deployment": 3,
+    "rules": 3
+  },
+  "presentation_slides": 10,
+  "presentation_planned_seconds": 545,
+  "video_seconds": 288.05,
+  "database": "root",
+  "project_owned_table_prefix": "zx_",
+  "banking_and_branch_devices": "synthetic",
+  "local_service_metrics": "measured",
+  "secrets_in_source": false,
+  "production_banking_connected": false,
+  "platform_upload_performed": false,
+  "backend_checks_total": 95,
+  "ui_state_checks": 4
+}

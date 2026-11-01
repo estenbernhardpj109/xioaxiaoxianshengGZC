@@ -1,0 +1,149 @@
+{
+  "suite": "mysql_operations_integration",
+  "date": "2026-11-01",
+  "isolated_test_schema": true,
+  "run": 35,
+  "passed": 35,
+  "checks": [
+    {
+      "name": "twelve project tables created in isolated schema",
+      "pass": true
+    },
+    {
+      "name": "exception restores memory and SQL state",
+      "pass": true
+    },
+    {
+      "name": "confirmed action commits account transaction audit and request together",
+      "pass": true
+    },
+    {
+      "name": "SQL write failure rolls back memory sessions audit and transaction",
+      "pass": true
+    },
+    {
+      "name": "optimistic state version refuses stale overwrite",
+      "pass": true
+    },
+    {
+      "name": "connection outage fails closed without file fallback",
+      "pass": true
+    },
+    {
+      "name": "model source is correctly attributed",
+      "pass": true
+    },
+    {
+      "name": "clarification is not falsely classified as bill analysis",
+      "pass": true
+    },
+    {
+      "name": "audit preserves exact float serialization",
+      "pass": true
+    },
+    {
+      "name": "audit chain persists insertion order even at identical timestamps",
+      "pass": true
+    },
+    {
+      "name": "future audit corruption is rejected rather than silently archived",
+      "pass": true
+    },
+    {
+      "name": "employee branch and source totals reconcile",
+      "pass": true
+    },
+    {
+      "name": "transaction chart reconciles to KPI",
+      "pass": true
+    },
+    {
+      "name": "SLA uses resolved-ticket denominator",
+      "pass": true
+    },
+    {
+      "name": "branch filter applies consistently to queue devices and metrics",
+      "pass": true
+    },
+    {
+      "name": "operational DTO excludes raw identities and credentials",
+      "pass": true
+    },
+    {
+      "name": "work-order optimistic lock rejects stale double action",
+      "pass": true
+    },
+    {
+      "name": "cannot resolve device ticket without healthy heartbeat",
+      "pass": true
+    },
+    {
+      "name": "device recovery resolves linked ticket with redacted comment",
+      "pass": true
+    },
+    {
+      "name": "HTTP actually runs MySQL backend",
+      "pass": true
+    },
+    {
+      "name": "anonymous ops read requires browser session",
+      "pass": true
+    },
+    {
+      "name": "leader cannot mutate operational data",
+      "pass": true
+    },
+    {
+      "name": "client-supplied role does not grant access",
+      "pass": true
+    },
+    {
+      "name": "invalid manager password refused",
+      "pass": true
+    },
+    {
+      "name": "manager login verified server-side",
+      "pass": true
+    },
+    {
+      "name": "ops writes still require CSRF",
+      "pass": true
+    },
+    {
+      "name": "manager role cannot leak to a second browser",
+      "pass": true
+    },
+    {
+      "name": "unknown filter and SQL injection input rejected",
+      "pass": true
+    },
+    {
+      "name": "MySQL HTTP action changes bank balance and database projection",
+      "pass": true
+    },
+    {
+      "name": "human handoff audit creates linked operational work order",
+      "pass": true
+    },
+    {
+      "name": "five-second collector persists changing operational data",
+      "pass": true
+    },
+    {
+      "name": "simulation does not mutate bank balances",
+      "pass": true
+    },
+    {
+      "name": "export is filtered and masked",
+      "pass": true
+    },
+    {
+      "name": "service restart reloads MySQL state",
+      "pass": true
+    },
+    {
+      "name": "service restart clears manager elevation",
+      "pass": true
+    }
+  ]
+}

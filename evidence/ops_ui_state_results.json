@@ -1,0 +1,12 @@
+{
+  "suite": "operations_ui_connection_state",
+  "date": "2026-11-01",
+  "run": 4,
+  "passed": 4,
+  "checks": [
+    "successful snapshot is live",
+    "fetch error shows disconnected",
+    "clock preserves failed-fetch state",
+    "recovered snapshot restores live state"
+  ]
+}

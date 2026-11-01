@@ -40,6 +40,9 @@ def restore(self, state):
 
 
 def save(self):
+    from ..storage import save_core
+    if save_core(self):
+        return
     target = os.environ.get('BANK_STATE_FILE')
     if target:
         os.makedirs(os.path.dirname(os.path.abspath(target)), exist_ok=True)
