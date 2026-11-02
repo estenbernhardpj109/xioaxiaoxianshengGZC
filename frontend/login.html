@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>安全登录 · 知行银行智能体</title><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/auth.css"><link rel="stylesheet" href="/static/human.css"></head>
+<body class="auth-page " data-auth="login">
+<header class="auth-top"><a class="auth-brand" href="/login"><span class="mark">知</span><span>知行银行智能体<small>ZHIXING BANKING AGENT</small></span></a><div class="auth-top-right"><span class="sandbox-label">2026 FINTECHATHON · 赛事沙箱</span><button class="text-button" data-policy="help">使用帮助 ↗</button></div></header>
+<main class="auth-main"><section class="auth-story" aria-label="知行数字服务"><div class="eyebrow">YOUR TRUST, OUR EVERY STEP</div><h1>每一次信任，<br>都有安全回应。</h1><p>从一句自然语言开始，连接业务与服务。<br>知小行陪你看懂流程，安心完成每一步。</p><div class="auth-portrait"><bank-avatar></bank-avatar><div class="auth-human-note"><strong>知小行</strong>你的数字服务伙伴 · 原创插画形象</div></div><div class="auth-principles"><span>独立账户</span><span>分级授权</span><span>全程可追溯</span></div></section>
+<section class="auth-form-wrap"><div class="form-kicker">WELCOME TO ZHIXING</div><h2>欢迎回到知行</h2><p class="form-intro">登录后，继续你的安全、便捷的数字银行体验。</p><nav class="auth-tabs" aria-label="身份入口"><a data-auth-route="/login" aria-current="page">账号登录</a><a data-auth-route="/register" >用户注册</a></nav>
+<div id="registeredNote" class="form-success" role="status" hidden>注册成功，独立模拟账户已就绪，请使用新密码登录。</div><div id="formError" class="form-error" role="alert" tabindex="-1" hidden></div><div class="form-error" data-session-error role="alert" hidden></div>
+<form id="authForm" method="post"><label class="field" for="username"><span>用户名</span><input id="username" name="username" autocomplete="username" required minlength="3" maxlength="32" pattern="[A-Za-z][A-Za-z0-9_]{2,31}" placeholder="请输入用户名" aria-describedby="usernameHint"><small id="usernameHint">字母开头，3–32位字母、数字或下划线</small></label>
+
+<label class="field" for="password"><span>登录密码</span><span class="input-with-button"><input id="password" name="password" type="password" autocomplete="current-password" required minlength="1" maxlength="72" placeholder="请输入登录密码" aria-describedby="passwordHint"><button type="button" data-password-toggle="password" aria-label="显示密码" aria-pressed="false">显示</button></span><small id="passwordHint">登录密码与沙箱交易密码相互独立。</small></label>
+<div class="form-utility"><span>空闲30分钟后自动退出</span><button type="button" class="text-button" data-policy="help">忘记密码？</button></div>
+<button id="submitAuth" class="auth-submit" type="submit">安全登录 →</button></form>
+<div class="demo-separator">先了解一下</div><button id="demoLogin" class="demo-button" type="button">进入演示体验 ↗</button><p class="demo-disclosure">演示使用共享模拟账户，可体验完整业务与运营大屏。<br>你的注册账户与演示账户独立，不共享余额与账单。</p>
+</section></main><footer class="auth-foot">知行银行智能体 · 金融科技赛事作品<span>全部金融业务为模拟，不接入真实银行或商户</span></footer>
+<div id="policyModal" class="policy-modal" role="dialog" aria-modal="true" aria-labelledby="policyTitle" hidden><div class="policy-card"><h2 id="policyTitle">沙箱说明</h2><div id="policyBody"></div><button id="closePolicy">我已了解</button></div></div>
+<script src="/static/digital-human.js"></script><script src="/static/session.js"></script><script src="/static/auth.js"></script></body></html>

@@ -9,6 +9,8 @@ __pycache__/
 
 # Authoring and local operating artifacts
 node_modules/
+.venv/
+venv/
 .chart-data-*/
 *.tmp
 *.bak

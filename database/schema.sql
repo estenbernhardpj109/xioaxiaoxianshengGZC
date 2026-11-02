@@ -1,4 +1,12 @@
--- MySQL 8 / InnoDB / utf8mb4. No credentials. Only zx_ project tables.
+-- Zhixing Banking Agent v4.0: 15 project tables, utf8mb4 / InnoDB.
+-- Credentials are supplied through the process environment.
+-- Startup applies idempotent schema migrations; do not replace an existing bank state.
+
+CREATE TABLE IF NOT EXISTS zx_auth_identities (user_id VARCHAR(48) PRIMARY KEY, username VARCHAR(32) NOT NULL UNIQUE, display_name VARCHAR(80) NOT NULL, password_hash VARCHAR(200) NOT NULL, created_at DOUBLE NOT NULL) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS zx_auth_sessions (token_hash CHAR(64) PRIMARY KEY, user_id VARCHAR(48) NOT NULL, is_demo BOOLEAN NOT NULL, created_at DOUBLE NOT NULL, last_seen DOUBLE NOT NULL, expires_at DOUBLE NOT NULL, INDEX ix_session_expiry(expires_at)) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS zx_auth_attempts (bucket CHAR(64) PRIMARY KEY, failures INT NOT NULL, reset_at DOUBLE NOT NULL) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS zx_schema_version (version INT PRIMARY KEY, applied_at DOUBLE NOT NULL) ENGINE=InnoDB;
 

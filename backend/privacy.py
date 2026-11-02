@@ -29,3 +29,21 @@ def redact(value):
     text = re.sub(r'(?<!\d)\d{15,19}[Xx]?(?!\d)', '****', text)
     text = re.sub(r'(?i)(sk-[a-z0-9_-]{12,}|(?:password|密码|otp|token)\s*[:=：]\s*\S+)', '[已隐藏]', text)
     return text[:200]
+
+
+def browser_payload(value):
+    """Mask sensitive identifiers in customer-facing DTOs; never truncate answers."""
+    if isinstance(value,dict):
+        out={}
+        for key,item in value.items():
+            if key in ('phone_full','password_hash','token_hash','owner_id'):continue
+            if key in ('account_no','account_number'):out[key]=mask_account(item)
+            elif key in ('phone','mobile'):out[key]=mask_phone(item) if item else ''
+            else:out[key]=browser_payload(item)
+        return out
+    if isinstance(value,list):return [browser_payload(x) for x in value]
+    if isinstance(value,str):
+        value=re.sub(r'(?<!\d)1\d{10}(?!\d)',lambda m:mask_phone(m[0]),value)
+        value=re.sub(r'(?<!\d)\d{15,19}[Xx]?(?!\d)','****',value)
+        return re.sub(r'(?i)(sk-[a-z0-9_-]{12,}|(?:password|密码|otp|token)\s*[:=：]\s*\S+)','[已隐藏]',value)
+    return value

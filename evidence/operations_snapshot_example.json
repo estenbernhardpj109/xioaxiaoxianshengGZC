@@ -1,42 +1,37 @@
 {
   "meta": {
-    "generated_at": 1793535831.7093642,
+    "generated_at": 1793613535.9428217,
     "database": "MySQL",
-    "state_version": 2,
-    "state_updated_at": 1793533481.1343348,
+    "state_version": 4,
+    "state_updated_at": 1793613107.4043777,
     "refresh_seconds": 5,
     "branch": "all",
     "period": "7d",
-    "from": 1792944000.0,
-    "to": 1793535831.7093642,
+    "from": 1793030400.0,
+    "to": 1793613535.9428217,
     "timezone": "Asia/Shanghai",
     "source_kind": "synthetic banking data + measured local service health",
-    "simulator": true,
-    "collector_last_seen": 1793535829.9438574,
+    "simulator": false,
+    "collector_last_seen": 1793613531.305683,
     "privacy": "server DTO allowlist; no customer identifiers or secrets"
   },
   "kpis": {
-    "transactions": 9,
-    "turnover": 6381.89,
-    "backlog": 119,
-    "overdue": 20,
+    "transactions": 6,
+    "turnover": 5367.81,
+    "backlog": 21,
+    "overdue": 18,
     "sla_rate": 93.3,
     "resolved": 45,
     "mean_resolution_minutes": 38.9,
-    "devices_online": 36,
+    "devices_online": 49,
     "devices_total": 50,
-    "device_rate": 72.0,
-    "ai_requests": 837,
-    "ai_success_rate": 95.6,
-    "p95_ms": 1253.2,
-    "actual_requests": 3
+    "device_rate": 98.0,
+    "ai_requests": 426,
+    "ai_success_rate": 89.9,
+    "p95_ms": 1307.4,
+    "actual_requests": 22
   },
   "trend": [
-    {
-      "day": "10-26",
-      "count": 2,
-      "amount": 514.08
-    },
     {
       "day": "10-27",
       "count": 0,
@@ -59,11 +54,16 @@
     },
     {
       "day": "10-31",
-      "count": 2,
-      "amount": 5499.0
+      "count": 1,
+      "amount": 4999.0
     },
     {
       "day": "11-01",
+      "count": 0,
+      "amount": 0.0
+    },
+    {
+      "day": "11-02",
       "count": 0,
       "amount": 0.0
     }
@@ -72,315 +72,315 @@
     {
       "id": "B01",
       "name": "深圳营业部",
-      "requests": 105,
-      "transactions": 9,
-      "backlog": 16,
-      "success_rate": 94.3
+      "requests": 65,
+      "transactions": 6,
+      "backlog": 3,
+      "success_rate": 86.2
     },
     {
       "id": "B02",
       "name": "南山科技园",
-      "requests": 114,
+      "requests": 58,
       "transactions": 0,
-      "backlog": 14,
-      "success_rate": 94.7
+      "backlog": 0,
+      "success_rate": 89.7
     },
     {
       "id": "B03",
       "name": "福田中心",
-      "requests": 111,
+      "requests": 58,
       "transactions": 0,
-      "backlog": 16,
-      "success_rate": 97.3
+      "backlog": 2,
+      "success_rate": 94.8
     },
     {
       "id": "B04",
       "name": "前海合作区",
-      "requests": 82,
+      "requests": 40,
       "transactions": 0,
-      "backlog": 10,
-      "success_rate": 97.6
+      "backlog": 4,
+      "success_rate": 95.0
     },
     {
       "id": "B05",
       "name": "罗湖口岸",
-      "requests": 104,
+      "requests": 51,
       "transactions": 0,
-      "backlog": 10,
-      "success_rate": 95.2
+      "backlog": 2,
+      "success_rate": 90.2
     },
     {
       "id": "B06",
       "name": "宝安新安",
-      "requests": 97,
+      "requests": 37,
       "transactions": 0,
-      "backlog": 15,
-      "success_rate": 94.8
+      "backlog": 3,
+      "success_rate": 86.5
     },
     {
       "id": "B07",
       "name": "龙华民治",
-      "requests": 115,
+      "requests": 57,
       "transactions": 0,
-      "backlog": 17,
-      "success_rate": 97.4
+      "backlog": 4,
+      "success_rate": 94.7
     },
     {
       "id": "B08",
       "name": "线上服务中心",
-      "requests": 109,
+      "requests": 60,
       "transactions": 0,
-      "backlog": 21,
-      "success_rate": 93.6
+      "backlog": 3,
+      "success_rate": 83.3
     }
   ],
   "employees": [
     {
       "id": "transfer",
       "name": "转账助手",
-      "requests": 134,
-      "success": 131,
-      "pending": 3,
-      "failed": 0,
-      "success_rate": 97.8
+      "requests": 74,
+      "success": 67,
+      "pending": 6,
+      "failed": 1,
+      "success_rate": 90.5
     },
     {
       "id": "bill",
       "name": "账单分析师",
-      "requests": 140,
-      "success": 133,
+      "requests": 64,
+      "success": 57,
       "pending": 6,
       "failed": 1,
-      "success_rate": 95.0
+      "success_rate": 89.1
     },
     {
       "id": "wealth",
       "name": "理财顾问",
-      "requests": 127,
-      "success": 119,
+      "requests": 61,
+      "success": 53,
       "pending": 8,
       "failed": 0,
-      "success_rate": 93.7
+      "success_rate": 86.9
     },
     {
       "id": "card",
       "name": "卡片管家",
-      "requests": 148,
-      "success": 138,
+      "requests": 79,
+      "success": 70,
       "pending": 7,
-      "failed": 3,
-      "success_rate": 93.2
+      "failed": 2,
+      "success_rate": 88.6
     },
     {
       "id": "subscription",
       "name": "订阅管家",
-      "requests": 147,
-      "success": 138,
+      "requests": 72,
+      "success": 63,
       "pending": 8,
       "failed": 1,
-      "success_rate": 93.9
+      "success_rate": 87.5
     },
     {
       "id": "cross",
       "name": "生活服务助手",
-      "requests": 141,
-      "success": 141,
-      "pending": 0,
-      "failed": 0,
-      "success_rate": 100.0
+      "requests": 69,
+      "success": 66,
+      "pending": 2,
+      "failed": 1,
+      "success_rate": 95.7
     },
     {
       "id": "general",
       "name": "通用助理",
-      "requests": 0,
-      "success": 0,
+      "requests": 7,
+      "success": 7,
       "pending": 0,
       "failed": 0,
-      "success_rate": null
+      "success_rate": 100.0
     }
   ],
   "hourly": [
     {
+      "hour": "18:00",
+      "requests": 2,
+      "latency_ms": 990.0
+    },
+    {
+      "hour": "19:00",
+      "requests": 5,
+      "latency_ms": 467.9
+    },
+    {
+      "hour": "20:00",
+      "requests": 0,
+      "latency_ms": null
+    },
+    {
       "hour": "21:00",
-      "requests": 3,
-      "latency_ms": 345.3
+      "requests": 4,
+      "latency_ms": 790.0
     },
     {
       "hour": "22:00",
       "requests": 2,
-      "latency_ms": 651.7
+      "latency_ms": 614.2
     },
     {
       "hour": "23:00",
-      "requests": 3,
-      "latency_ms": 791.2
-    },
-    {
-      "hour": "00:00",
-      "requests": 3,
-      "latency_ms": 671.6
-    },
-    {
-      "hour": "01:00",
       "requests": 1,
       "latency_ms": 1320.3
     },
     {
+      "hour": "00:00",
+      "requests": 5,
+      "latency_ms": 565.6
+    },
+    {
+      "hour": "01:00",
+      "requests": 0,
+      "latency_ms": null
+    },
+    {
       "hour": "02:00",
-      "requests": 3,
-      "latency_ms": 765.0
+      "requests": 4,
+      "latency_ms": 826.7
     },
     {
       "hour": "03:00",
-      "requests": 2,
-      "latency_ms": 266.5
+      "requests": 1,
+      "latency_ms": 157.0
     },
     {
       "hour": "04:00",
-      "requests": 3,
-      "latency_ms": 1019.1
+      "requests": 0,
+      "latency_ms": null
     },
     {
       "hour": "05:00",
-      "requests": 2,
-      "latency_ms": 203.2
+      "requests": 1,
+      "latency_ms": 1307.4
     },
     {
       "hour": "06:00",
-      "requests": 0,
-      "latency_ms": null
+      "requests": 4,
+      "latency_ms": 901.1
     },
     {
       "hour": "07:00",
-      "requests": 0,
-      "latency_ms": null
+      "requests": 2,
+      "latency_ms": 976.6
     },
     {
       "hour": "08:00",
-      "requests": 4,
-      "latency_ms": 906.9
-    },
-    {
-      "hour": "09:00",
-      "requests": 3,
-      "latency_ms": 1079.2
-    },
-    {
-      "hour": "10:00",
       "requests": 3,
       "latency_ms": 780.0
     },
     {
-      "hour": "11:00",
+      "hour": "09:00",
       "requests": 4,
       "latency_ms": 1022.3
     },
     {
+      "hour": "10:00",
+      "requests": 2,
+      "latency_ms": 710.2
+    },
+    {
+      "hour": "11:00",
+      "requests": 3,
+      "latency_ms": 727.3
+    },
+    {
       "hour": "12:00",
+      "requests": 5,
+      "latency_ms": 530.7
+    },
+    {
+      "hour": "13:00",
       "requests": 0,
       "latency_ms": null
     },
     {
-      "hour": "13:00",
-      "requests": 4,
-      "latency_ms": 774.6
-    },
-    {
       "hour": "14:00",
-      "requests": 3,
-      "latency_ms": 533.7
-    },
-    {
-      "hour": "15:00",
-      "requests": 3,
-      "latency_ms": 518.7
-    },
-    {
-      "hour": "16:00",
       "requests": 1,
       "latency_ms": 331.8
     },
     {
+      "hour": "15:00",
+      "requests": 3,
+      "latency_ms": 534.6
+    },
+    {
+      "hour": "16:00",
+      "requests": 2,
+      "latency_ms": 499.3
+    },
+    {
       "hour": "17:00",
-      "requests": 1,
-      "latency_ms": 229.8
-    },
-    {
-      "hour": "18:00",
-      "requests": 4,
-      "latency_ms": 593.2
-    },
-    {
-      "hour": "19:00",
-      "requests": 172,
-      "latency_ms": 585.3
-    },
-    {
-      "hour": "20:00",
-      "requests": 257,
-      "latency_ms": 594.1
+      "requests": 22,
+      "latency_ms": 7.3
     }
   ],
   "flow_links": [
     {
       "source": "演练请求",
       "target": "转账助手",
-      "value": 133
+      "value": 68
     },
     {
       "source": "转账助手",
       "target": "已完成",
-      "value": 131
+      "value": 67
     },
     {
       "source": "演练请求",
       "target": "理财顾问",
-      "value": 127
+      "value": 60
     },
     {
       "source": "理财顾问",
       "target": "已完成",
-      "value": 119
+      "value": 53
     },
     {
       "source": "演练请求",
       "target": "生活服务助手",
-      "value": 141
+      "value": 65
     },
     {
       "source": "生活服务助手",
       "target": "已完成",
-      "value": 141
+      "value": 66
     },
     {
       "source": "演练请求",
       "target": "订阅管家",
-      "value": 146
+      "value": 70
     },
     {
       "source": "订阅管家",
       "target": "已完成",
-      "value": 138
+      "value": 63
     },
     {
       "source": "演练请求",
       "target": "账单分析师",
-      "value": 139
+      "value": 63
     },
     {
       "source": "账单分析师",
       "target": "已完成",
-      "value": 133
+      "value": 57
     },
     {
       "source": "演练请求",
       "target": "卡片管家",
-      "value": 148
+      "value": 78
     },
     {
       "source": "卡片管家",
       "target": "已完成",
-      "value": 138
+      "value": 70
     },
     {
       "source": "账单分析师",
@@ -393,11 +393,6 @@
       "value": 8
     },
     {
-      "source": "卡片管家",
-      "target": "需人工复核",
-      "value": 3
-    },
-    {
       "source": "账单分析师",
       "target": "需人工复核",
       "value": 1
@@ -406,6 +401,11 @@
       "source": "订阅管家",
       "target": "待确认",
       "value": 8
+    },
+    {
+      "source": "卡片管家",
+      "target": "需人工复核",
+      "value": 2
     },
     {
       "source": "订阅管家",
@@ -420,29 +420,69 @@
     {
       "source": "转账助手",
       "target": "待确认",
-      "value": 3
+      "value": 6
+    },
+    {
+      "source": "规则规划",
+      "target": "通用助理",
+      "value": 7
+    },
+    {
+      "source": "通用助理",
+      "target": "已完成",
+      "value": 7
     },
     {
       "source": "规则规划",
       "target": "转账助手",
+      "value": 6
+    },
+    {
+      "source": "规则规划",
+      "target": "生活服务助手",
+      "value": 4
+    },
+    {
+      "source": "生活服务助手",
+      "target": "待确认",
+      "value": 2
+    },
+    {
+      "source": "生活服务助手",
+      "target": "需人工复核",
+      "value": 1
+    },
+    {
+      "source": "规则规划",
+      "target": "理财顾问",
+      "value": 1
+    },
+    {
+      "source": "规则规划",
+      "target": "订阅管家",
+      "value": 2
+    },
+    {
+      "source": "转账助手",
+      "target": "需人工复核",
+      "value": 1
+    },
+    {
+      "source": "规则规划",
+      "target": "卡片管家",
       "value": 1
     },
     {
       "source": "规则规划",
       "target": "账单分析师",
       "value": 1
-    },
-    {
-      "source": "规则规划",
-      "target": "订阅管家",
-      "value": 1
     }
   ],
   "ticket_statuses": {
-    "NEW": 107,
+    "NEW": 10,
     "RESOLVED": 45,
     "IN_PROGRESS": 7,
-    "ASSIGNED": 5
+    "ASSIGNED": 4
   },
   "tickets": [
     {
@@ -452,49 +492,17 @@
       "title": "AI任务人工接管",
       "priority": "P1",
       "status": "IN_PROGRESS",
-      "created_at": 1793238305.3744302,
-      "assigned_at": 1793238485.3744302,
+      "created_at": 1793316517.582565,
+      "assigned_at": 1793316697.582565,
       "resolved_at": null,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 4958.8,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-0CF13BA8D9",
-      "device_id": null,
-      "branch_id": "B01",
-      "title": "业务执行需要人工复核",
-      "priority": "P1",
-      "status": "NEW",
-      "created_at": 1793533481.159478,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 30,
-      "assignee": null,
-      "version": 1,
-      "overdue": true,
-      "elapsed_minutes": 39.2,
-      "source": "application"
-    },
-    {
-      "ticket_id": "WO-H0025",
-      "device_id": null,
-      "branch_id": "B02",
-      "title": "设备巡检复核",
-      "priority": "P2",
-      "status": "ASSIGNED",
-      "created_at": 1792948425.3091898,
-      "assigned_at": 1792948605.3091898,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": "MGR-01",
-      "version": 1,
-      "overdue": true,
-      "elapsed_minutes": 9790.1,
-      "source": "synthetic"
+      "elapsed_minutes": 4950.3,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0008",
@@ -503,15 +511,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "ASSIGNED",
-      "created_at": 1792975080.4098773,
-      "assigned_at": 1792975260.4098773,
+      "created_at": 1793053292.6180122,
+      "assigned_at": 1793053472.6180122,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 9345.9,
-      "source": "synthetic"
+      "elapsed_minutes": 9337.4,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0037",
@@ -520,15 +530,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "IN_PROGRESS",
-      "created_at": 1792990541.8450105,
-      "assigned_at": 1792990721.8450105,
+      "created_at": 1793068754.0531454,
+      "assigned_at": 1793068934.0531454,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 9088.2,
-      "source": "synthetic"
+      "elapsed_minutes": 9079.7,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0011",
@@ -537,15 +549,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "ASSIGNED",
-      "created_at": 1792990960.4940274,
-      "assigned_at": 1792991140.4940274,
+      "created_at": 1793069172.7021623,
+      "assigned_at": 1793069352.7021623,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 9081.2,
-      "source": "synthetic"
+      "elapsed_minutes": 9072.7,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0034",
@@ -554,15 +568,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "IN_PROGRESS",
-      "created_at": 1793178928.938435,
-      "assigned_at": 1793179108.938435,
+      "created_at": 1793257141.14657,
+      "assigned_at": 1793257321.14657,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 5948.4,
-      "source": "synthetic"
+      "elapsed_minutes": 5939.9,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0043",
@@ -571,15 +587,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793186884.7708468,
+      "created_at": 1793265096.9789817,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": null,
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 5815.8,
-      "source": "synthetic"
+      "elapsed_minutes": 5807.3,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0054",
@@ -588,15 +606,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793200399.836401,
+      "created_at": 1793278612.0445359,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": null,
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 5590.5,
-      "source": "synthetic"
+      "elapsed_minutes": 5582.1,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0027",
@@ -605,15 +625,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "ASSIGNED",
-      "created_at": 1793225372.3593378,
-      "assigned_at": 1793225552.3593378,
+      "created_at": 1793303584.5674727,
+      "assigned_at": 1793303764.5674727,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 5174.3,
-      "source": "synthetic"
+      "elapsed_minutes": 5165.9,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0019",
@@ -622,15 +644,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "IN_PROGRESS",
-      "created_at": 1793233011.1319072,
-      "assigned_at": 1793233191.1319072,
+      "created_at": 1793311223.340042,
+      "assigned_at": 1793311403.340042,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 5047.0,
-      "source": "synthetic"
+      "elapsed_minutes": 5038.5,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0052",
@@ -639,15 +663,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "IN_PROGRESS",
-      "created_at": 1793244845.6783066,
-      "assigned_at": 1793245025.6783066,
+      "created_at": 1793323057.8864415,
+      "assigned_at": 1793323237.8864415,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 4849.8,
-      "source": "synthetic"
+      "elapsed_minutes": 4841.3,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0046",
@@ -656,15 +682,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793296684.6710036,
+      "created_at": 1793374896.8791385,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": null,
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 3985.8,
-      "source": "synthetic"
+      "elapsed_minutes": 3977.3,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0023",
@@ -673,15 +701,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "IN_PROGRESS",
-      "created_at": 1793313151.59144,
-      "assigned_at": 1793313331.59144,
+      "created_at": 1793391363.7995749,
+      "assigned_at": 1793391543.7995749,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 3711.3,
-      "source": "synthetic"
+      "elapsed_minutes": 3702.9,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0005",
@@ -690,15 +720,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793409230.6542122,
+      "created_at": 1793487442.8623471,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": null,
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 2110.0,
-      "source": "synthetic"
+      "elapsed_minutes": 2101.6,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0024",
@@ -707,15 +739,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793425773.5865977,
+      "created_at": 1793503985.7947326,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": null,
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 1834.3,
-      "source": "synthetic"
+      "elapsed_minutes": 1825.8,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0050",
@@ -724,15 +758,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793452915.0180404,
+      "created_at": 1793531127.2261753,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": null,
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 1381.9,
-      "source": "synthetic"
+      "elapsed_minutes": 1373.5,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0006",
@@ -741,15 +777,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793456169.5470355,
+      "created_at": 1793534381.7551703,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": null,
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 1327.7,
-      "source": "synthetic"
+      "elapsed_minutes": 1319.2,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0004",
@@ -758,15 +796,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "IN_PROGRESS",
-      "created_at": 1793462774.5369973,
-      "assigned_at": 1793462954.5369973,
+      "created_at": 1793540986.7451322,
+      "assigned_at": 1793541166.7451322,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 1217.6,
-      "source": "synthetic"
+      "elapsed_minutes": 1209.2,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0061",
@@ -775,32 +815,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "ASSIGNED",
-      "created_at": 1793483461.7085075,
-      "assigned_at": 1793483641.7085075,
+      "created_at": 1793561673.9166424,
+      "assigned_at": 1793561853.9166424,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
-      "elapsed_minutes": 872.8,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-8C44745E48",
-      "device_id": null,
-      "branch_id": "B01",
-      "title": "业务执行需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533481.1634789,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 39.2,
-      "source": "application"
+      "elapsed_minutes": 864.4,
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-35394A080B",
@@ -809,398 +834,7 @@
       "title": "设备运行指标需要复核",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793533481.1770024,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 39.2,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-5347C94467",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533522.264731,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 38.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-F15FA098BE",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533547.3580668,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 38.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-56D82222F6",
-      "device_id": "DEV-0102",
-      "branch_id": "B01",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533557.3934903,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 37.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-6E10622205",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533572.459805,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 37.7,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-6D595971EE",
-      "device_id": null,
-      "branch_id": "B05",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533597.5571058,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 37.2,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-4B86C7F86D",
-      "device_id": "DEV-0103",
-      "branch_id": "B01",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533617.6190934,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 36.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-4A8AB14313",
-      "device_id": null,
-      "branch_id": "B02",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533622.6443539,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 36.8,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-773A677F2B",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533647.7517111,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 36.4,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-B3136330A4",
-      "device_id": null,
-      "branch_id": "B04",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533672.8398871,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 36.0,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-51C4C982DF",
-      "device_id": "DEV-0104",
-      "branch_id": "B01",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533677.8512993,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 35.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-1A2FA9EE1E",
-      "device_id": null,
-      "branch_id": "B01",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533697.9299572,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 35.6,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-C03C87997D",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533723.0144353,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 35.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-FF996DC837",
-      "device_id": "DEV-0105",
-      "branch_id": "B01",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533738.062552,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 34.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-CB438A23F9",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533748.101732,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 34.7,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-2E20B3D513",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533773.2060726,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 34.3,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-7D1355A62A",
-      "device_id": "DEV-0106",
-      "branch_id": "B01",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533798.3058746,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 33.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-A12F868ACA",
-      "device_id": null,
-      "branch_id": "B05",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533798.3138783,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 33.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-861FBF90AD",
-      "device_id": null,
-      "branch_id": "B02",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533823.4036143,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 33.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-BD4054CBF5",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533848.4948566,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 33.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-6FA4C1EA6F",
-      "device_id": "DEV-0201",
-      "branch_id": "B02",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533858.5270226,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 32.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-DD2DBA532E",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533941.600304,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 31.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-4EA69288A4",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533966.7010982,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 31.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-37BAA0BF92",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793533991.7969675,
+      "created_at": 1793611693.3868685,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
@@ -1208,1265 +842,47 @@
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 30.7,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
-      "ticket_id": "WO-70B2F88F0F",
-      "device_id": null,
-      "branch_id": "B05",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534016.9089053,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 30.2,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-0416793520",
-      "device_id": null,
-      "branch_id": "B02",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534042.017018,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 29.8,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-A96F51CC85",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534067.1207,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 29.4,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-7B50D6D85F",
-      "device_id": null,
-      "branch_id": "B04",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534092.2157128,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 29.0,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-EB72E63D3D",
-      "device_id": null,
-      "branch_id": "B01",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534117.3133376,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 28.6,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-5C9ED0EF18",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534142.4175963,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 28.2,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-AA177A2A78",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534167.518132,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 27.7,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-CDB6C63DE1",
+      "ticket_id": "WO-4208CE51EC",
       "device_id": null,
       "branch_id": "B08",
-      "title": "演练任务需要人工复核",
+      "title": "业务执行需要人工复核",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793534192.630429,
+      "created_at": 1793613111.4540443,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": null,
       "version": 1,
       "overdue": false,
-      "elapsed_minutes": 27.3,
-      "source": "synthetic"
+      "elapsed_minutes": 7.1,
+      "source": "application",
+      "linked_operation": "transfer",
+      "business_reference": "AUD-2CB374585F54"
     },
     {
-      "ticket_id": "WO-093564DEF8",
-      "device_id": null,
-      "branch_id": "B05",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534217.7481403,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 26.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-2B755EDD2B",
-      "device_id": null,
-      "branch_id": "B02",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534242.8539174,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 26.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-6083FE0396",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534267.9482265,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 26.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-278D40163A",
-      "device_id": null,
-      "branch_id": "B04",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534293.0511365,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 25.6,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-0B603A9DD8",
-      "device_id": null,
-      "branch_id": "B01",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534318.1428728,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 25.2,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-2C8624CB7D",
-      "device_id": "DEV-0202",
-      "branch_id": "B02",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534338.2070203,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 24.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-41B8DCA1DF",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534343.2338793,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 24.8,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-6FDE6973E6",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534368.330817,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 24.4,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-97EFA05661",
+      "ticket_id": "WO-C1D7651271",
       "device_id": null,
       "branch_id": "B08",
-      "title": "演练任务需要人工复核",
+      "title": "业务执行需要人工复核",
       "priority": "P2",
       "status": "NEW",
-      "created_at": 1793534393.429323,
+      "created_at": 1793613129.0267816,
       "assigned_at": null,
       "resolved_at": null,
       "sla_minutes": 120,
       "assignee": null,
       "version": 1,
       "overdue": false,
-      "elapsed_minutes": 24.0,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-0DFEFC9631",
-      "device_id": "DEV-0203",
-      "branch_id": "B02",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534398.4430866,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 23.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-BC2DD8D13A",
-      "device_id": null,
-      "branch_id": "B05",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534418.5307593,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 23.6,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-6E61B315DE",
-      "device_id": null,
-      "branch_id": "B02",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534443.624082,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 23.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-530E067693",
-      "device_id": "DEV-0204",
-      "branch_id": "B02",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534458.67825,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 22.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-76FC90979F",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534468.7238042,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 22.7,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-E5A8CBEA82",
-      "device_id": null,
-      "branch_id": "B04",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534493.831957,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 22.3,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-8AD944BA44",
-      "device_id": "DEV-0205",
-      "branch_id": "B02",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534518.9358027,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 21.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-137961DA9A",
-      "device_id": null,
-      "branch_id": "B01",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534518.94358,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 21.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-813890C333",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534544.0485363,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 21.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-0DDE255270",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534569.14325,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 21.0,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-3D3149AAF3",
-      "device_id": "DEV-0206",
-      "branch_id": "B02",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534579.1754427,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 20.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-3A4265DB38",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534594.2362218,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 20.6,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-F34364D464",
-      "device_id": null,
-      "branch_id": "B05",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534619.3456337,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 20.2,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-F63C28CA53",
-      "device_id": "DEV-0301",
-      "branch_id": "B03",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534639.4168997,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 19.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-2054FF38E4",
-      "device_id": null,
-      "branch_id": "B02",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534644.4472106,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 19.8,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-853B76B7C9",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534669.5448658,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 19.4,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-578D4F9CD7",
-      "device_id": null,
-      "branch_id": "B04",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534694.6457884,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 19.0,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-8D36DC316D",
-      "device_id": "DEV-0302",
-      "branch_id": "B03",
-      "title": "设备响应超过演练阈值",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534699.6590047,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 18.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-E3D4897F43",
-      "device_id": null,
-      "branch_id": "B01",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534719.7388108,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 18.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-2E7CB54CBA",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534742.4349616,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 18.2,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-9B024B19DF",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534767.5276785,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 17.7,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-340C23FF77",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534792.6279266,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 17.3,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-45EB01C048",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534817.7236266,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 16.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-17CB1DA004",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534842.823821,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 16.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-B59941C62D",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534867.9183147,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 16.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-A442BFFD95",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534893.0220835,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 15.6,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-3482DF9871",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534918.1224847,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 15.2,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-6EED3B1B26",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534943.2132878,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 14.8,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-685745507C",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534968.3242006,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 14.4,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-9DD0D21182",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793534993.4253705,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 14.0,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-AFFD525B44",
-      "device_id": null,
-      "branch_id": "B05",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535018.5268219,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 13.6,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-52A005D909",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535043.6277614,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 13.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-673BF92480",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535068.7291698,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 12.7,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-551F875A5B",
-      "device_id": null,
-      "branch_id": "B01",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535093.8393254,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 12.3,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-8B05DD0532",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535118.9418192,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 11.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-2B34C6811F",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535144.0535073,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 11.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-D94AFECA76",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535169.1540751,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 11.0,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-6DC3C4A107",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535194.2528114,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 10.6,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-6D24C9A3C0",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535219.358542,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 10.2,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-75CDF107BC",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535244.4659343,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 9.8,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-CD77CD45AA",
-      "device_id": null,
-      "branch_id": "B05",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535269.5738702,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 9.4,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-34E821ECC4",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535294.6666949,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 9.0,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-B488E993E7",
-      "device_id": null,
-      "branch_id": "B04",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535319.7592127,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 8.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-7BE66CDC7B",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535344.8475053,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 8.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-586FA30543",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535369.9427404,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 7.7,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-D3829572A1",
-      "device_id": null,
-      "branch_id": "B02",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535395.0435584,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 7.3,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-996E3CA0D9",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535420.1511083,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 6.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-87CA82AD2F",
-      "device_id": null,
-      "branch_id": "B03",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535604.0871572,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 3.8,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-9BF87E3661",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535629.189085,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 3.4,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-CA2B71FD36",
-      "device_id": null,
-      "branch_id": "B06",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535654.2948043,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 3.0,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-877656909C",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535679.3984246,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 2.5,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-9AC121DFB2",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535704.5105777,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 2.1,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-C14AA5CB62",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535729.6061993,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 1.7,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-E5FA7F94D0",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535754.6979465,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 1.3,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-24637817CE",
-      "device_id": null,
-      "branch_id": "B08",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535779.787343,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 0.9,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-D5E4FE5FC4",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535804.867897,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 0.4,
-      "source": "synthetic"
-    },
-    {
-      "ticket_id": "WO-CDAFD338AE",
-      "device_id": null,
-      "branch_id": "B07",
-      "title": "演练任务需要人工复核",
-      "priority": "P2",
-      "status": "NEW",
-      "created_at": 1793535829.9595747,
-      "assigned_at": null,
-      "resolved_at": null,
-      "sla_minutes": 120,
-      "assignee": null,
-      "version": 1,
-      "overdue": false,
-      "elapsed_minutes": 0.0,
-      "source": "synthetic"
+      "elapsed_minutes": 6.8,
+      "source": "application",
+      "linked_operation": "reserve_budget",
+      "business_reference": "AUD-868D9374DD96"
     },
     {
       "ticket_id": "WO-H0021",
@@ -2475,15 +891,17 @@
       "title": "设备巡检复核",
       "priority": "P1",
       "status": "RESOLVED",
-      "created_at": 1793342986.4193335,
-      "assigned_at": 1793343166.4193335,
-      "resolved_at": 1793346682.7239735,
+      "created_at": 1793421198.6274683,
+      "assigned_at": 1793421378.6274683,
+      "resolved_at": 1793424894.9321084,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
       "elapsed_minutes": 61.6,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0063",
@@ -2492,15 +910,17 @@
       "title": "渠道响应检查",
       "priority": "P1",
       "status": "RESOLVED",
-      "created_at": 1793449396.755282,
-      "assigned_at": 1793449576.755282,
-      "resolved_at": 1793452677.6186867,
+      "created_at": 1793527608.9634168,
+      "assigned_at": 1793527788.9634168,
+      "resolved_at": 1793530889.8268216,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
       "elapsed_minutes": 54.7,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0035",
@@ -2509,15 +929,17 @@
       "title": "渠道响应检查",
       "priority": "P1",
       "status": "RESOLVED",
-      "created_at": 1793518440.5679326,
-      "assigned_at": 1793518620.5679326,
-      "resolved_at": 1793521987.5089421,
+      "created_at": 1793596652.7760675,
+      "assigned_at": 1793596832.7760675,
+      "resolved_at": 1793600199.717077,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": true,
       "elapsed_minutes": 59.1,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0007",
@@ -2526,15 +948,17 @@
       "title": "渠道响应检查",
       "priority": "P1",
       "status": "RESOLVED",
-      "created_at": 1793024063.0366433,
-      "assigned_at": 1793024243.0366433,
-      "resolved_at": 1793025658.6111774,
+      "created_at": 1793102275.2447782,
+      "assigned_at": 1793102455.2447782,
+      "resolved_at": 1793103870.8193123,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 26.6,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0042",
@@ -2543,15 +967,17 @@
       "title": "AI任务人工接管",
       "priority": "P1",
       "status": "RESOLVED",
-      "created_at": 1793063619.179186,
-      "assigned_at": 1793063799.179186,
-      "resolved_at": 1793064251.3879733,
+      "created_at": 1793141831.387321,
+      "assigned_at": 1793142011.387321,
+      "resolved_at": 1793142463.5961082,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 10.5,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0000",
@@ -2560,15 +986,17 @@
       "title": "业务回执核对",
       "priority": "P1",
       "status": "RESOLVED",
-      "created_at": 1793147378.9541895,
-      "assigned_at": 1793147558.9541895,
-      "resolved_at": 1793148436.651742,
+      "created_at": 1793225591.1623244,
+      "assigned_at": 1793225771.1623244,
+      "resolved_at": 1793226648.8598769,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 17.6,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0056",
@@ -2577,15 +1005,17 @@
       "title": "业务回执核对",
       "priority": "P1",
       "status": "RESOLVED",
-      "created_at": 1793156805.3717296,
-      "assigned_at": 1793156985.3717296,
-      "resolved_at": 1793158110.2634327,
+      "created_at": 1793235017.5798645,
+      "assigned_at": 1793235197.5798645,
+      "resolved_at": 1793236322.4715676,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 21.7,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0049",
@@ -2594,15 +1024,17 @@
       "title": "设备巡检复核",
       "priority": "P1",
       "status": "RESOLVED",
-      "created_at": 1793339376.5215526,
-      "assigned_at": 1793339556.5215526,
-      "resolved_at": 1793340808.5120354,
+      "created_at": 1793417588.7296875,
+      "assigned_at": 1793417768.7296875,
+      "resolved_at": 1793419020.7201703,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 23.9,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0028",
@@ -2611,15 +1043,17 @@
       "title": "业务回执核对",
       "priority": "P1",
       "status": "RESOLVED",
-      "created_at": 1793351843.6852024,
-      "assigned_at": 1793352023.6852024,
-      "resolved_at": 1793353182.513523,
+      "created_at": 1793430055.8933372,
+      "assigned_at": 1793430235.8933372,
+      "resolved_at": 1793431394.721658,
       "sla_minutes": 30,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 22.3,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0047",
@@ -2628,15 +1062,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1792963091.5473022,
-      "assigned_at": 1792963271.5473022,
-      "resolved_at": 1792965460.1832078,
+      "created_at": 1793041303.7554371,
+      "assigned_at": 1793041483.7554371,
+      "resolved_at": 1793043672.3913426,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 39.5,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0038",
@@ -2645,15 +1081,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1792968232.4568596,
-      "assigned_at": 1792968412.4568596,
-      "resolved_at": 1792969844.0782425,
+      "created_at": 1793046444.6649945,
+      "assigned_at": 1793046624.6649945,
+      "resolved_at": 1793048056.2863774,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 26.9,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0026",
@@ -2662,15 +1100,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1792969848.9570975,
-      "assigned_at": 1792970028.9570975,
-      "resolved_at": 1792971782.5971823,
+      "created_at": 1793048061.1652324,
+      "assigned_at": 1793048241.1652324,
+      "resolved_at": 1793049994.8053172,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 32.2,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0001",
@@ -2679,15 +1119,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1792979881.8378716,
-      "assigned_at": 1792980061.8378716,
-      "resolved_at": 1792982982.608247,
+      "created_at": 1793058094.0460064,
+      "assigned_at": 1793058274.0460064,
+      "resolved_at": 1793061194.816382,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 51.7,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0032",
@@ -2696,15 +1138,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1792980537.7018468,
-      "assigned_at": 1792980717.7018468,
-      "resolved_at": 1792981314.5365317,
+      "created_at": 1793058749.9099817,
+      "assigned_at": 1793058929.9099817,
+      "resolved_at": 1793059526.7446666,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 12.9,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0041",
@@ -2713,15 +1157,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1792981433.06338,
-      "assigned_at": 1792981613.06338,
-      "resolved_at": 1792984764.5000854,
+      "created_at": 1793059645.271515,
+      "assigned_at": 1793059825.271515,
+      "resolved_at": 1793062976.7082202,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 55.5,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0013",
@@ -2730,15 +1176,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793000802.794371,
-      "assigned_at": 1793000982.794371,
-      "resolved_at": 1793003315.2468607,
+      "created_at": 1793079015.0025058,
+      "assigned_at": 1793079195.0025058,
+      "resolved_at": 1793081527.4549956,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 41.9,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0051",
@@ -2747,15 +1195,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793004212.0400827,
-      "assigned_at": 1793004392.0400827,
-      "resolved_at": 1793007433.9399107,
+      "created_at": 1793082424.2482176,
+      "assigned_at": 1793082604.2482176,
+      "resolved_at": 1793085646.1480455,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 53.7,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0031",
@@ -2764,15 +1214,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793005806.6154487,
-      "assigned_at": 1793005986.6154487,
-      "resolved_at": 1793006477.2466877,
+      "created_at": 1793084018.8235836,
+      "assigned_at": 1793084198.8235836,
+      "resolved_at": 1793084689.4548225,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 11.2,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0010",
@@ -2781,15 +1233,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793017526.5667706,
-      "assigned_at": 1793017706.5667706,
-      "resolved_at": 1793019413.6622488,
+      "created_at": 1793095738.7749054,
+      "assigned_at": 1793095918.7749054,
+      "resolved_at": 1793097625.8703837,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 31.5,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0012",
@@ -2798,15 +1252,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793038041.2137601,
-      "assigned_at": 1793038221.2137601,
-      "resolved_at": 1793039698.6187937,
+      "created_at": 1793116253.421895,
+      "assigned_at": 1793116433.421895,
+      "resolved_at": 1793117910.8269286,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 27.6,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0059",
@@ -2815,15 +1271,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793059180.633728,
-      "assigned_at": 1793059360.633728,
-      "resolved_at": 1793060994.9274793,
+      "created_at": 1793137392.841863,
+      "assigned_at": 1793137572.841863,
+      "resolved_at": 1793139207.1356142,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 30.2,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0048",
@@ -2832,15 +1290,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793080271.6721375,
-      "assigned_at": 1793080451.6721375,
-      "resolved_at": 1793084112.8923986,
+      "created_at": 1793158483.8802724,
+      "assigned_at": 1793158663.8802724,
+      "resolved_at": 1793162325.1005335,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 64.0,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0033",
@@ -2849,15 +1309,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793123633.2776108,
-      "assigned_at": 1793123813.2776108,
-      "resolved_at": 1793124291.654158,
+      "created_at": 1793201845.4857457,
+      "assigned_at": 1793202025.4857457,
+      "resolved_at": 1793202503.862293,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 11.0,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0030",
@@ -2866,15 +1328,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793128588.0210807,
-      "assigned_at": 1793128768.0210807,
-      "resolved_at": 1793131390.738776,
+      "created_at": 1793206800.2292156,
+      "assigned_at": 1793206980.2292156,
+      "resolved_at": 1793209602.9469109,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 46.7,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0015",
@@ -2883,15 +1347,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793164897.3963752,
-      "assigned_at": 1793165077.3963752,
-      "resolved_at": 1793167095.6806931,
+      "created_at": 1793243109.60451,
+      "assigned_at": 1793243289.60451,
+      "resolved_at": 1793245307.888828,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 36.6,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0022",
@@ -2900,15 +1366,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793170715.3947706,
-      "assigned_at": 1793170895.3947706,
-      "resolved_at": 1793174591.1151803,
+      "created_at": 1793248927.6029055,
+      "assigned_at": 1793249107.6029055,
+      "resolved_at": 1793252803.3233151,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 64.6,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0017",
@@ -2917,15 +1385,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793202968.2431312,
-      "assigned_at": 1793203148.2431312,
-      "resolved_at": 1793206830.5240452,
+      "created_at": 1793281180.451266,
+      "assigned_at": 1793281360.451266,
+      "resolved_at": 1793285042.73218,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 64.4,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0060",
@@ -2934,15 +1404,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793222819.4189396,
-      "assigned_at": 1793222999.4189396,
-      "resolved_at": 1793224997.1312847,
+      "created_at": 1793301031.6270745,
+      "assigned_at": 1793301211.6270745,
+      "resolved_at": 1793303209.3394196,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 36.3,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0002",
@@ -2951,15 +1423,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793252664.805895,
-      "assigned_at": 1793252844.805895,
-      "resolved_at": 1793253509.5043597,
+      "created_at": 1793330877.01403,
+      "assigned_at": 1793331057.01403,
+      "resolved_at": 1793331721.7124946,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 14.1,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0055",
@@ -2968,15 +1442,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793280756.223196,
-      "assigned_at": 1793280936.223196,
-      "resolved_at": 1793282701.81568,
+      "created_at": 1793358968.431331,
+      "assigned_at": 1793359148.431331,
+      "resolved_at": 1793360914.023815,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 32.4,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0020",
@@ -2985,15 +1461,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793296165.0995302,
-      "assigned_at": 1793296345.0995302,
-      "resolved_at": 1793299369.3824866,
+      "created_at": 1793374377.307665,
+      "assigned_at": 1793374557.307665,
+      "resolved_at": 1793377581.5906215,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 53.4,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0029",
@@ -3002,15 +1480,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793316408.2311966,
-      "assigned_at": 1793316588.2311966,
-      "resolved_at": 1793320264.1107929,
+      "created_at": 1793394620.4393315,
+      "assigned_at": 1793394800.4393315,
+      "resolved_at": 1793398476.3189278,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 64.3,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0036",
@@ -3019,15 +1499,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793317633.0751119,
-      "assigned_at": 1793317813.0751119,
-      "resolved_at": 1793319538.83667,
+      "created_at": 1793395845.2832468,
+      "assigned_at": 1793396025.2832468,
+      "resolved_at": 1793397751.0448048,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 31.8,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0018",
@@ -3036,15 +1518,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793318756.4276378,
-      "assigned_at": 1793318936.4276378,
-      "resolved_at": 1793320263.6708846,
+      "created_at": 1793396968.6357727,
+      "assigned_at": 1793397148.6357727,
+      "resolved_at": 1793398475.8790195,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 25.1,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0040",
@@ -3053,15 +1537,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793328182.0807617,
-      "assigned_at": 1793328362.0807617,
-      "resolved_at": 1793331237.4209073,
+      "created_at": 1793406394.2888966,
+      "assigned_at": 1793406574.2888966,
+      "resolved_at": 1793409449.6290421,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 50.9,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0058",
@@ -3070,15 +1556,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793353943.9862719,
-      "assigned_at": 1793354123.9862719,
-      "resolved_at": 1793357471.8034196,
+      "created_at": 1793432156.1944067,
+      "assigned_at": 1793432336.1944067,
+      "resolved_at": 1793435684.0115545,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 58.8,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0003",
@@ -3087,15 +1575,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793363907.751317,
-      "assigned_at": 1793364087.751317,
-      "resolved_at": 1793366868.7620487,
+      "created_at": 1793442119.959452,
+      "assigned_at": 1793442299.959452,
+      "resolved_at": 1793445080.9701836,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 49.4,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0045",
@@ -3104,15 +1594,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793388455.8171086,
-      "assigned_at": 1793388635.8171086,
-      "resolved_at": 1793390342.6966655,
+      "created_at": 1793466668.0252435,
+      "assigned_at": 1793466848.0252435,
+      "resolved_at": 1793468554.9048004,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 31.4,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0057",
@@ -3121,15 +1613,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793404237.554887,
-      "assigned_at": 1793404417.554887,
-      "resolved_at": 1793404857.0089765,
+      "created_at": 1793482449.763022,
+      "assigned_at": 1793482629.763022,
+      "resolved_at": 1793483069.2171113,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 10.3,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0009",
@@ -3138,15 +1632,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793431069.73008,
-      "assigned_at": 1793431249.73008,
-      "resolved_at": 1793434749.7858481,
+      "created_at": 1793509281.9382148,
+      "assigned_at": 1793509461.9382148,
+      "resolved_at": 1793512961.993983,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 61.3,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0016",
@@ -3155,15 +1651,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793461419.156805,
-      "assigned_at": 1793461599.156805,
-      "resolved_at": 1793464943.367922,
+      "created_at": 1793539631.36494,
+      "assigned_at": 1793539811.36494,
+      "resolved_at": 1793543155.576057,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 58.7,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0062",
@@ -3172,15 +1670,17 @@
       "title": "AI任务人工接管",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793467419.888882,
-      "assigned_at": 1793467599.888882,
-      "resolved_at": 1793468594.9269178,
+      "created_at": 1793545632.0970168,
+      "assigned_at": 1793545812.0970168,
+      "resolved_at": 1793546807.1350527,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 19.6,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0053",
@@ -3189,15 +1689,17 @@
       "title": "设备巡检复核",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793486463.0303285,
-      "assigned_at": 1793486643.0303285,
-      "resolved_at": 1793489812.5156457,
+      "created_at": 1793564675.2384634,
+      "assigned_at": 1793564855.2384634,
+      "resolved_at": 1793568024.7237806,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 55.8,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0044",
@@ -3206,15 +1708,17 @@
       "title": "业务回执核对",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793507543.7289486,
-      "assigned_at": 1793507723.7289486,
-      "resolved_at": 1793511412.0548468,
+      "created_at": 1793585755.9370835,
+      "assigned_at": 1793585935.9370835,
+      "resolved_at": 1793589624.2629817,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 64.5,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     },
     {
       "ticket_id": "WO-H0039",
@@ -3223,15 +1727,17 @@
       "title": "渠道响应检查",
       "priority": "P2",
       "status": "RESOLVED",
-      "created_at": 1793529018.2865944,
-      "assigned_at": 1793529198.2865944,
-      "resolved_at": 1793530843.3054516,
+      "created_at": 1793607230.4947293,
+      "assigned_at": 1793607410.4947293,
+      "resolved_at": 1793609055.5135865,
       "sla_minutes": 120,
       "assignee": "MGR-01",
       "version": 1,
       "overdue": false,
       "elapsed_minutes": 30.4,
-      "source": "synthetic"
+      "source": "synthetic",
+      "linked_operation": null,
+      "business_reference": null
     }
   ],
   "devices": [
@@ -3242,10 +1748,10 @@
       "kind": "ATM自助终端",
       "source": "synthetic",
       "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 55.94,
-      "cpu_pct": 31.3,
-      "memory_pct": 36.0
+      "last_seen": 1793613531.305683,
+      "latency_ms": 43.54,
+      "cpu_pct": 30.6,
+      "memory_pct": 44.3
     },
     {
       "device_id": "DEV-0102",
@@ -3253,11 +1759,11 @@
       "name": "智能柜台 02",
       "kind": "智能柜台",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 27.29,
-      "cpu_pct": 25.8,
-      "memory_pct": 42.9
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 38.88,
+      "cpu_pct": 35.9,
+      "memory_pct": 34.3
     },
     {
       "device_id": "DEV-0103",
@@ -3265,11 +1771,11 @@
       "name": "网络网关 03",
       "kind": "网络网关",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 52.39,
-      "cpu_pct": 35.4,
-      "memory_pct": 45.6
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 59.62,
+      "cpu_pct": 28.4,
+      "memory_pct": 43.9
     },
     {
       "device_id": "DEV-0104",
@@ -3277,11 +1783,11 @@
       "name": "自助打印 04",
       "kind": "自助打印",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 57.97,
-      "cpu_pct": 32.7,
-      "memory_pct": 37.6
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 47.61,
+      "cpu_pct": 29.0,
+      "memory_pct": 45.0
     },
     {
       "device_id": "DEV-0105",
@@ -3289,11 +1795,11 @@
       "name": "视频终端 05",
       "kind": "视频终端",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 32.31,
-      "cpu_pct": 23.8,
-      "memory_pct": 41.7
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 34.11,
+      "cpu_pct": 36.0,
+      "memory_pct": 36.0
     },
     {
       "device_id": "DEV-0106",
@@ -3301,11 +1807,11 @@
       "name": "边缘节点 06",
       "kind": "边缘节点",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 48.98,
-      "cpu_pct": 34.7,
-      "memory_pct": 45.9
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 58.54,
+      "cpu_pct": 30.1,
+      "memory_pct": 42.9
     },
     {
       "device_id": "DEV-0201",
@@ -3313,11 +1819,11 @@
       "name": "ATM自助终端 01",
       "kind": "ATM自助终端",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 59.31,
-      "cpu_pct": 33.9,
-      "memory_pct": 39.2
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 51.21,
+      "cpu_pct": 27.2,
+      "memory_pct": 45.6
     },
     {
       "device_id": "DEV-0202",
@@ -3325,11 +1831,11 @@
       "name": "智能柜台 02",
       "kind": "智能柜台",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 37.17,
-      "cpu_pct": 22.2,
-      "memory_pct": 40.3
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 29.13,
+      "cpu_pct": 35.7,
+      "memory_pct": 37.7
     },
     {
       "device_id": "DEV-0203",
@@ -3337,11 +1843,11 @@
       "name": "网络网关 03",
       "kind": "网络网关",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 45.07,
-      "cpu_pct": 33.7,
-      "memory_pct": 46.0
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 56.76,
+      "cpu_pct": 31.6,
+      "memory_pct": 41.6
     },
     {
       "device_id": "DEV-0204",
@@ -3349,11 +1855,11 @@
       "name": "自助打印 04",
       "kind": "自助打印",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 59.95,
-      "cpu_pct": 34.8,
-      "memory_pct": 40.7
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 54.26,
+      "cpu_pct": 25.3,
+      "memory_pct": 45.9
     },
     {
       "device_id": "DEV-0205",
@@ -3361,11 +1867,11 @@
       "name": "视频终端 05",
       "kind": "视频终端",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 41.77,
-      "cpu_pct": 24.1,
-      "memory_pct": 38.8
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 24.05,
+      "cpu_pct": 35.2,
+      "memory_pct": 39.2
     },
     {
       "device_id": "DEV-0206",
@@ -3373,11 +1879,11 @@
       "name": "边缘节点 06",
       "kind": "边缘节点",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 40.74,
-      "cpu_pct": 32.5,
-      "memory_pct": 45.8
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 54.32,
+      "cpu_pct": 33.0,
+      "memory_pct": 40.3
     },
     {
       "device_id": "DEV-0301",
@@ -3385,11 +1891,11 @@
       "name": "ATM自助终端 01",
       "kind": "ATM自助终端",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 59.86,
-      "cpu_pct": 35.5,
-      "memory_pct": 42.0
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 56.71,
+      "cpu_pct": 23.4,
+      "memory_pct": 46.0
     },
     {
       "device_id": "DEV-0302",
@@ -3397,11 +1903,11 @@
       "name": "智能柜台 02",
       "kind": "智能柜台",
       "source": "synthetic",
-      "status": "warning",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 46.01,
-      "cpu_pct": 26.1,
-      "memory_pct": 37.2
+      "status": "online",
+      "last_seen": 1793613531.305683,
+      "latency_ms": 29.03,
+      "cpu_pct": 34.5,
+      "memory_pct": 40.7
     },
     {
       "device_id": "DEV-0303",
@@ -3410,10 +1916,10 @@
       "kind": "网络网关",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 36.08,
-      "cpu_pct": 31.1,
-      "memory_pct": 45.4
+      "last_seen": 1793613531.305683,
+      "latency_ms": 51.28,
+      "cpu_pct": 34.1,
+      "memory_pct": 38.7
     },
     {
       "device_id": "DEV-0304",
@@ -3422,10 +1928,10 @@
       "kind": "自助打印",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 59.06,
-      "cpu_pct": 35.9,
-      "memory_pct": 43.2
+      "last_seen": 1793613531.305683,
+      "latency_ms": 58.51,
+      "cpu_pct": 22.6,
+      "memory_pct": 45.8
     },
     {
       "device_id": "DEV-0305",
@@ -3434,10 +1940,10 @@
       "kind": "视频终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 49.81,
-      "cpu_pct": 27.9,
-      "memory_pct": 35.5
+      "last_seen": 1793613531.305683,
+      "latency_ms": 34.01,
+      "cpu_pct": 33.4,
+      "memory_pct": 42.0
     },
     {
       "device_id": "DEV-0306",
@@ -3446,10 +1952,10 @@
       "kind": "边缘节点",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 31.17,
-      "cpu_pct": 29.5,
-      "memory_pct": 44.8
+      "last_seen": 1793613531.305683,
+      "latency_ms": 47.69,
+      "cpu_pct": 35.0,
+      "memory_pct": 37.1
     },
     {
       "device_id": "DEV-0401",
@@ -3458,10 +1964,10 @@
       "kind": "ATM自助终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 57.56,
-      "cpu_pct": 36.0,
-      "memory_pct": 44.2
+      "last_seen": 1793613531.305683,
+      "latency_ms": 59.61,
+      "cpu_pct": 24.6,
+      "memory_pct": 45.4
     },
     {
       "device_id": "DEV-0402",
@@ -3470,10 +1976,10 @@
       "kind": "智能柜台",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 53.09,
-      "cpu_pct": 29.6,
-      "memory_pct": 34.2
+      "last_seen": 1793613531.305683,
+      "latency_ms": 38.79,
+      "cpu_pct": 32.2,
+      "memory_pct": 43.2
     },
     {
       "device_id": "DEV-0403",
@@ -3482,10 +1988,10 @@
       "kind": "网络网关",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 26.12,
-      "cpu_pct": 27.7,
-      "memory_pct": 44.0
+      "last_seen": 1793613531.305683,
+      "latency_ms": 43.63,
+      "cpu_pct": 35.6,
+      "memory_pct": 35.5
     },
     {
       "device_id": "DEV-0404",
@@ -3494,10 +2000,10 @@
       "kind": "自助打印",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 55.39,
-      "cpu_pct": 35.8,
-      "memory_pct": 45.0
+      "last_seen": 1793613531.305683,
+      "latency_ms": 60.0,
+      "cpu_pct": 26.5,
+      "memory_pct": 44.8
     },
     {
       "device_id": "DEV-0405",
@@ -3506,10 +2012,10 @@
       "kind": "视频终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 55.79,
-      "cpu_pct": 31.2,
-      "memory_pct": 35.9
+      "last_seen": 1793613531.305683,
+      "latency_ms": 43.27,
+      "cpu_pct": 30.7,
+      "memory_pct": 44.2
     },
     {
       "device_id": "DEV-0406",
@@ -3518,10 +2024,10 @@
       "kind": "边缘节点",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 26.97,
-      "cpu_pct": 25.9,
-      "memory_pct": 43.0
+      "last_seen": 1793613531.305683,
+      "latency_ms": 39.17,
+      "cpu_pct": 35.9,
+      "memory_pct": 34.2
     },
     {
       "device_id": "DEV-0501",
@@ -3530,10 +2036,10 @@
       "kind": "ATM自助终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 52.59,
-      "cpu_pct": 35.4,
-      "memory_pct": 45.6
+      "last_seen": 1793613531.305683,
+      "latency_ms": 59.67,
+      "cpu_pct": 28.3,
+      "memory_pct": 44.0
     },
     {
       "device_id": "DEV-0502",
@@ -3542,10 +2048,10 @@
       "kind": "智能柜台",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 57.86,
-      "cpu_pct": 32.6,
-      "memory_pct": 37.5
+      "last_seen": 1793613531.305683,
+      "latency_ms": 47.37,
+      "cpu_pct": 29.1,
+      "memory_pct": 45.0
     },
     {
       "device_id": "DEV-0503",
@@ -3554,10 +2060,10 @@
       "kind": "网络网关",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 32.0,
-      "cpu_pct": 23.9,
-      "memory_pct": 41.7
+      "last_seen": 1793613531.305683,
+      "latency_ms": 34.42,
+      "cpu_pct": 36.0,
+      "memory_pct": 35.9
     },
     {
       "device_id": "DEV-0504",
@@ -3566,10 +2072,10 @@
       "kind": "自助打印",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 49.21,
-      "cpu_pct": 34.7,
-      "memory_pct": 45.9
+      "last_seen": 1793613531.305683,
+      "latency_ms": 58.62,
+      "cpu_pct": 30.0,
+      "memory_pct": 42.9
     },
     {
       "device_id": "DEV-0505",
@@ -3578,10 +2084,10 @@
       "kind": "视频终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 59.25,
-      "cpu_pct": 33.8,
-      "memory_pct": 39.1
+      "last_seen": 1793613531.305683,
+      "latency_ms": 51.0,
+      "cpu_pct": 27.3,
+      "memory_pct": 45.6
     },
     {
       "device_id": "DEV-0506",
@@ -3590,10 +2096,10 @@
       "kind": "边缘节点",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 36.88,
-      "cpu_pct": 22.0,
-      "memory_pct": 40.4
+      "last_seen": 1793613531.305683,
+      "latency_ms": 29.45,
+      "cpu_pct": 35.8,
+      "memory_pct": 37.6
     },
     {
       "device_id": "DEV-0601",
@@ -3602,10 +2108,10 @@
       "kind": "ATM自助终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 45.33,
-      "cpu_pct": 33.8,
-      "memory_pct": 46.0
+      "last_seen": 1793613531.305683,
+      "latency_ms": 56.89,
+      "cpu_pct": 31.6,
+      "memory_pct": 41.7
     },
     {
       "device_id": "DEV-0602",
@@ -3614,10 +2120,10 @@
       "kind": "智能柜台",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 59.93,
-      "cpu_pct": 34.7,
-      "memory_pct": 40.6
+      "last_seen": 1793613531.305683,
+      "latency_ms": 54.09,
+      "cpu_pct": 25.4,
+      "memory_pct": 45.9
     },
     {
       "device_id": "DEV-0603",
@@ -3626,10 +2132,10 @@
       "kind": "网络网关",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 41.49,
-      "cpu_pct": 24.0,
-      "memory_pct": 38.9
+      "last_seen": 1793613531.305683,
+      "latency_ms": 24.37,
+      "cpu_pct": 35.3,
+      "memory_pct": 39.1
     },
     {
       "device_id": "DEV-0604",
@@ -3638,10 +2144,10 @@
       "kind": "自助打印",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 41.03,
-      "cpu_pct": 32.6,
-      "memory_pct": 45.9
+      "last_seen": 1793613531.305683,
+      "latency_ms": 54.49,
+      "cpu_pct": 32.9,
+      "memory_pct": 40.3
     },
     {
       "device_id": "DEV-0605",
@@ -3650,10 +2156,10 @@
       "kind": "视频终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 59.89,
-      "cpu_pct": 35.4,
-      "memory_pct": 42.0
+      "last_seen": 1793613531.305683,
+      "latency_ms": 56.58,
+      "cpu_pct": 23.5,
+      "memory_pct": 46.0
     },
     {
       "device_id": "DEV-0606",
@@ -3662,10 +2168,10 @@
       "kind": "边缘节点",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 45.76,
-      "cpu_pct": 25.9,
-      "memory_pct": 37.3
+      "last_seen": 1793613531.305683,
+      "latency_ms": 28.71,
+      "cpu_pct": 34.5,
+      "memory_pct": 40.6
     },
     {
       "device_id": "DEV-0701",
@@ -3674,10 +2180,10 @@
       "kind": "ATM自助终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 36.38,
-      "cpu_pct": 31.2,
-      "memory_pct": 45.5
+      "last_seen": 1793613531.305683,
+      "latency_ms": 51.49,
+      "cpu_pct": 34.0,
+      "memory_pct": 38.8
     },
     {
       "device_id": "DEV-0702",
@@ -3686,10 +2192,10 @@
       "kind": "智能柜台",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 59.13,
-      "cpu_pct": 35.9,
-      "memory_pct": 43.1
+      "last_seen": 1793613531.305683,
+      "latency_ms": 58.41,
+      "cpu_pct": 22.5,
+      "memory_pct": 45.9
     },
     {
       "device_id": "DEV-0703",
@@ -3698,10 +2204,10 @@
       "kind": "网络网关",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 49.59,
-      "cpu_pct": 27.8,
-      "memory_pct": 35.6
+      "last_seen": 1793613531.305683,
+      "latency_ms": 33.7,
+      "cpu_pct": 33.5,
+      "memory_pct": 42.0
     },
     {
       "device_id": "DEV-0704",
@@ -3710,10 +2216,10 @@
       "kind": "自助打印",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 31.48,
-      "cpu_pct": 29.6,
-      "memory_pct": 44.9
+      "last_seen": 1793613531.305683,
+      "latency_ms": 47.93,
+      "cpu_pct": 34.9,
+      "memory_pct": 37.2
     },
     {
       "device_id": "DEV-0705",
@@ -3722,10 +2228,10 @@
       "kind": "视频终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 57.68,
-      "cpu_pct": 36.0,
-      "memory_pct": 44.1
+      "last_seen": 1793613531.305683,
+      "latency_ms": 59.56,
+      "cpu_pct": 24.5,
+      "memory_pct": 45.5
     },
     {
       "device_id": "DEV-0706",
@@ -3734,10 +2240,10 @@
       "kind": "边缘节点",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 52.9,
-      "cpu_pct": 29.5,
-      "memory_pct": 34.1
+      "last_seen": 1793613531.305683,
+      "latency_ms": 38.5,
+      "cpu_pct": 32.3,
+      "memory_pct": 43.2
     },
     {
       "device_id": "DEV-0801",
@@ -3746,10 +2252,10 @@
       "kind": "ATM自助终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 26.44,
-      "cpu_pct": 27.9,
-      "memory_pct": 44.0
+      "last_seen": 1793613531.305683,
+      "latency_ms": 43.9,
+      "cpu_pct": 35.6,
+      "memory_pct": 35.6
     },
     {
       "device_id": "DEV-0802",
@@ -3758,9 +2264,9 @@
       "kind": "智能柜台",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 55.54,
-      "cpu_pct": 35.9,
+      "last_seen": 1793613531.305683,
+      "latency_ms": 60.0,
+      "cpu_pct": 26.4,
       "memory_pct": 44.9
     },
     {
@@ -3770,10 +2276,10 @@
       "kind": "网络网关",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 55.64,
-      "cpu_pct": 31.1,
-      "memory_pct": 35.8
+      "last_seen": 1793613531.305683,
+      "latency_ms": 43.0,
+      "cpu_pct": 30.8,
+      "memory_pct": 44.2
     },
     {
       "device_id": "DEV-0804",
@@ -3782,10 +2288,10 @@
       "kind": "自助打印",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 26.65,
-      "cpu_pct": 26.0,
-      "memory_pct": 43.0
+      "last_seen": 1793613531.305683,
+      "latency_ms": 39.46,
+      "cpu_pct": 35.9,
+      "memory_pct": 34.1
     },
     {
       "device_id": "DEV-0805",
@@ -3794,10 +2300,10 @@
       "kind": "视频终端",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 52.78,
-      "cpu_pct": 35.5,
-      "memory_pct": 45.5
+      "last_seen": 1793613531.305683,
+      "latency_ms": 59.71,
+      "cpu_pct": 28.2,
+      "memory_pct": 44.0
     },
     {
       "device_id": "DEV-0806",
@@ -3806,10 +2312,10 @@
       "kind": "边缘节点",
       "source": "synthetic",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 57.75,
-      "cpu_pct": 32.5,
-      "memory_pct": 37.4
+      "last_seen": 1793613531.305683,
+      "latency_ms": 47.13,
+      "cpu_pct": 29.2,
+      "memory_pct": 45.0
     },
     {
       "device_id": "SERVICE-API",
@@ -3818,10 +2324,10 @@
       "kind": "服务节点",
       "source": "measured",
       "status": "online",
-      "last_seen": 1793535829.9438574,
+      "last_seen": 1793613531.305683,
       "latency_ms": null,
-      "cpu_pct": 12.2,
-      "memory_pct": 54.3
+      "cpu_pct": 6.9,
+      "memory_pct": 56.1
     },
     {
       "device_id": "SERVICE-DB",
@@ -3830,104 +2336,104 @@
       "kind": "服务节点",
       "source": "measured",
       "status": "online",
-      "last_seen": 1793535829.9438574,
-      "latency_ms": 1.03,
-      "cpu_pct": 12.2,
-      "memory_pct": 54.3
+      "last_seen": 1793613531.305683,
+      "latency_ms": 1.62,
+      "cpu_pct": 6.9,
+      "memory_pct": 56.1
     }
   ],
   "device_statuses": {
-    "warning": 14,
-    "online": 36
+    "warning": 1,
+    "online": 49
   },
   "request_sources": {
-    "synthetic": 834,
-    "rule": 3
+    "synthetic": 404,
+    "rule": 22
   },
   "events": [
     {
-      "event_ts": 1793535829.9595747,
-      "event_type": "ticket_created",
-      "branch_id": "B07",
-      "ref_id": "WO-CDAFD338AE",
-      "actor": "SYSTEM"
+      "event_ts": 1793613535.9316754,
+      "event_type": "auth_login",
+      "branch_id": "B08",
+      "ref_id": "客户043F50",
+      "actor": "IDENTITY"
     },
     {
-      "event_ts": 1793535804.867897,
-      "event_type": "ticket_created",
-      "branch_id": "B07",
-      "ref_id": "WO-D5E4FE5FC4",
-      "actor": "SYSTEM"
+      "event_ts": 1793613138.014744,
+      "event_type": "auth_logout",
+      "branch_id": "B08",
+      "ref_id": null,
+      "actor": "IDENTITY"
     },
     {
-      "event_ts": 1793535779.787343,
+      "event_ts": 1793613129.0267816,
       "event_type": "ticket_created",
       "branch_id": "B08",
-      "ref_id": "WO-24637817CE",
+      "ref_id": "WO-C1D7651271",
       "actor": "SYSTEM"
     },
     {
-      "event_ts": 1793535754.6979465,
+      "event_ts": 1793613111.4540443,
       "event_type": "ticket_created",
       "branch_id": "B08",
-      "ref_id": "WO-E5FA7F94D0",
+      "ref_id": "WO-4208CE51EC",
       "actor": "SYSTEM"
     },
     {
-      "event_ts": 1793535729.6061993,
-      "event_type": "ticket_created",
+      "event_ts": 1793613089.227712,
+      "event_type": "auth_login",
       "branch_id": "B08",
-      "ref_id": "WO-C14AA5CB62",
-      "actor": "SYSTEM"
+      "ref_id": "客户24395B",
+      "actor": "IDENTITY"
     },
     {
-      "event_ts": 1793535704.5105777,
-      "event_type": "ticket_created",
+      "event_ts": 1793613082.2541065,
+      "event_type": "auth_registered",
       "branch_id": "B08",
-      "ref_id": "WO-9AC121DFB2",
-      "actor": "SYSTEM"
+      "ref_id": "客户24395B",
+      "actor": "IDENTITY"
     },
     {
-      "event_ts": 1793535679.3984246,
-      "event_type": "ticket_created",
+      "event_ts": 1793612709.0888693,
+      "event_type": "auth_login",
       "branch_id": "B08",
-      "ref_id": "WO-877656909C",
-      "actor": "SYSTEM"
+      "ref_id": "客户F58674",
+      "actor": "IDENTITY"
     },
     {
-      "event_ts": 1793535654.2948043,
-      "event_type": "ticket_created",
-      "branch_id": "B06",
-      "ref_id": "WO-CA2B71FD36",
-      "actor": "SYSTEM"
-    },
-    {
-      "event_ts": 1793535629.189085,
-      "event_type": "ticket_created",
-      "branch_id": "B06",
-      "ref_id": "WO-9BF87E3661",
-      "actor": "SYSTEM"
-    },
-    {
-      "event_ts": 1793535604.0871572,
-      "event_type": "ticket_created",
-      "branch_id": "B03",
-      "ref_id": "WO-87CA82AD2F",
-      "actor": "SYSTEM"
-    },
-    {
-      "event_ts": 1793535439.940326,
-      "event_type": "audit_legacy_archive",
+      "event_ts": 1793612672.298983,
+      "event_type": "auth_logout",
       "branch_id": "B08",
-      "ref_id": "AUDIT-V4",
-      "actor": "SYSTEM"
+      "ref_id": null,
+      "actor": "IDENTITY"
     },
     {
-      "event_ts": 1793535420.1511083,
-      "event_type": "ticket_created",
-      "branch_id": "B03",
-      "ref_id": "WO-996E3CA0D9",
-      "actor": "SYSTEM"
+      "event_ts": 1793612125.4285262,
+      "event_type": "auth_login",
+      "branch_id": "B08",
+      "ref_id": "客户043F50",
+      "actor": "IDENTITY"
+    },
+    {
+      "event_ts": 1793611994.0205,
+      "event_type": "auth_logout",
+      "branch_id": "B08",
+      "ref_id": null,
+      "actor": "IDENTITY"
+    },
+    {
+      "event_ts": 1793611734.3660805,
+      "event_type": "auth_login",
+      "branch_id": "B08",
+      "ref_id": "客户F58674",
+      "actor": "IDENTITY"
+    },
+    {
+      "event_ts": 1793611724.1354985,
+      "event_type": "auth_registered",
+      "branch_id": "B08",
+      "ref_id": "客户F58674",
+      "actor": "IDENTITY"
     }
   ],
   "definitions": {

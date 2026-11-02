@@ -1,0 +1,13 @@
+(()=>{'use strict';
+const allowed=['/app','/assistant','/ops','/app#workspace','/app#dashboard'];
+const safeNext=value=>allowed.includes(value)?value:'/app';
+let csrf='',user=null;
+function expired(){window.DigitalHuman?.stop();document.documentElement.style.visibility='hidden';location.replace('/login?next='+encodeURIComponent(safeNext(location.pathname+location.hash)));}
+async function request(url,data){const r=await fetch(url,data===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json','X-Bank-CSRF':csrf},body:JSON.stringify(data)});if(r.status===401){expired();throw Error('登录已过期');}return r;}
+const ready=(async()=>{try{const r=await fetch('/api/auth/me');if(!r.ok)throw Error('身份服务暂不可用');const d=await r.json();csrf=d.csrf;user=d.user;if(document.body.hasAttribute('data-protected')&&!d.authenticated){expired();return null;}document.querySelectorAll('[data-user-name]').forEach(el=>{el.textContent=user?.display_name||'';});document.querySelectorAll('[data-demo-badge]').forEach(el=>{el.textContent=user?.is_demo?'共享演示身份':'独立模拟账户';});document.querySelectorAll('[data-ops-link]').forEach(el=>{el.hidden=!user?.can_view_ops;});document.querySelectorAll('[data-logout]').forEach(el=>el.addEventListener('click',async()=>{el.disabled=true;try{const result=await request('/api/auth/logout',{});if(!result.ok)throw Error();window.DigitalHuman?.stop();document.documentElement.style.visibility='hidden';location.replace('/login');}catch{el.disabled=false;el.textContent='退出失败，请重试';}}));return d;}catch(e){document.querySelectorAll('[data-session-error]').forEach(el=>{el.hidden=false;el.textContent='身份服务暂不可用，请检查数据库后刷新页面。';});return null;}})();
+let checking=false;
+async function validateOnReturn(){if(checking||!document.body.hasAttribute('data-protected'))return;checking=true;try{await ready;const r=await fetch('/api/auth/me');if(!r.ok)return;const d=await r.json();if(!d.authenticated){expired();return;}if(user&&(d.user.username!==user.username||d.user.is_demo!==user.is_demo||d.csrf!==csrf)){document.documentElement.style.visibility='hidden';location.reload();return;}csrf=d.csrf;}catch{}finally{checking=false;}}
+addEventListener('pageshow',e=>{if(e.persisted&&document.body.hasAttribute('data-protected')){document.documentElement.style.visibility='hidden';location.reload();}});
+addEventListener('focus',validateOnReturn);document.addEventListener('visibilitychange',()=>{if(!document.hidden)validateOnReturn();});
+window.BankSession={ready,request,api:async(url,data)=>(await request(url,data)).json(),safeNext,csrf:()=>csrf,user:()=>user,expired};
+})();

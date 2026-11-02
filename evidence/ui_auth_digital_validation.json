@@ -1,0 +1,59 @@
+{
+  "version": "4.0.0",
+  "date": "2026-11-02",
+  "method": "CUA visible browser interactions and read-only DOM inspection",
+  "isolated_ui_database": true,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "width": 820,
+      "height": 1180
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "verified": [
+    "banking blue/white tokens preserved",
+    "registration password mismatch shown",
+    "registration success returns to login with safe next",
+    "username prefilled and password cleared",
+    "new account login returns to requested assistant",
+    "independent zero-balance account",
+    "customer ops link hidden",
+    "grounded KB-02 consultation and sources",
+    "guiding avatar state",
+    "suggested action asks for missing recipient",
+    "medium-risk confirmation gate",
+    "pending confirmation restored after navigation to workbench",
+    "high-risk password and simulated OTP",
+    "cancellation preserves demo balance",
+    "explicit shared-demo label",
+    "local Chinese voice available, disabled by default",
+    "390px login and register have no horizontal overflow",
+    "390px assistant has no horizontal overflow",
+    "820px assistant has no horizontal overflow",
+    "1440px forms fit",
+    "1920px service hall has no horizontal overflow",
+    "sample dashboard has twelve ECharts",
+    "empty customer dashboard has twelve charts without JS error",
+    "operations has six charts and seven visible employee rows",
+    "employee list clientHeight=scrollHeight=313 at 1920px",
+    "logout returns to canonical login",
+    "help closes on Escape and restores focus",
+    "browser error log empty at inspected final customer page"
+  ],
+  "limits": [
+    "No human listening quality review of system TTS",
+    "No physical robot, biometric capture or production KYC",
+    "Screenshots are separately captured synthetic development snapshots, not one continuous recording"
+  ]
+}

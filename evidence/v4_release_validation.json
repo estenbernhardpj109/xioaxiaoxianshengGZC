@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-02",
+  "version": "4.0.0",
+  "automated_tests": [
+    {
+      "file": "test_results.json",
+      "run": 45,
+      "passed": 45
+    },
+    {
+      "file": "http_results.json",
+      "run": 15,
+      "passed": 15
+    },
+    {
+      "file": "mysql_ops_results.json",
+      "run": 35,
+      "passed": 35
+    },
+    {
+      "file": "auth_digital_results.json",
+      "run": 44,
+      "passed": 44
+    },
+    {
+      "file": "ops_ui_state_results.json",
+      "run": 4,
+      "passed": 4
+    }
+  ],
+  "automated_total": 143,
+  "ui_observations": 28,
+  "database_tables": 15,
+  "pdf_pages": {
+    "技术文档.pdf": 15,
+    "安全自评报告.pdf": 5,
+    "部署说明.pdf": 3,
+    "规则与提交清单.pdf": 3
+  },
+  "slides": 12,
+  "native_charts": 4,
+  "embedded_workbooks": 4,
+  "speaker_seconds": 540,
+  "video_seconds": 296,
+  "intro_characters": 191,
+  "private_runtime_excluded": true,
+  "platform_upload_performed": false,
+  "primary_mysql_ui_verified": true,
+  "preexisting_financial_state_unchanged": true
+}

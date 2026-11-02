@@ -20,7 +20,7 @@ for p in sorted(ROOT.rglob('*')):
     if not p.resolve().is_relative_to(ROOT.resolve()):raise RuntimeError('Source link points outside project')
     if re.search(rb'sk-[A-Za-z0-9_-]{20,}',p.read_bytes()):raise RuntimeError('Credential-like data found: '+str(rel))
     files.append(p)
-manifest={'project':'知行银行智能体','version':'3.0.0','files':[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]}
+manifest={'project':'知行银行智能体','version':'4.0.0','files':[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]}
 mp=ROOT/'evidence/提交文件校验清单.json';mp.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8');files.append(mp)
 target=OUT/'知行银行智能体_参赛提交包.zip'
 with ZipFile(target,'w',ZIP_DEFLATED,compresslevel=9) as z:

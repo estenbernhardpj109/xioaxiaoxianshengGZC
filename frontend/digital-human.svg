@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 500" role="img" aria-labelledby="avatar-title avatar-desc">
+<title id="avatar-title">知小行，银行数字服务伙伴</title><desc id="avatar-desc">身穿深蓝银行制服、佩戴知行胸牌的原创插画数字人，微笑面向用户。</desc>
+<defs>
+ <linearGradient id="suit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#234d83"/><stop offset="1" stop-color="#0b2549"/></linearGradient>
+ <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe5d1"/><stop offset="1" stop-color="#edb8a0"/></linearGradient>
+ <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#38465c"/><stop offset=".55" stop-color="#1d293f"/><stop offset="1" stop-color="#131c2e"/></linearGradient>
+ <linearGradient id="scarf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#79cbe5"/><stop offset="1" stop-color="#3278ca"/></linearGradient>
+ <radialGradient id="cheek"><stop stop-color="#e39185" stop-opacity=".55"/><stop offset="1" stop-color="#e39185" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="220" cy="481" rx="149" ry="13" fill="#183963" opacity=".1"/>
+<g class="avatar-person">
+ <path d="M142 206C116 162 124 88 154 65C189 33 258 37 289 70C322 106 311 169 301 212L310 302H131Z" fill="url(#hair)"/>
+ <path d="M176 271L174 314L220 344L266 314L260 268Z" fill="url(#skin)"/>
+ <path d="M175 276C190 298 247 299 262 274L263 286C238 308 196 307 176 290Z" fill="#d39b87" opacity=".35"/>
+ <path d="M80 462L94 366Q99 338 140 325L176 309L220 335L266 309L307 325Q345 340 350 372L361 474H80Z" fill="url(#suit)"/>
+ <path d="M178 312L220 332L265 312L249 475H192Z" fill="#f1f7fd"/>
+ <path d="M178 308L217 333L197 360L170 326Z" fill="#fff"/><path d="M263 308L222 333L244 361L273 326Z" fill="#fff"/>
+ <path d="M157 318L186 346L177 366L204 430L180 474H105L116 365Z" fill="#2c5584"/>
+ <path d="M282 318L255 347L266 366L236 430L263 474H340L328 365Z" fill="#16395f"/>
+ <path d="M192 319L220 337L245 320L241 339L220 354L195 337Z" fill="url(#scarf)"/>
+ <path d="M220 345L236 348L250 401L223 384L211 357Z" fill="url(#scarf)"/><path d="M219 346L207 359L197 385L219 374L227 350Z" fill="#7bc5e2"/>
+ <path d="M129 381L116 472M311 381L324 472" stroke="#7e9bb7" stroke-width="2" opacity=".3"/>
+ <rect x="267" y="371" width="43" height="27" rx="4" fill="#e8f3ff"/><path d="M275 377H284V387H275Z" fill="#2676c5"/><path d="M290 379H303M290 384H300" stroke="#54718e" stroke-width="2"/>
+ <circle cx="220" cy="430" r="3" fill="#aac0d5"/>
+ <ellipse cx="147" cy="191" rx="13" ry="21" fill="#edb8a0"/><ellipse cx="292" cy="191" rx="13" ry="21" fill="#edb8a0"/>
+ <path d="M148 141Q148 91 218 89Q289 90 292 145L286 215Q278 258 248 277Q221 294 193 277Q160 257 152 217Z" fill="url(#skin)"/>
+ <path d="M144 171Q133 112 161 85Q207 48 262 79Q303 100 296 171L282 150Q247 129 228 97Q204 129 166 139Z" fill="url(#hair)"/>
+ <path d="M158 116Q177 78 221 76M236 82Q266 91 280 117" stroke="#566278" stroke-width="4" opacity=".5" fill="none" stroke-linecap="round"/>
+ <path d="M165 166Q180 157 195 164M244 164Q259 158 274 166" stroke="#584746" stroke-width="4" fill="none" stroke-linecap="round"/>
+ <g class="avatar-eyes">
+  <path d="M163 185Q179 170 197 185Q181 196 163 185M243 185Q259 171 276 185Q260 195 243 185" fill="#fff9f5"/>
+  <ellipse cx="181" cy="184" rx="7" ry="9" fill="#3d485d"/><ellipse cx="259" cy="184" rx="7" ry="9" fill="#3d485d"/>
+  <circle cx="183" cy="181" r="2.3" fill="white"/><circle cx="261" cy="181" r="2.3" fill="white"/>
+  <path d="M163 184Q180 171 197 183M243 183Q260 171 276 184" stroke="#514342" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+ </g>
+ <path d="M218 188L212 215Q218 221 227 216" stroke="#d09b87" stroke-width="2.3" fill="none" stroke-linecap="round"/>
+ <ellipse cx="176" cy="221" rx="24" ry="15" fill="url(#cheek)"/><ellipse cx="263" cy="221" rx="24" ry="15" fill="url(#cheek)"/>
+ <g class="avatar-mouth"><path d="M199 239Q219 248 242 238Q224 260 207 249Z" fill="#b26c69"/><path d="M204 241Q221 247 237 240" stroke="#fff3e9" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+ <circle cx="150" cy="215" r="4" fill="#f2d7a2"/><circle cx="289" cy="215" r="4" fill="#f2d7a2"/>
+ <path d="M285 188Q310 186 305 219L278 231" stroke="#728cab" stroke-width="4" fill="none" stroke-linecap="round"/>
+ <rect x="263" y="227" width="18" height="7" rx="3.5" fill="#31567a"/>
+</g>
+</svg>

@@ -49,7 +49,7 @@ with tempfile.TemporaryDirectory() as td:
     try:
         store.initialize(core,audit);operations.seed(store);operations.collect(store)
         tables=store.query('SHOW TABLES')
-        check('twelve project tables created in isolated schema',len(tables)==12)
+        check('fifteen project tables created in isolated schema',len(tables)==15)
         base=core.get_account()['balance'];tx0=len(core._data['transactions']);audit0=len(audit._mem)
         try:
             with unit_of_work(core,audit,agent.mgr):
@@ -83,7 +83,7 @@ with tempfile.TemporaryDirectory() as td:
                 with unit_of_work(core,audit,agent.mgr):core.transfer('李婷',3)
         except OSError:pass
         check('connection outage fails closed without file fallback',core._data==before and not Path(os.environ['BANK_STATE_FILE']).exists())
-        check('model source is correctly attributed',operations.request_record({'planner_source':'deepseek_tool_call','plan':[]},1)[2]=='llm')
+        check('model source is correctly attributed',operations.request_record({'planner_source':'deepseek_tool_call','plan':[]},1)[2]=='llm' and operations.request_record({'planner_source':'knowledge_llm_router','plan':None},1)[2]=='llm')
         check('clarification is not falsely classified as bill analysis',operations.request_record({'plan':[]},1)[3]=='general')
         for op in ('same_time_one','same_time_two'):
             audit.record({'operation':op,'ts':time.time()//10*10,'risk':'LOW','success':True})
@@ -159,13 +159,23 @@ with tempfile.TemporaryDirectory() as td:
         proc=start();health=ready();csrf=health['csrf']
         check('HTTP actually runs MySQL backend',health['storage']=='mysql')
         check('anonymous ops read requires browser session',req(client(),'/api/ops/snapshot')[0]==401)
+        csrf=req(a,'/api/auth/demo',{},csrf)[1]['csrf']
         check('leader cannot mutate operational data',req(a,'/api/ops/action',{'action':'simulator','enabled':True},csrf)[0]==403)
         check('client-supplied role does not grant access',req(a,'/api/ops/action',{'action':'simulator','enabled':True,'role':'manager'},csrf)[0]==403)
         check('invalid manager password refused',req(a,'/api/ops/login',{'password':'wrong'},csrf)[0]==403)
         check('manager login verified server-side',req(a,'/api/ops/login',{'password':pin},csrf)[0]==200)
         check('ops writes still require CSRF',req(a,'/api/ops/action',{'action':'simulator','enabled':True})[0]==403)
         h2=req(b,'/api/health')[1]
-        check('manager role cannot leak to a second browser',req(b,'/api/ops/action',{'action':'simulator','enabled':True},h2['csrf'])[0]==403)
+        h2['csrf']=req(b,'/api/auth/demo',{},h2['csrf'])[1]['csrf']
+        mixed=client()
+        jar_a=next(h.cookiejar for h in a.handlers if isinstance(h,urllib.request.HTTPCookieProcessor))
+        jar_b=next(h.cookiejar for h in b.handlers if isinstance(h,urllib.request.HTTPCookieProcessor))
+        jar_mixed=next(h.cookiejar for h in mixed.handlers if isinstance(h,urllib.request.HTTPCookieProcessor))
+        for cookie in jar_a:
+            if cookie.name=='bank_client':jar_mixed.set_cookie(copy.copy(cookie))
+        for cookie in jar_b:
+            if cookie.name=='bank_auth':jar_mixed.set_cookie(copy.copy(cookie))
+        check('manager elevation cannot cross browser or authentication-session boundaries',req(b,'/api/ops/action',{'action':'simulator','enabled':True},h2['csrf'])[0]==403 and req(mixed,'/api/ops/action',{'action':'simulator','enabled':True},csrf)[0]==403)
         check('unknown filter and SQL injection input rejected',req(a,'/api/ops/snapshot?branch=B01%27%3BDELETE%20FROM%20zx_requests%3B--')[0]==400 and req(a,'/api/ops/snapshot?period=year')[0]==400)
         _,result=req(a,'/api/chat',{'text':'给李婷转10元'},csrf);pending=result['pending_confirm']
         status,result=req(a,'/api/confirm',{'session_id':result['session_id'],'step_id':pending['step_id'],'confirmed':True},csrf)
@@ -197,6 +207,6 @@ with tempfile.TemporaryDirectory() as td:
             assert database.startswith('zx_test_') and len(database)==20
             cur=cn.cursor();cur.execute('DROP DATABASE `'+database+'`');cur.close()
         finally:cn.close()
-        result={'suite':'mysql_operations_integration','date':'2026-11-01','isolated_test_schema':True,'run':len(checks),'passed':sum(c['pass'] for c in checks),'checks':checks}
+        result={'suite':'mysql_operations_integration','date':'2026-11-02','isolated_test_schema':True,'run':len(checks),'passed':sum(c['pass'] for c in checks),'checks':checks}
         (ROOT/'evidence/mysql_ops_results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
         print(json.dumps(result,ensure_ascii=False))

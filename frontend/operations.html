@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>知行银行 · 运营指挥中心</title><link rel="stylesheet" href="/static/operations.css"></head>
-<body><div class="wall" id="wall">
+<body data-protected><div class="wall" id="wall">
 <header class="topbar"><a class="brand" href="/"><span class="brand-icon">知</span><span>知行银行<small>ZHIXING BANK</small></span></a><div class="title"><span class="eyebrow">OPERATIONS INTELLIGENCE</span><h1>运营指挥中心</h1></div><div class="top-tools"><span id="connection" class="connection connecting">连接中</span><time id="clock"></time><button id="fullscreen" aria-label="切换全屏">全屏 ⛶</button><button id="roleButton">领导视图 ▾</button></div></header>
 <section class="kpis" aria-label="运营关键指标">
 <article class="kpi"><span>业务流水笔数 <i>01</i></span><strong id="kTransactions">—</strong><small>入账与出账流水 · <b class="period-label">近7日</b></small></article>
@@ -22,11 +22,11 @@
 </div>
 <div class="column right-col">
 <section class="panel device-panel"><div class="panel-head"><h2>设备与服务健康</h2><button class="text-button" id="deviceDetail">设备明细 ↗</button></div><div class="device-overview"><div id="deviceChart" role="img" aria-label="设备当前状态分布"></div><div class="device-totals"><span><i class="dot good"></i>正常 <b id="deviceOnline">—</b></span><span><i class="dot warn"></i>预警 <b id="deviceWarn">—</b></span><span><i class="dot bad"></i>失联 <b id="deviceStale">—</b></span></div></div><div id="services" class="service-list"></div></section>
-<section class="panel employee-panel"><div class="panel-head"><h2>AI 数字员工</h2><span class="pill blue-pill">六类场景联动</span></div><div class="employee-label"><span>角色 / 服务请求</span><span>成功占比</span></div><div id="employeeList" class="employee-list"></div><div id="sourceSummary" class="source-summary"></div><div class="employee-foot">成功率含待确认与失败请求，按请求计数</div></section>
+<section class="panel employee-panel"><div class="panel-head"><h2>AI 数字员工</h2><span class="pill blue-pill">六类场景 + 通用咨询</span></div><div class="employee-label"><span>角色 / 服务请求</span><span>成功占比</span></div><div id="employeeList" class="employee-list"></div><div id="sourceSummary" class="source-summary"></div><div class="employee-foot">成功率含待确认与失败请求，按请求计数</div></section>
 </div>
 </main>
 <footer class="bottom-bar"><div class="filters"><label>统计范围<select id="period"><option value="today">今日</option><option value="7d" selected>近7日</option><option value="30d">近30日</option></select></label><label>网点<select id="branch"><option value="all">全部网点</option><option value="B01">深圳营业部</option><option value="B02">南山科技园</option><option value="B03">福田中心</option><option value="B04">前海合作区</option><option value="B05">罗湖口岸</option><option value="B06">宝安新安</option><option value="B07">龙华民治</option><option value="B08">线上服务中心</option></select></label><button id="resetFilters">重置</button><button id="nativeSize">1:1 画布</button></div><div class="source-state"><i id="pulse" class="pulse"></i><span id="freshness">等待数据库快照</span><span class="source-tag">模拟业务 / 真实服务监测</span></div><div class="footer-actions"><button id="simulate">演练流 · 查看</button><button id="definitions">指标口径</button><button id="export">脱敏导出 ↓</button></div></footer>
 </div>
 <div class="overlay" id="overlay" hidden><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle"><div class="drawer-head"><div><small id="drawerEyebrow">OPERATIONS DETAIL</small><h2 id="drawerTitle">运营详情</h2></div><button id="closeDrawer" aria-label="关闭详情">×</button></div><div id="drawerBody" class="drawer-body"></div><div id="drawerActions" class="drawer-actions"></div></aside></div>
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
-<script src="/static/vendor/echarts.min.js"></script><script src="/static/operations.js"></script></body></html>
+<script src="/static/session.js"></script><script src="/static/vendor/echarts.min.js"></script><script src="/static/operations.js"></script></body></html>

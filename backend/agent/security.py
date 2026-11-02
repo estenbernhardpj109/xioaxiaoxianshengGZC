@@ -173,7 +173,7 @@ class AnomalyGuard:
                     reasons.append(f"单笔超过 ¥50000，超过单次限额，已拦截")
                     level = "BLOCK"
                 from ..bank.core import get_core
-                recent=[t for t in get_core()._data.get('commitments',[]) if now-t['ts']<600]
+                recent=[t for t in get_core()._data.get('commitments',[]) if now-t['ts']<600 and t.get('owner_id','U1001')==get_core().current_user_id]
                 if len(recent)>=5:
                     reasons.append('十分钟内已累计五次资金承诺，触发安全锁定')
                     level='BLOCK'
@@ -216,6 +216,8 @@ class AuditLog:
 
     def record(self, entry):
         entry = dict(entry)
+        from ..bank.core import get_core
+        entry.setdefault('owner_id',get_core().current_user_id)
         entry.setdefault("ts", time.time())
         with self._lock:
             import hashlib

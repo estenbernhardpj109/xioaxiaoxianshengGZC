@@ -1,0 +1,185 @@
+{
+  "suite": "auth_digital_integration",
+  "date": "2026-11-02",
+  "isolated_test_schema": true,
+  "run": 44,
+  "passed": 44,
+  "checks": [
+    {
+      "name": "scrypt uses random salts for identical passwords",
+      "pass": true
+    },
+    {
+      "name": "registration SQL failure restores bank memory",
+      "pass": true
+    },
+    {
+      "name": "registration SQL failure rolls back identity row",
+      "pass": true
+    },
+    {
+      "name": "password stored only as scrypt-derived salted hash",
+      "pass": true
+    },
+    {
+      "name": "login identity and zero-balance account share stable user ID",
+      "pass": true
+    },
+    {
+      "name": "duplicate registration does not create an orphan account",
+      "pass": true
+    },
+    {
+      "name": "new account cannot see demo transactions, cards or commitments",
+      "pass": true
+    },
+    {
+      "name": "customer safety survives cancellation and is accurately reported",
+      "pass": true
+    },
+    {
+      "name": "unauthenticated workbench redirects to canonical login with return route",
+      "pass": true
+    },
+    {
+      "name": "anonymous cookie is not financial authorisation",
+      "pass": true
+    },
+    {
+      "name": "anonymous assistant cannot execute or consult as a customer",
+      "pass": true
+    },
+    {
+      "name": "canonical HTML is guarded and login credentials never default to URL submission",
+      "pass": true
+    },
+    {
+      "name": "auth mutation requires CSRF",
+      "pass": true
+    },
+    {
+      "name": "cross-origin login is rejected",
+      "pass": true
+    },
+    {
+      "name": "successful login rejects open redirects",
+      "pass": true
+    },
+    {
+      "name": "authentication rotates browser CSRF value",
+      "pass": true
+    },
+    {
+      "name": "opaque auth cookie is HttpOnly and SameSite Strict",
+      "pass": true
+    },
+    {
+      "name": "database stores session digest, not bearer token",
+      "pass": true
+    },
+    {
+      "name": "authenticated customer profile omits internal IDs and password hashes",
+      "pass": true
+    },
+    {
+      "name": "registered user cannot read operational data",
+      "pass": true
+    },
+    {
+      "name": "client-supplied manager role cannot elevate a customer",
+      "pass": true
+    },
+    {
+      "name": "new customer dashboard shows empty owned records only",
+      "pass": true
+    },
+    {
+      "name": "digital concierge returns grounded transfer guidance without a plan",
+      "pass": true
+    },
+    {
+      "name": "digital human state follows grounded consultation",
+      "pass": true
+    },
+    {
+      "name": "consultation creates no bank transaction",
+      "pass": true
+    },
+    {
+      "name": "conversation survives workbench-to-assistant page navigation",
+      "pass": true
+    },
+    {
+      "name": "demo login is explicit and marked as shared identity",
+      "pass": true
+    },
+    {
+      "name": "demo cannot resume customer conversation or mix identity cookies",
+      "pass": true
+    },
+    {
+      "name": "explicit transaction intent uses existing confirmation gate",
+      "pass": true
+    },
+    {
+      "name": "customer cannot confirm demo pending transaction",
+      "pass": true
+    },
+    {
+      "name": "pending confirmation is restored across route navigation",
+      "pass": true
+    },
+    {
+      "name": "new conversation cannot discard a pending authorisation",
+      "pass": true
+    },
+    {
+      "name": "safe speech does not read financial details aloud",
+      "pass": true
+    },
+    {
+      "name": "rejected authorisation preserves balance and restored cancellation history",
+      "pass": true
+    },
+    {
+      "name": "digital concierge does not bypass prompt-injection control",
+      "pass": true
+    },
+    {
+      "name": "customer audit does not leak other customer/demonstration records",
+      "pass": true
+    },
+    {
+      "name": "browser response masks accounts phones and accidental secret text",
+      "pass": true
+    },
+    {
+      "name": "login limit persists across a fresh browser session",
+      "pass": true
+    },
+    {
+      "name": "MySQL login session survives server restart",
+      "pass": true
+    },
+    {
+      "name": "volatile conversation is safely cleared after restart",
+      "pass": true
+    },
+    {
+      "name": "idle expiry rejects an otherwise valid signed-in browser",
+      "pass": true
+    },
+    {
+      "name": "logout revokes the database session immediately",
+      "pass": true
+    },
+    {
+      "name": "logout removes access to protected APIs",
+      "pass": true
+    },
+    {
+      "name": "logged-out browser cannot reuse old CSRF token",
+      "pass": true
+    }
+  ]
+}

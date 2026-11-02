@@ -24,6 +24,7 @@ styles={
  'body':ParagraphStyle('body',fontName='CN',fontSize=10,leading=16,spaceAfter=7,wordWrap='CJK',textColor=colors.HexColor('#233a52')),
  'h1':ParagraphStyle('h1',fontName='CN',fontSize=22,leading=29,spaceAfter=16,textColor=blue),
  'h2':ParagraphStyle('h2',fontName='CN',fontSize=14.5,leading=22,spaceBefore=13,spaceAfter=9,keepWithNext=False,textColor=blue),
+ 'h3':ParagraphStyle('h3',fontName='CN',fontSize=12,leading=19,spaceBefore=10,spaceAfter=7,keepWithNext=False,textColor=blue),
  'small':ParagraphStyle('small',fontName='CN',fontSize=8,leading=12,wordWrap='CJK',textColor=muted),
  'cell':ParagraphStyle('cell',fontName='CN',fontSize=8.2,leading=12.5,wordWrap='CJK'),
  'code':ParagraphStyle('code',fontName='CN',fontSize=8.2,leading=12.8,spaceAfter=6,backColor=colors.HexColor('#f1f5fb'),wordWrap='CJK'),
@@ -45,7 +46,7 @@ def picture(name,width=475):
 
 
 class Architecture(Flowable):
-    def __init__(self):super().__init__();self.width=475;self.height=164
+    def __init__(self):super().__init__();self.width=475;self.height=215
     def draw(self):
         c=self.canv
         def box(x,y,w,h,lines,fill='#edf4fd'):
@@ -54,21 +55,22 @@ class Architecture(Flowable):
             for i,t in enumerate(lines):c.drawCentredString(x+w/2,y+h/2+4-(i*13),t)
         def arrow(x,y,x2,y2):
             c.setStrokeColor(colors.HexColor('#7799bc'));c.setLineWidth(.8);c.line(x,y,x2,y2)
-            if x2!=x:c.line(x2,y2,x2-4,y2+2);c.line(x2,y2,x2-4,y2-2)
-            else:c.line(x2,y2,x2-2,y2+4);c.line(x2,y2,x2+2,y2+4)
-        for x,lines in [(0,['银行工作台','自然语言与确认']),(162,['同源API与授权','固定工具及DAG']),(324,['请求工作单元','状态与会话回退'])]:box(x,117,150,42,lines)
-        arrow(150,138,162,138);arrow(312,138,324,138)
-        box(100,59,375,37,['MySQL InnoDB','业务状态 / 关系查询 / 精确审计 / 运营请求'],'#dfedfc')
-        arrow(400,117,400,96)
+            from math import hypot
+            length=hypot(x2-x,y2-y) or 1;dx=(x2-x)/length;dy=(y2-y)/length
+            for sign in (-1,1):c.line(x2,y2,x2-4*dx+sign*2*dy,y2-4*dy-sign*2*dx)
+        for x,lines in [(0,['注册与登录','独立模拟账户']),(162,['工作台与数字人','咨询 / 引导 / 办理']),(324,['运营指挥中心','领导只读 / 经理处置'])]:box(x,173,150,40,lines)
+        for x,lines in [(0,['身份与请求网关','scrypt / 会话 / CSRF']),(162,['知识问答与金融DAG','固定工具 / 独立授权']),(324,['运营与关联工单','白名单DTO / 版本检查'])]:box(x,116,150,40,lines)
+        for x in (75,237,399):arrow(x,173,x,156);arrow(x,116,x,94)
+        box(0,55,475,39,['MySQL InnoDB：15张项目表','身份与账户 / 事务状态 / 精确审计 / 运营事件'],'#dfedfc')
         box(0,0,145,37,['设备与服务采集','5秒心跳 / 预警工单'])
-        box(164,0,145,37,['经理工单状态机','分派 / 处理 / 解决'])
-        box(328,0,147,37,['脱敏运营大屏','筛选 / 下钻 / 导出'])
-        arrow(400,59,400,37);arrow(237,59,237,37);arrow(74,37,74,77);arrow(74,77,100,77)
+        box(164,0,145,37,['工单状态机','分派 / 处理 / 解决'])
+        box(328,0,147,37,['脱敏图表与导出','12类客户图 / 6类运营图'])
+        arrow(74,37,74,55);arrow(237,55,237,37);arrow(400,55,400,37)
 
 
 def footer(c,d):
     c.saveState();c.setFont('CN',8);c.setFillColor(muted)
-    c.drawString(44,25,'知行银行智能体  v3.0  MySQL与数字银行沙箱')
+    c.drawString(44,25,'知行银行智能体  v4.0  独立身份与数字人金融沙箱')
     c.drawRightString(A4[0]-44,25,str(d.page));c.restoreState()
 
 
@@ -102,25 +104,30 @@ def build(src,target,title):
                 i+=1
             story.extend([table(rows),Spacer(1,9)]);continue
         if line.startswith('# '):story.append(Paragraph(clean(line[2:]),styles['h1']))
+        elif line.startswith('### '):story.extend([CondPageBreak(70),Paragraph(clean(line[4:]),styles['h3'])])
         elif line.startswith('## '):story.extend([CondPageBreak(78),Paragraph(clean(line[3:]),styles['h2'])])
         else:story.append(Paragraph(clean(line),styles['body']))
         i+=1
     if src=='作品报告.md':
         story.extend([PageBreak(),Paragraph('界面与可视化记录',styles['h1']),Paragraph('下图为开发阶段实际界面快照；运行数据持续变化，以页面时间和MySQL快照为准。全部金融与网点终端均为模拟。',styles['body'])])
-        story+=picture('运营大屏_1920x1080.jpg')
+        story+=picture('运营大屏_v4.png')
         sample=json.loads((ROOT/'evidence/operations_snapshot_example.json').read_text(encoding='utf-8'))
         from datetime import datetime,timezone,timedelta
         stamp=datetime.fromtimestamp(sample['meta']['generated_at'],timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
         story.append(Paragraph('独立运营快照示例：'+stamp+'，全部网点，近7日。图像与表格为分别采集，不要求动态数值相同。',styles['small']))
         k=sample['kpis'];story.append(table([['指标','快照值','口径'],['流水笔数',str(k['transactions']),'入账与出账记录'],['流水金额',f"{k['turnover']:,.2f}元",'绝对流水合计，非利润'],['待办工单',str(k['backlog']),'期间创建且未解决'],['AI请求',str(k['ai_requests']),'演练与实际应用分别计数'],['设备正常',f"{k['devices_online']}/{k['devices_total']}",'当前状态与心跳']]))
-        story.extend([PageBreak(),Paragraph('客户工作台与既有图表',styles['h1'])]);story+=picture('账单核验.png',465)
+        story.extend([PageBreak(),Paragraph('注册与数字人服务厅',styles['h1']),Paragraph('统一蓝白风格、规范路由与身份标识；数字人解答附依据，业务授权沿用既有策略。截图为独立模拟库的开发阶段实际界面。',styles['body'])])
+        story+=picture('登录界面_v4.png',475);story+=picture('数字人服务厅_v4.png',475)
+        story.extend([PageBreak(),Paragraph('独立注册与多源数据展示',styles['h1']),Paragraph('注册页最小化采集信息；客户数据全景只查询当前账户。演示样本与注册账户隔离，空账户不伪造历史流水。',styles['body'])])
+        story+=picture('注册界面_v4.png',475);story+=picture('数据全景_v4.png',475)
+        story.extend([PageBreak(),Paragraph('客户工作台与行动依据',styles['h1'])]);story+=picture('工作台_v4.png',475)
     if src=='安全自评报告.md':
-        story.extend([CondPageBreak(410),Paragraph('强验证交互证据',styles['h1']),Paragraph('确认窗明确风险、参数与模拟身份因子，验证码不是独立真实短信通道。',styles['body'])]);story+=picture('强验证.png',465)
+        story.extend([CondPageBreak(410),Paragraph('强验证交互证据',styles['h1']),Paragraph('确认窗明确风险、参数与模拟身份因子，验证码不是独立真实短信通道。新版登录认证不会替代交易授权。',styles['body'])]);story+=picture('强验证_v4.png',475)
     doc=SimpleDocTemplate(str(OUT/target),pagesize=A4,leftMargin=58,rightMargin=58,topMargin=44,bottomMargin=45,title=title,author='知行银行智能体')
     doc.build(story,onFirstPage=footer,onLaterPages=footer)
     print(target)
 
 
 if __name__=='__main__':
-    for src,target,title in [('作品报告.md','技术文档.pdf','知行银行智能体技术文档 v3.0'),('安全自评报告.md','安全自评报告.pdf','知行银行智能体安全自评 v3.0'),('部署文档.md','部署说明.pdf','知行银行智能体部署说明 v3.0'),('规则核对与提交清单.md','规则与提交清单.pdf','规则与提交清单 v3.0')]:
+    for src,target,title in [('作品报告.md','技术文档.pdf','知行银行智能体技术文档 v4.0'),('安全自评报告.md','安全自评报告.pdf','知行银行智能体安全自评 v4.0'),('部署文档.md','部署说明.pdf','知行银行智能体部署说明 v4.0'),('规则核对与提交清单.md','规则与提交清单.pdf','规则与提交清单 v4.0')]:
         build(src,target,title)

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc"><title id="title">知行银行智能体v4架构</title><desc id="desc">注册登录与数字人、受约束金融智能体、MySQL十五表、设备采集与运营工单形成安全隔离的联动结构。</desc><defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#7595ba"/></marker></defs>
+<rect width="1200" height="680" rx="18" fill="#f4f7fc"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#182b49"><text x="52" y="54" font-size="26" font-weight="700">知行银行智能体 · v4.0 系统架构</text><text x="52" y="85" font-size="14" fill="#5f6f85">单服务实例 / 多模拟账户 / 固定能力边界 / 身份与交易授权分离</text>
+<g stroke="#c3d5eb" fill="#fff"><rect x="52" y="118" width="340" height="76" rx="9"/><rect x="430" y="118" width="340" height="76" rx="9"/><rect x="808" y="118" width="340" height="76" rx="9"/>
+<rect x="52" y="245" width="340" height="100" rx="9"/><rect x="430" y="245" width="340" height="100" rx="9"/><rect x="808" y="245" width="340" height="100" rx="9"/>
+<rect x="52" y="397" width="1096" height="92" rx="9" fill="#e9f1fd"/>
+<rect x="52" y="540" width="340" height="82" rx="9"/><rect x="430" y="540" width="340" height="82" rx="9"/><rect x="808" y="540" width="340" height="82" rx="9"/></g>
+<g font-size="18" text-anchor="middle"><text x="222" y="151">注册与登录 / 独立模拟账户</text><text x="600" y="151">工作台 / 知小行数字人</text><text x="978" y="151">运营指挥中心 / 领导与经理</text>
+<text x="222" y="280">身份与请求网关</text><text x="600" y="280">知识问答与金融智能体</text><text x="978" y="280">运营服务与安全处置</text>
+<text x="600" y="432" font-weight="700" fill="#165dce">MySQL InnoDB · 15张项目表 · 版本检查与事务提交</text>
+<text x="222" y="572">设备与本机服务采集</text><text x="600" y="572">关联工单状态机</text><text x="978" y="572">脱敏数据可视化与导出</text></g>
+<g font-size="13" text-anchor="middle" fill="#5f6f85"><text x="222" y="177">显式演示入口，与注册账户隔离</text><text x="600" y="177">自然语言 / 来源 / 跨页面任务恢复</text><text x="978" y="177">1920×1080 / 5秒刷新 / 按范围筛选</text>
+<text x="222" y="309">scrypt / 会话摘要 / CSRF / 用户绑定</text><text x="222" y="330">空闲30分钟 / 绝对8小时 / 退出撤销</text>
+<text x="600" y="309">本地知识或模型主题 / 30项固定工具</text><text x="600" y="330">NLU → DAG → 独立权限 → 执行与核验</text>
+<text x="978" y="309">客户禁止访问 / 经理另验口令</text><text x="978" y="330">业务人工接管与设备故障关联工单</text>
+<text x="600" y="460">身份、会话、账户、流水、资源、精确审计、请求、设备、工单与事件</text>
+<text x="222" y="599">模拟网点设备 / 实测本机心跳</text><text x="600" y="599">分派 → 处理 → 核验恢复 → 解决</text><text x="978" y="599">12类客户图表 + 6类运营图表</text>
+<text x="600" y="655">全部金融业务为沙箱模拟；无真实银行清算、商户履约、短信或物理机器人。</text></g></g>
+<g stroke="#7595ba" stroke-width="2" fill="none" marker-end="url(#a)"><path d="M222 194V242"/><path d="M600 194V242"/><path d="M978 194V242"/><path d="M392 290H427"/><path d="M222 345V394"/><path d="M600 345V394"/><path d="M978 345V394"/><path d="M222 540V492"/><path d="M600 489V537"/><path d="M978 489V537"/></g></svg>

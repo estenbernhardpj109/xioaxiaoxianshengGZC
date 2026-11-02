@@ -37,6 +37,11 @@ class BankCore(DigitalEnvironmentMixin):
         with self._lock:
             return dict(self._data["users"][self.current_user_id])
 
+    def security_state(self):
+        if self.current_user_id == 'U1001':
+            return self._data
+        return self._data.setdefault('user_security', {}).setdefault(self.current_user_id, {})
+
     def get_account(self, user_id=None):
         with self._lock:
             uid = user_id or self.current_user_id
@@ -45,14 +50,15 @@ class BankCore(DigitalEnvironmentMixin):
 
     def list_users(self):
         with self._lock:
-            return [dict(u) for u in self._data["users"].values()]
+            return [dict(u) for uid,u in self._data["users"].items()
+                    if uid in (self.current_user_id,'U1002','U1003','U1004')]
 
     def find_user(self, key):
         """按 姓名 / 手机号(全号或脱敏) / 备注 模糊匹配用户，返回匹配列表。"""
         with self._lock:
             key = str(key).strip()
             res = []
-            for u in self._data["users"].values():
+            for u in self.list_users():
                 hay = [u["name"], u["phone"], u.get("phone_full", ""), u.get("remark", "")]
                 if any(key in h for h in hay):
                     res.append(dict(u))
@@ -133,6 +139,7 @@ class BankCore(DigitalEnvironmentMixin):
             payee = matches[0]
             task = {
                 "task_id": "ST" + uuid.uuid4().hex[:6],
+                "owner_id": self.current_user_id,
                 "to_user": payee["user_id"],
                 "to_name": payee["name"],
                 "amount": amount,
@@ -148,7 +155,7 @@ class BankCore(DigitalEnvironmentMixin):
 
     def get_scheduled_tasks(self):
         with self._lock:
-            return [dict(t) for t in self._data["scheduled_tasks"]]
+            return [dict(t) for t in self._data["scheduled_tasks"] if t.get('owner_id','U1001')==self.current_user_id]
 
     # ---------- 账单分析 ----------
     def bill_analysis(self, period="month"):

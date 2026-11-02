@@ -21,6 +21,9 @@ def dumps(value):
 
 
 DDL = [
+    """CREATE TABLE IF NOT EXISTS zx_auth_identities (user_id VARCHAR(48) PRIMARY KEY, username VARCHAR(32) NOT NULL UNIQUE, display_name VARCHAR(80) NOT NULL, password_hash VARCHAR(200) NOT NULL, created_at DOUBLE NOT NULL) ENGINE=InnoDB""",
+    """CREATE TABLE IF NOT EXISTS zx_auth_sessions (token_hash CHAR(64) PRIMARY KEY, user_id VARCHAR(48) NOT NULL, is_demo BOOLEAN NOT NULL, created_at DOUBLE NOT NULL, last_seen DOUBLE NOT NULL, expires_at DOUBLE NOT NULL, INDEX ix_session_expiry(expires_at)) ENGINE=InnoDB""",
+    """CREATE TABLE IF NOT EXISTS zx_auth_attempts (bucket CHAR(64) PRIMARY KEY, failures INT NOT NULL, reset_at DOUBLE NOT NULL) ENGINE=InnoDB""",
     """CREATE TABLE IF NOT EXISTS zx_schema_version (version INT PRIMARY KEY, applied_at DOUBLE NOT NULL) ENGINE=InnoDB""",
     """CREATE TABLE IF NOT EXISTS zx_bank_state (id INT PRIMARY KEY, version BIGINT NOT NULL, payload JSON NOT NULL, updated_at DOUBLE NOT NULL) ENGINE=InnoDB""",
     """CREATE TABLE IF NOT EXISTS zx_users (user_id VARCHAR(48) PRIMARY KEY, name_mask VARCHAR(80), phone_mask VARCHAR(32), branch_id VARCHAR(16) NOT NULL) ENGINE=InnoDB""",
@@ -81,6 +84,7 @@ class MySQLStore:
             self.legacy_migration_allowed=not bool(cur.fetchall())
             cur.execute('INSERT IGNORE INTO zx_schema_version VALUES (1,%s)', (time.time(),))
             cur.execute('INSERT IGNORE INTO zx_schema_version VALUES (2,%s)', (time.time(),))
+            cur.execute('INSERT IGNORE INTO zx_schema_version VALUES (5,%s)', (time.time(),))
         self.version = None
         self.state_digest = None
 
@@ -164,15 +168,20 @@ class MySQLStore:
                     resources.append((kind, uid + ':' + item[idkey], uid, item.get('status','有效'), item.get('amount',0), dumps(item)))
         for key, values in [('task', data.get('scheduled_tasks', [])), ('reservation', list(data.get('reservations', {}).values())), ('product',data.get('wealth_products', []))]:
             for i, item in enumerate(values):
-                resources.append((key, str(item.get('task_id',item.get('id',item.get('product_id',i)))), data['current_user_id'], item.get('status','有效'), item.get('amount',0), dumps(item)))
+                resources.append((key, str(item.get('task_id',item.get('id',item.get('product_id',i)))), item.get('owner_id',data['current_user_id']), item.get('status','有效'), item.get('amount',0), dumps(item)))
         if resources:
             cur.executemany('INSERT INTO zx_resources VALUES (%s,%s,%s,%s,%s,%s)', resources)
 
-    def persist(self, core, audit_entries, requests):
+    def persist(self, core, audit_entries, requests, identity=None):
         now = time.time()
         digest=hashlib.sha256(json.dumps(core._data,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
         changed=digest!=self.state_digest
         with self.transaction() as cur:
+            if identity:
+                cur.execute('INSERT INTO zx_auth_identities VALUES (%s,%s,%s,%s,%s)', identity)
+                from .privacy import alias
+                cur.execute('INSERT INTO zx_ops_events(event_ts,event_type,branch_id,ref_id,actor,payload) VALUES (%s,%s,%s,%s,%s,%s)',
+                            (now,'auth_registered','B08',alias(identity[0]),'IDENTITY',dumps({'result':'accepted','scope':'customer'})))
             if self.version is None:
                 cur.execute('INSERT INTO zx_bank_state VALUES (1,1,%s,%s)', (dumps(core._data), now))
                 new_version = 1

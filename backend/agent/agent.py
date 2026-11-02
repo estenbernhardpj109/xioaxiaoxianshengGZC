@@ -42,7 +42,7 @@ class BankingAgent:
         session = self.mgr.get_or_create(session_id)
         text = (text or "").strip()
         session.add("user", text)
-        if session.locked or get_core()._data.get('security_locked'):
+        if session.locked or get_core().security_state().get('security_locked'):
             return self._clarify(session, '连续验证失败，账户已安全锁定，请人工接管')
         if text in ('暂停','中断','继续','取消任务','回退','人工接管'):
             return self.control(session, text)
@@ -253,16 +253,20 @@ class BankingAgent:
             digest=hashlib.sha256(json.dumps(step['params'],sort_keys=True).encode()).hexdigest()
             valid=c and c['step_id']==step_id and c['expires']>time.time() and c['digest']==digest and secrets.compare_digest(c['token'],challenge_token or '') and secrets.compare_digest(c['otp'],otp or '') and secrets.compare_digest(password or '',DEMO_TXN_PASSWORD)
             if not valid:
-                core._data['auth_failures']=core._data.get('auth_failures',0)+1
-                session.failures=core._data['auth_failures']
+                state=core.security_state()
+                state['auth_failures']=state.get('auth_failures',0)+1
+                session.failures=state['auth_failures']
                 session.locked=session.failures>=3
-                core._data['security_locked']=session.locked
+                state['security_locked']=session.locked
+                # Safety changes invalidate other tasks' whole-bank snapshots too.
+                core._revision=getattr(core,'_revision',0)+1
+                session.expected_revision=core._revision
                 core.save()
                 security.get_audit().record({'operation':'strong_auth','risk':'HIGH','success':False,'note':'强验证失败','session_id':session_id})
-                return {'session_id':session_id,'reply':'强验证失败'+('，连续三次失败已锁定，请人工接管' if session.locked else '，请检查验证码与密码'),
+                return {'session_id':session_id,'verification_failed':True,'reply':'强验证失败'+('，连续三次失败已锁定，请人工接管' if session.locked else '，请检查验证码与密码'),
                         'plan':self._plan_view(session.pending_plan),'pending_confirm':None if session.locked else self._pending_view(step,session)}
         session.challenge=None
-        core._data['auth_failures']=0
+        core.security_state()['auth_failures']=0
         result=self.executor.execute_plan(session.pending_plan,{step_id:{'strong_verified':high}})
         session.expected_revision=getattr(core,'_revision',0)
         reply=self._compose_reply('',result,continued=True)
@@ -278,7 +282,12 @@ class BankingAgent:
     def _rollback(self, session):
         core=get_core()
         if session.snapshot is not None and getattr(core,'_revision',0)==getattr(session,'expected_revision',0):
-            core.restore(session.snapshot)
+            restored=copy.deepcopy(session.snapshot)
+            # Roll back business effects, never authentication failures or safety locks.
+            for key in ('auth_failures','security_locked','user_security'):
+                if key in core._data:restored[key]=copy.deepcopy(core._data[key])
+                else:restored.pop(key,None)
+            core.restore(restored)
             core._revision=getattr(core,'_revision',0)+1
             session.expected_revision=core._revision
             for s in session.pending_plan or []:
@@ -306,7 +315,8 @@ class BankingAgent:
                 session.paused=True
                 message='状态已发生变化，无法自动回退，请人工接管'
             else:
-                message='已取消任务并回退本地沙箱状态，审计记录保留'
+                message='已取消任务并回退沙箱业务状态，审计与安全计数保留'
+        session.add('agent',message)
         security.get_audit().record({'operation':'task_control','risk':'LOW','success':True,'note':command})
         pending=next((s for s in session.pending_plan if s['status']=='await_confirm'),None)
         return {'session_id':session.session_id,'reply':message,'plan':self._plan_view(session.pending_plan),

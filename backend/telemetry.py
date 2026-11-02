@@ -30,9 +30,9 @@ def dashboard():
             s['monthly_equivalent'] = round(s['amount'] / (12 if s['cycle']=='年' else 1), 2)
             s['days_until_charge'] = max(0, (datetime.fromtimestamp(s['next_charge'],TZ).date() - datetime.now(TZ).date()).days)
             s['matched_debits'] = len([t for t in tx if t['counterparty']==s['merchant'] and t['channel']=='代扣'])
-        audit = get_audit().recent(10000)
+        audit = [a for a in get_audit().recent(10000) if a.get('owner_id','U1001')==c.current_user_id]
         return {'source': {'kind':'synthetic', 'seed':2026, 'as_of':'2026-10-31T12:00:00+08:00',
-                            'scope':'当前演示用户 U1001，交易历史不与初始余额对账',
+                            'scope':'当前登录用户；初始演示余额不与历史流水对账',
                             'join_keys':['user_id','product_id','merchant','reservation_id']},
                 'observation':c.observe(), 'transactions':tx, 'transaction_count':len(tx),
                 'monthly':[{'month':k, **{n:round(v,2) for n,v in monthly[k].items()}} for k in sorted(monthly)],

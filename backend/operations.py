@@ -86,7 +86,7 @@ def seed(store):
 
 
 def scenario_from_response(out):
-    ops = {s.get('operation') for s in out.get('plan',[])}
+    ops = {s.get('operation') for s in (out.get('plan') or [])}
     if ops & {'reserve_budget','place_gift_order','finalize_birthday'}:return 'cross'
     if ops & {'transfer','schedule_transfer','query_balance','query_transactions'}:return 'transfer'
     if ops & {'bill_analysis','detect_anomaly','monthly_report'}:return 'bill'
@@ -97,10 +97,10 @@ def scenario_from_response(out):
 
 
 def request_record(out, duration_ms, branch_id='B01'):
-    failed = 'error' in out or any(s.get('status')=='failed' for s in out.get('plan',[]))
+    failed = 'error' in out or bool(out.get('verification_failed')) or any(s.get('status')=='failed' for s in (out.get('plan') or []))
     state = 'failed' if failed else 'await_confirm' if out.get('pending_confirm') else 'success'
     source = out.get('planner_source','rule')
-    if source=='deepseek_tool_call':source='llm'
+    if source in ('deepseek_tool_call','knowledge_llm_router'):source='llm'
     if source not in ('llm','rule','rule_fallback'):source='rule'
     return ('REQ-'+uuid.uuid4().hex,alias(out.get('session_id','unknown')),source,
             scenario_from_response(out),state,round(duration_ms,2),time.time(),branch_id)

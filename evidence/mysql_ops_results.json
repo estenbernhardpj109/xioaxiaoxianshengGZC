@@ -1,12 +1,12 @@
 {
   "suite": "mysql_operations_integration",
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "isolated_test_schema": true,
   "run": 35,
   "passed": 35,
   "checks": [
     {
-      "name": "twelve project tables created in isolated schema",
+      "name": "fifteen project tables created in isolated schema",
       "pass": true
     },
     {
@@ -110,7 +110,7 @@
       "pass": true
     },
     {
-      "name": "manager role cannot leak to a second browser",
+      "name": "manager elevation cannot cross browser or authentication-session boundaries",
       "pass": true
     },
     {

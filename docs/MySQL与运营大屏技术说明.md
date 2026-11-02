@@ -41,7 +41,7 @@ HTTP成功响应在数据库提交完成后发送。SQL异常或连接不可用�
 |表|内容|主要关联|
 |---|---|---|
 |zx_schema_version|结构及演练数据迁移版本|版本1初始、2审计序号、3演练维度解耦、4审计精确文本|
-|zx_bank_state|单账户沙箱完整状态JSON、版本、更新时间|id=1|
+|zx_bank_state|单实例多账户完整状态JSON、版本、更新时间|id=1|
 |zx_users|客户掩码姓名、手机号与演示网点|user_id、branch_id|
 |zx_accounts|掩码账号、DECIMAL余额、币种|user_id、branch_id|
 |zx_transactions|交易金额、方向、类别、渠道及时间|txn_id、user_id、branch_id|

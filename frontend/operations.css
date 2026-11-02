@@ -12,3 +12,6 @@
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 body.native-canvas{width:1920px;min-height:1080px;overflow:auto}body.native-canvas .wall{transform:none!important}
+
+/* Seven rows when digital-human consultation adds the general assistant. */
+.employee-info small{margin-top:0}.employee-info i{margin-top:2px}

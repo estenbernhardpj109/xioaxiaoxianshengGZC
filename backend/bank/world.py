@@ -12,18 +12,18 @@ def daily_committed(self):
     tz = timezone(timedelta(hours=8))
     today = datetime.now(tz).date()
     return round(sum(t['amount'] for t in self._data.get('commitments', [])
-                     if datetime.fromtimestamp(t['ts'], tz).date() == today), 2)
+                     if t.get('owner_id','U1001')==self.current_user_id and datetime.fromtimestamp(t['ts'], tz).date() == today), 2)
 
 
 def commit(self, amount, source):
-    self._data.setdefault('commitments', []).append({'ts': time.time(), 'amount': amount, 'source': source})
+    self._data.setdefault('commitments', []).append({'ts': time.time(), 'amount': amount, 'source': source, 'owner_id':self.current_user_id})
 
 
 def observe(self):
     with self._lock:
         return {'environment': 'local_digital_bank_sandbox', 'data_kind': 'synthetic',
                 'observed_at': time.time(), 'balance': self.get_account()['balance'],
-                'held': sum(r['amount'] for r in self._data.get('reservations', {}).values() if r['status'] == 'held'),
+                'held': sum(r['amount'] for r in self._data.get('reservations', {}).values() if r['status'] == 'held' and r.get('owner_id','U1001')==self.current_user_id),
                 'daily_committed': self.daily_committed(),
                 'cards': self.card_list(), 'holdings': self.get_holdings(), 'subscriptions': self.subscription_list(),
                 'scheduled': self.get_scheduled_tasks(), 'orders': self.order_list()}
@@ -65,7 +65,7 @@ def reserve_budget(self, to_key, amount, birthday_date):
         return {'ok': False, 'error': '模拟鲜花和蛋糕共需300元，预算不足或余额不足'}
     rid = 'R' + uuid.uuid4().hex[:12]
     self._data['accounts'][self.current_user_id]['balance'] = round(self.get_account()['balance'] - amount, 2)
-    reservation = {'id': rid, 'to': users[0]['name'], 'amount': amount, 'birthday_date': birthday_date,
+    reservation = {'id': rid, 'owner_id':self.current_user_id, 'to': users[0]['name'], 'amount': amount, 'birthday_date': birthday_date,
                    'order_date': (bday - timedelta(days=2)).isoformat(), 'status': 'held'}
     self._data.setdefault('reservations', {})[rid] = reservation
     self.commit(amount, rid)
@@ -74,7 +74,7 @@ def reserve_budget(self, to_key, amount, birthday_date):
 
 def place_gift_order(self, reservation_id, kind):
     r = self._data.get('reservations', {}).get(reservation_id)
-    if not r or r['status'] != 'held' or kind not in ('鲜花', '蛋糕'):
+    if not r or r.get('owner_id','U1001')!=self.current_user_id or r['status'] != 'held' or kind not in ('鲜花', '蛋糕'):
         return {'ok': False, 'error': '有效资金预留或商品类型缺失'}
     orders = self._data['orders'].setdefault(self.current_user_id, [])
     if any(o.get('reservation_id') == reservation_id and o['product'] == kind for o in orders):
@@ -90,9 +90,9 @@ def place_gift_order(self, reservation_id, kind):
 def finalize_birthday(self, reservation_id):
     r = self._data.get('reservations', {}).get(reservation_id)
     orders = [o for o in self.order_list() if o.get('reservation_id') == reservation_id]
-    if not r or {o['product'] for o in orders} != {'鲜花', '蛋糕'}:
+    if not r or r.get('owner_id','U1001')!=self.current_user_id or {o['product'] for o in orders} != {'鲜花', '蛋糕'}:
         return {'ok': False, 'error': '预约订单未齐备'}
-    task = {'task_id': 'BG' + uuid.uuid4().hex[:10], 'kind': 'birthday', 'reservation_id': reservation_id,
+    task = {'task_id': 'BG' + uuid.uuid4().hex[:10], 'owner_id':self.current_user_id, 'kind': 'birthday', 'reservation_id': reservation_id,
             'execute_ts': datetime.fromisoformat(r['order_date']).replace(tzinfo=timezone(timedelta(hours=8))).timestamp(),
             'status': '待执行', 'amount': 300, 'to_name': r['to']}
     self._data['scheduled_tasks'].append(task)
@@ -102,13 +102,13 @@ def finalize_birthday(self, reservation_id):
 
 def run_due(self, now=None):
     """Operator controlled sandbox clock. Never exposed as an LLM tool."""
-    if self._data.get('security_locked'):
+    if self.security_state().get('security_locked'):
         return [{'ok':False,'error':'安全锁定中，定时任务暂停'}]
     now = now or time.time()
     results = []
     with self._lock:
         for task in self._data['scheduled_tasks']:
-            if task['status'] != '待执行' or task['execute_ts'] > now:
+            if task.get('owner_id','U1001')!=self.current_user_id or task['status'] != '待执行' or task['execute_ts'] > now:
                 continue
             if task.get('kind') == 'birthday':
                 r = self._data['reservations'][task['reservation_id']]

@@ -1,6 +1,6 @@
 {
   "project": "知行银行智能体",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "files": [
     {
       "path": ".env.example",
@@ -14,8 +14,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 171,
-      "sha256": "6a04649f6c9af31e62da616339b17952fa61a54bb5928ac0100894ebcd61433b"
+      "bytes": 186,
+      "sha256": "9141c4b8a267da4ae351df9ccdf6531d873887a17906a7146568d75c7e1a5607"
     },
     {
       "path": "backend/__init__.py",
@@ -29,8 +29,8 @@
     },
     {
       "path": "backend/agent/agent.py",
-      "bytes": 31450,
-      "sha256": "3def8e3d25b9a26dc0db35ac0473fc15538eaeee35885647d7173a0fe4172c67"
+      "bytes": 32116,
+      "sha256": "196ebd29b10c0a218a0d9efa7139aa8c3ba378770f02a9eb71860be517ee2f52"
     },
     {
       "path": "backend/agent/context.py",
@@ -59,8 +59,8 @@
     },
     {
       "path": "backend/agent/security.py",
-      "bytes": 10052,
-      "sha256": "9af1e7895b9b5c349828e72a5138249f7cccceb40ac0e9675303daec8f029093"
+      "bytes": 10217,
+      "sha256": "46d6cc3ea5c444c09839e99cd031335b4a09ebb4fa6f4cd033fb52caef1bad8a"
     },
     {
       "path": "backend/agent/tools.py",
@@ -73,14 +73,19 @@
       "sha256": "be37088d375d0926fabc285adf638e5464ce8b0b951cdf2be671e44acbe89023"
     },
     {
+      "path": "backend/auth.py",
+      "bytes": 9922,
+      "sha256": "6dbfef894bab374e2d7d401a5ca85c3f53dfe2bb41c32add436ad59bcec38f1b"
+    },
+    {
       "path": "backend/bank/__init__.py",
       "bytes": 145,
       "sha256": "51a17780be62a478536f5c12712dbf99c8354198fe623b013b96524cb8ba3f55"
     },
     {
       "path": "backend/bank/core.py",
-      "bytes": 20332,
-      "sha256": "4a77e80b622a1d132a492d71db0b1b4423c36faceeed62a42a6d5bf6c72410fb"
+      "bytes": 20709,
+      "sha256": "49a73aa93dbcad4908f51c56ad91ec822526598a3ef81fe56c32a61d5b6a054e"
     },
     {
       "path": "backend/bank/data.py",
@@ -89,33 +94,38 @@
     },
     {
       "path": "backend/bank/world.py",
-      "bytes": 6967,
-      "sha256": "04669bf8edb8745d28d00a8095f0dd83cd33880e58d4e1f4ab423ebd51a25348"
+      "bytes": 7337,
+      "sha256": "51e83c03cddb66e0f9c5dc0edeebcd9001cebfb1642ae71a118cb8672ba98fb4"
+    },
+    {
+      "path": "backend/digital_assistant.py",
+      "bytes": 11073,
+      "sha256": "49f902ed0419c2e877606c53b358b2f54b6d05210f5913d7070e0e236d3432cc"
     },
     {
       "path": "backend/operations.py",
-      "bytes": 21783,
-      "sha256": "2af930ec48f25dce3a4ffb65e0ad7206f030917b4b4129cbb18bd83a187ee202"
+      "bytes": 21860,
+      "sha256": "5b849feff3732e0f952aa18f132171af61c67cbfe759e9190435f24d60c250b5"
     },
     {
       "path": "backend/privacy.py",
-      "bytes": 1026,
-      "sha256": "3585364118601f1dbf176e3e3988b6a6b72d2c45977a49019769912348270a5a"
+      "bytes": 1928,
+      "sha256": "45be940760a6d0adf6bdc7afd6c43eb711df90fb5f8865c329efc173ed7ba411"
     },
     {
       "path": "backend/server.py",
-      "bytes": 12631,
-      "sha256": "bc6a2149c8bb81fe005101c9986ff243e214ea7a3c62892bf5f38564667ce272"
+      "bytes": 21018,
+      "sha256": "55becacd49239a86fe9c30d9e0abe5594a6551aa92eb5ca5419445db3f06e120"
     },
     {
       "path": "backend/storage.py",
-      "bytes": 15745,
-      "sha256": "07e31b420cfdf5bedfc5a81e65897fdb56b9a087ed13c6fdcce13d4aa10c5688"
+      "bytes": 16982,
+      "sha256": "c236b6cc7edf9b2d3e5dbdb508a70e0bb2dc61cd758d47bd817e8ad32eafa76c"
     },
     {
       "path": "backend/telemetry.py",
-      "bytes": 2695,
-      "sha256": "fca3c6d6d900bf23b6111463743851540da0569e83ad2bfed20d0462dc0fba6e"
+      "bytes": 2756,
+      "sha256": "a2f1f0aaf8000e2052e727404e834ecd11a860250b8b19c0dd59e71cb90d22a6"
     },
     {
       "path": "data/cards.csv",
@@ -164,8 +174,8 @@
     },
     {
       "path": "database/schema.sql",
-      "bytes": 3332,
-      "sha256": "c4ef681b75a4ce5b79f14dcbf2f97b7379849cf2a20991b1240ebcb482f8e5a2"
+      "bytes": 4128,
+      "sha256": "1d47e0268ef285853c55332f94c435838c0ad9b288c39700ada1de9c36d5a65e"
     },
     {
       "path": "database/依赖许可说明.md",
@@ -178,9 +188,94 @@
       "sha256": "d892ed8912ae358f571eaa29900a6b8c281ff88e3862c87922c8d910a9c735aa"
     },
     {
+      "path": "demo/build_video_v4.py",
+      "bytes": 5447,
+      "sha256": "1e7d5aa30f800379824cde9e700a2afb2a3cfe3b499a5001dc9221ec6253f986"
+    },
+    {
       "path": "demo/capture.mjs",
-      "bytes": 6780,
-      "sha256": "626102ad69c2320eba0b55896a257d069a86f907447c03b5ba3fdd3c59b83b93"
+      "bytes": 6951,
+      "sha256": "f1e45ca014e47b1939b128e99340a8a35924dd4b551dc3c39c9c9689f38ca5f9"
+    },
+    {
+      "path": "demo/frames_v4/01-login.png",
+      "bytes": 83448,
+      "sha256": "de78395b33f723e2992b79fd925f53e015b3642fbc476f215bce0a0830b13449"
+    },
+    {
+      "path": "demo/frames_v4/02-register.png",
+      "bytes": 92605,
+      "sha256": "568d5533a07f23a3864781aa4e2d18baf794a48c67fa301642d5cb8f34d2d8b3"
+    },
+    {
+      "path": "demo/frames_v4/03-private-account.png",
+      "bytes": 89304,
+      "sha256": "e6689b399ec48d54975ffa13788e4ca0659e2794ecbb35f5ac613d4e4968944c"
+    },
+    {
+      "path": "demo/frames_v4/04-digital-faq.png",
+      "bytes": 145556,
+      "sha256": "78cab99b7b226a5e5599b07ec41f4795acdc9b49d1bd7d4e29ef3afe839a61f0"
+    },
+    {
+      "path": "demo/frames_v4/05-clarify.png",
+      "bytes": 150154,
+      "sha256": "4404706c753fa6386f6d3cd7b166e66b5af3176d88554324b5382666533d85c0"
+    },
+    {
+      "path": "demo/frames_v4/06-transfer-confirm.png",
+      "bytes": 113844,
+      "sha256": "608295cf1fd810fe0bd5cba705d26c2a2cf38ccfcf4b546bf054aa823a371364"
+    },
+    {
+      "path": "demo/frames_v4/07-strong-auth.png",
+      "bytes": 113427,
+      "sha256": "a94d648273b47caed7dfd4f8c98e694b3346b091683a7cf5b173bd081ab88277"
+    },
+    {
+      "path": "demo/frames_v4/08-annual-bill.png",
+      "bytes": 113000,
+      "sha256": "98769697cd20b80867f1a26d0ef41d538229361a700c5a5efd279152e18933a6"
+    },
+    {
+      "path": "demo/frames_v4/09-data-overview.png",
+      "bytes": 127437,
+      "sha256": "b4fd07c9bcf0a2741f3491cf3f5c5f28dfdad63319492a649142773c13fb57ab"
+    },
+    {
+      "path": "demo/frames_v4/10-wealth.png",
+      "bytes": 122039,
+      "sha256": "eff44bd81c85c060a39fa01bafc03ff43b49a190ce3bef4650b02aab068f6b32"
+    },
+    {
+      "path": "demo/frames_v4/11-cards.png",
+      "bytes": 114475,
+      "sha256": "f953e333ba918b042992737907fc402b8d1d35451238070cf285c54bf282522e"
+    },
+    {
+      "path": "demo/frames_v4/12-subscriptions.png",
+      "bytes": 132283,
+      "sha256": "9dc523cc51c8aef6692ac4295cdbbb25a658a3223bd2f723f264bd035ba20550"
+    },
+    {
+      "path": "demo/frames_v4/13-birthday.png",
+      "bytes": 112117,
+      "sha256": "33684d7b37e42c317851780d66c46335789bd425f8d302f6acfba13e844cf956"
+    },
+    {
+      "path": "demo/frames_v4/14-audit.png",
+      "bytes": 141913,
+      "sha256": "4ed4a5a71f64f9bacf096676e5275055bddd9a7e1ee4953bf28226905f2d6fc6"
+    },
+    {
+      "path": "demo/frames_v4/15-operations.png",
+      "bytes": 193386,
+      "sha256": "c1025ba30c748eb6bd1aee9af423bcd931cd5047b3cacc4e31ae5601c940c34f"
+    },
+    {
+      "path": "demo/frames_v4/16-ops-permission.png",
+      "bytes": 129579,
+      "sha256": "bf626e0cdd9947456a43bdc7d4aff570518a509dfe0abcc561df4208342b2a68"
     },
     {
       "path": "demo/make_video.py",
@@ -198,24 +293,34 @@
       "sha256": "76c113b7a7b285de9e8dd38f6471f989498172bb6f2c7fcee437386f70619c5e"
     },
     {
+      "path": "demo/narrate_v4.ps1",
+      "bytes": 925,
+      "sha256": "894f0aef2e946a826722c02288a2fbeef93fa066cabcacb1c56b925671bb45c0"
+    },
+    {
       "path": "demo/package.json",
       "bytes": 172,
       "sha256": "a332e873cc12247735842054ee4fa65c17a4a67c43faf22662fcba4569d415d1"
     },
     {
+      "path": "demo/v4_scenes.json",
+      "bytes": 6731,
+      "sha256": "052b9784035a5445fb05a3f9b0aabf6f3eb087ef56bf884f6b9a330128dc370e"
+    },
+    {
       "path": "demo/演示字幕.srt",
-      "bytes": 3423,
-      "sha256": "395dc8353cabd7e9dc32b798289aab2ba3092f9db5f97e288223e41697c3cf4e"
+      "bytes": 4248,
+      "sha256": "14d4d40c32c5b634088cf52f32366f421e5973b403991ea8a00c9ce35e59cd2e"
     },
     {
       "path": "demo/演示视频.mp4",
-      "bytes": 6002450,
-      "sha256": "f8be3a3fd65f3721748ac78ed97e3423fa55e6b6beb3041bb13da4bfe7ab17cc"
+      "bytes": 7307970,
+      "sha256": "9e27218e33d6d56db70cba6069a5b8a001d8bbcd0be755025e6504c8e175b5f3"
     },
     {
       "path": "demo/演示说明.md",
-      "bytes": 2173,
-      "sha256": "9ea6bc01e0749a998715b5463d626a501e9ba106ab24a7e8c6b2caf5147f9b08"
+      "bytes": 1817,
+      "sha256": "ef299110c8dcba8309c69b3010d7261a0bcbc160b7e35133ad02b76f73f31ca7"
     },
     {
       "path": "docs/assets/任务DAG.png",
@@ -228,14 +333,39 @@
       "sha256": "e239767c84e317216c4a89607c33dc7c851bf47790b5a8ee1845c015c937689a"
     },
     {
+      "path": "docs/assets/工作台_v4.png",
+      "bytes": 113007,
+      "sha256": "34422b347c001dda06075c5a0566854d8531bd06cb1f6cc52079fbee32244ab6"
+    },
+    {
       "path": "docs/assets/强验证.png",
       "bytes": 147304,
       "sha256": "a6d0addc89239c36a276b65f12b957884efae384273870eea238217a9a138dbc"
     },
     {
+      "path": "docs/assets/强验证_v4.png",
+      "bytes": 113427,
+      "sha256": "a94d648273b47caed7dfd4f8c98e694b3346b091683a7cf5b173bd081ab88277"
+    },
+    {
+      "path": "docs/assets/数字人_当前预览_v4.png",
+      "bytes": 107379,
+      "sha256": "7628246f85bfcd34310837d842f378ebb00233a7e07588822a8516f7414037ba"
+    },
+    {
+      "path": "docs/assets/数字人服务厅_v4.png",
+      "bytes": 145545,
+      "sha256": "75536bb39d86a56bc88c077f2b290d1517742da881e109d81beb7849a0bc5539"
+    },
+    {
       "path": "docs/assets/数据全景.png",
       "bytes": 238770,
       "sha256": "346fb1ae57ea94a07c624317dfa74a95ba1c2f6ac61626bb8593e4fd2e3d00a9"
+    },
+    {
+      "path": "docs/assets/数据全景_v4.png",
+      "bytes": 127439,
+      "sha256": "5c1618ddf5ceb838e59fbd5207c925969de980b9dc597f7ac50461bc8eb3429d"
     },
     {
       "path": "docs/assets/新版界面预览.png",
@@ -263,9 +393,24 @@
       "sha256": "dd8de1cf9ba49c3f10a84a464f8deb0727a2dceb657970c13f8ca18e2a480fdb"
     },
     {
+      "path": "docs/assets/架构图_v4.svg",
+      "bytes": 3635,
+      "sha256": "635a6100626b373be438515fa8db04f0b21c5c37631aceb4f5e63e4388c718d7"
+    },
+    {
+      "path": "docs/assets/注册界面_v4.png",
+      "bytes": 74805,
+      "sha256": "bfd2cbb145d00668cb4d6cfe66482115c7c0ae8e3d89004a2ecd56d18118c8bd"
+    },
+    {
       "path": "docs/assets/生日DAG.png",
       "bytes": 144218,
       "sha256": "814fdec2fff1ee08ab7bcaf1b4edc90cefb90ddf70c98606a3d6b78999c60f47"
+    },
+    {
+      "path": "docs/assets/登录界面_v4.png",
+      "bytes": 69926,
+      "sha256": "011fd60c9573c5022d3b43288d8028114867ed028b05560bdf18245e977ca66b"
     },
     {
       "path": "docs/assets/订阅支出.png",
@@ -283,109 +428,124 @@
       "sha256": "b27ce1c59cec73ab4522cf1b07dbccaa4b4771a592eade013aa6285d13b3f477"
     },
     {
+      "path": "docs/assets/运营大屏_v4.png",
+      "bytes": 193386,
+      "sha256": "c1025ba30c748eb6bd1aee9af423bcd931cd5047b3cacc4e31ae5601c940c34f"
+    },
+    {
       "path": "docs/assets/运营大屏_当前预览.jpg",
       "bytes": 206351,
       "sha256": "cd28feae117852e8ba54792802597f4e324cb3b612c1aa1c22410705f02a4625"
     },
     {
       "path": "docs/GitHub仓库使用说明.md",
-      "bytes": 1144,
-      "sha256": "2e6757952db647234889de18487f5d94c88000420091bdf0bf53389f26017b58"
+      "bytes": 6693,
+      "sha256": "340be29520505aa613ad0ef3d0e9cfd2acdd6d32063454d5123d85937e78af9e"
     },
     {
       "path": "docs/MySQL与运营大屏技术说明.md",
-      "bytes": 10865,
-      "sha256": "a7353c187016ea53e558f632545ebc4f9e8103e3bc32254d1af86d89e9cebeb6"
+      "bytes": 10868,
+      "sha256": "3c92373e8776980f9baed121a4331c6a9b6026f59cd956d7c87727bf62d40147"
     },
     {
       "path": "docs/作品报告.md",
-      "bytes": 22461,
-      "sha256": "8e87a1f887d890d3650fe18f81c18a380e8f01ea6604e038221ce4c205494a3b"
+      "bytes": 31460,
+      "sha256": "00c5c38ba840e2330e0dac8e163d8c25a3a3bafdba6d976a2007815907ee5ad8"
     },
     {
       "path": "docs/作品简介.md",
-      "bytes": 716,
-      "sha256": "282e6d6a562068798adc50051c7b152936eb3927cc6756dc1bd0febaa9df4cc3"
+      "bytes": 772,
+      "sha256": "d2718cff5e2018d45a2648c48a1601f626d1b5145829060893d3c6025761bdd2"
     },
     {
       "path": "docs/安全自评报告.md",
-      "bytes": 8621,
-      "sha256": "0aa90f84a5575eceea3b8882c87047ae9f9fb3ebe5d41c530d579b697a977671"
+      "bytes": 11395,
+      "sha256": "7a93083492c383f1a3ba0f5d7ace66ca7a21178dec22ab767ae89511a8712b85"
     },
     {
       "path": "docs/安全自评报告.pdf",
-      "bytes": 277414,
-      "sha256": "7a2a50a67a503102e1a9d9965f03ae4d7172560902768688e91b339a06299457"
+      "bytes": 296635,
+      "sha256": "77100b84a0c11243cb6da5e8b764ee841cbef0fb6a966d5e7c2ab9872e02ab31"
     },
     {
       "path": "docs/平台上传说明.md",
-      "bytes": 2302,
-      "sha256": "072b45e74fe13cbd2ca619f7b4d2380c0c5a6d854f29156b621311c59ac7fda5"
+      "bytes": 2351,
+      "sha256": "e04e0d184fde979217fc4076ab09c6ae2f2e3a72045b16dc2e01f6deb65bb4f9"
     },
     {
       "path": "docs/开源说明.md",
-      "bytes": 2900,
-      "sha256": "0b40128053679b328623804e676072e3dc49aff4e59bc8942b8281b56fb15820"
+      "bytes": 3502,
+      "sha256": "cb1a4cb54811ef291a2fc8ee96993c72b4a1d8baee40772b05c7e1125fe5b39a"
     },
     {
       "path": "docs/技术文档.pdf",
-      "bytes": 603970,
-      "sha256": "3b66f3ec53eb190f0ff08632547a234bfe23466d38f0d88cd8694cd6768ebad2"
+      "bytes": 1156860,
+      "sha256": "3a6323fddeccc2ff2e1be26880a74b90e1472bcbd7b4aeaa144578d984ec6d18"
     },
     {
       "path": "docs/报名信息.md",
-      "bytes": 3587,
-      "sha256": "81cc5c2f2035b38df2c2ccc78ccaa6f04907101d29181ce6198689ae2f0fc5a9"
+      "bytes": 3622,
+      "sha256": "1c53a4998098ca3ddc9666f2a1c31c4795f95a33832484833ecc53f2cdeb24da"
     },
     {
       "path": "docs/提交前登记表.md",
       "bytes": 961,
-      "sha256": "51c1c0312b49e11fa9f4710e441f0d8c6f74c72c457e26056a7f9ca3334d5f05"
+      "sha256": "8f9f9188fc4e311db283632c838289920c6951ae64ce26dfdb9717990115133a"
+    },
+    {
+      "path": "docs/注册登录与数字人设计说明.md",
+      "bytes": 9385,
+      "sha256": "102fc2790a7e8ed8150639cc9c94658fb31a8870ea6108731f1a57a05905fad1"
     },
     {
       "path": "docs/界面设计规范.md",
-      "bytes": 3127,
-      "sha256": "a73a9baaee3e273bef03989a95b8fb944cb3bbb30b822a67cab80ff66a2eab1c"
+      "bytes": 4359,
+      "sha256": "c6cc93725bcea8613d5b06c9e5a9c72f5388b0a67dba0fd4f420af9a65b0f9d5"
     },
     {
       "path": "docs/答辩PPT.pptx",
-      "bytes": 236954,
-      "sha256": "68527e55c6e5e618cbec5f7717494ed00f181ac30a29c15f3b9b6e8475e571e2"
+      "bytes": 404304,
+      "sha256": "a6dc5e15c01473a39f984f76ae4fcdd1790d6febc1ade1f9f062864492077859"
     },
     {
       "path": "docs/答辩讲稿.json",
-      "bytes": 4754,
-      "sha256": "d49c1a79e4f52d8a41b254c330ea2e4b392b08adfe18b92ef4add9c7011fccef"
+      "bytes": 6027,
+      "sha256": "b544143453961ba0fd53d84fb4e18f15b3fc577006cf5f3c5168b67d64a68fdd"
     },
     {
       "path": "docs/答辩讲稿.md",
-      "bytes": 4361,
-      "sha256": "8d24dbae2f854a6182c60644630e58c440900d57ab2e05eef6c8e43665df0fbb"
+      "bytes": 5334,
+      "sha256": "9214d7954456ba256b259fb2630dd011f5f48c349faf82fa3da902faff02882b"
     },
     {
       "path": "docs/规则与提交清单.pdf",
-      "bytes": 130438,
-      "sha256": "c5822b1a3586ce665a0b623662ff78fac8018350e83291564d0d01987810658c"
+      "bytes": 134503,
+      "sha256": "aae5949874cbff30f2e9d4b44858f4f233b6ee3ba8d4f73fa54ffb1e731e943e"
     },
     {
       "path": "docs/规则核对与提交清单.md",
-      "bytes": 6062,
-      "sha256": "1a8ed63cbdfa8f846d70a8bc69c40365d596aa58d278fc884f61b8fd12aa2317"
+      "bytes": 6649,
+      "sha256": "c47dd53eeee1654685a2c5f4e83b47a4cb8cfff35877d909a5f76d33c028f89c"
     },
     {
       "path": "docs/部署文档.md",
-      "bytes": 5983,
-      "sha256": "c36ede194654885efd7899c6745e2b45703678f7f71c1ec1363c95eed2907f5d"
+      "bytes": 7745,
+      "sha256": "b7dadfd4392d5f3b5554c3f1cdae027721f02649fabe9cc30e1f92f594a4a835"
     },
     {
       "path": "docs/部署说明.pdf",
-      "bytes": 107855,
-      "sha256": "9a3d16852c3c96067ab4fb442f0c2c9bef7b4ab1249845c7ffa6ece364c5a6fe"
+      "bytes": 121048,
+      "sha256": "c2294535d0a74718c2517530078958f2e58f7317303717873ccd56a4ec5c97da"
     },
     {
       "path": "evidence/audit_storage_migration.json",
       "bytes": 342,
       "sha256": "3ce8cf09eb881bb6248788856d1d98529a5bbda589ec64f100665827935cea40"
+    },
+    {
+      "path": "evidence/auth_digital_results.json",
+      "bytes": 4869,
+      "sha256": "196a43fd71b5213857c05bbf9a3e9e59d7cfad810d34c2548af0f3e4e39d9a7b"
     },
     {
       "path": "evidence/dashboard_baseline.json",
@@ -404,13 +564,13 @@
     },
     {
       "path": "evidence/mysql_ops_results.json",
-      "bytes": 3692,
-      "sha256": "f081c828d87f3049910ee75e50f4e67f747736082cccb092ede240703f547e81"
+      "bytes": 3724,
+      "sha256": "205e35f433792d184b9d96ed74c9ac129a258a272f89382fb640a8453d5c812b"
     },
     {
       "path": "evidence/operations_snapshot_example.json",
-      "bytes": 104695,
-      "sha256": "3ceba60448f0935602e245c351dc040a9f7454663ad2e84d671bc8a174f1c65e"
+      "bytes": 64747,
+      "sha256": "874df4ac5e56e6a14dae7ec256ae9ba1b7f7604a2e0fba8dde1506eecf73fb87"
     },
     {
       "path": "evidence/ops_ui_state_results.json",
@@ -421,6 +581,11 @@
       "path": "evidence/test_results.json",
       "bytes": 119,
       "sha256": "41eda03ccfc0224d8052465e8513969e7b7d98ee0d46dceb9d9cd12a596e845e"
+    },
+    {
+      "path": "evidence/ui_auth_digital_validation.json",
+      "bytes": 2070,
+      "sha256": "c5cc020b2a10385c9884dfb0f95506309f7ed57b29ce446280a9630d0e778b88"
     },
     {
       "path": "evidence/ui_ops_validation.json",
@@ -438,9 +603,14 @@
       "sha256": "8011d13f794be897f2966601198f331c6c2563a33d8e05b554fe9d4f650573fd"
     },
     {
+      "path": "evidence/v4_release_validation.json",
+      "bytes": 1086,
+      "sha256": "724c97f0aeb6eb2a446cac009ac88570666005559980e90370f176a4db1f9556"
+    },
+    {
       "path": "evidence/video_validation.json",
-      "bytes": 519,
-      "sha256": "bc60716b233d8527e70c4644619afc856bb98b3c838911eaeb8475a9ca5d3c2f"
+      "bytes": 789,
+      "sha256": "121ba846f86267cb94f0076676d04adae59e19a5793ce1b4eaa65e9495f6d11d"
     },
     {
       "path": "evidence/原始资料清单.json",
@@ -449,43 +619,88 @@
     },
     {
       "path": "evidence/材料完整性检查.md",
-      "bytes": 3206,
-      "sha256": "585bf20965036ccffb98e72df925355502e7d25c2a1e15bac8835d6ffc15192a"
+      "bytes": 2511,
+      "sha256": "dfe35459ef3d2c025bc6371a01d8b43fdb132a8ee58f1cfe1691e71d2f4f24a5"
     },
     {
       "path": "evidence/验收记录.md",
-      "bytes": 2086,
-      "sha256": "afc5b63e43017857cd0f545baaee70decdbc8237f1f30287fbcb6c088d46dade"
+      "bytes": 2830,
+      "sha256": "1d6481bdfcebe371fd74102d8bd1f3b6c82e0004ed6b14bf40eb56fe4670d38a"
     },
     {
       "path": "frontend/app.js",
-      "bytes": 6222,
-      "sha256": "266d4deaa1bf890c5ea49644d0f2ba1fd079fea2b3d8d84c8bf9dceed3bb5dec"
+      "bytes": 8436,
+      "sha256": "3dd4d6e94a08a6cb53a0467d5bba8872c9c88d022eea0716c3d97efd7346117d"
+    },
+    {
+      "path": "frontend/assistant.html",
+      "bytes": 7673,
+      "sha256": "fe8e269eef5568a96d158ed51c898a61772cc2b8db4a0490061357947d104b49"
+    },
+    {
+      "path": "frontend/auth.css",
+      "bytes": 6674,
+      "sha256": "5b073b64461a9ea318546eaf7b8fcaa9d9a39781c77713e6ed559ad208d4174b"
+    },
+    {
+      "path": "frontend/auth.js",
+      "bytes": 4741,
+      "sha256": "480e8c2351a7c2eb779452b21f03b32d2df679e7f8760bbd535667549f2182bd"
     },
     {
       "path": "frontend/dashboard.js",
-      "bytes": 6392,
-      "sha256": "bafc68a8e21644dcc8f28f64c31d2c617f4169bb370f4cda1b1e311add853a9a"
+      "bytes": 6481,
+      "sha256": "60f008a728e36c932752b90deaf170270466371cf6d63edce3299ec042ad474c"
+    },
+    {
+      "path": "frontend/digital-human.js",
+      "bytes": 2736,
+      "sha256": "3f29e1f387344019ad5a6ff60b8e1e342bde24737650791f83009887c716b173"
+    },
+    {
+      "path": "frontend/digital-human.svg",
+      "bytes": 4376,
+      "sha256": "68a9fa28a063cbe685456a20556dff49f1984d6c3cb65bfb013574a5ebcd6307"
+    },
+    {
+      "path": "frontend/human.css",
+      "bytes": 9228,
+      "sha256": "dec8ad48321a222ed7e8a476da9b1483d1fb88acfed3b3090cceb720175e2036"
     },
     {
       "path": "frontend/index.html",
-      "bytes": 5475,
-      "sha256": "54c70f5ed5fa574249681b8906059df51f7b708d213a3da342fd41394ddf98d4"
+      "bytes": 6436,
+      "sha256": "52790be25fe9319623a4c34b652cef2f1f92d3ee0a4e88273427d3c2979e65e1"
+    },
+    {
+      "path": "frontend/login.html",
+      "bytes": 4026,
+      "sha256": "622d4c382f769a469f533f4809c077afbbd7206270707e9d0daea3effa552051"
     },
     {
       "path": "frontend/operations.css",
-      "bytes": 11372,
-      "sha256": "52c219eba39ee043faa923f106bfefb943a4e60a11d1d7db37846ab003c84583"
+      "bytes": 11520,
+      "sha256": "42b6a788fded1d992b2e9dc87b7e6d2b8dc87978556e752c03250e4fd83824c4"
     },
     {
       "path": "frontend/operations.html",
-      "bytes": 7104,
-      "sha256": "883dac00f4784c2d116d7efd6a203100eba7d933ab0547bc8cf7b37951863583"
+      "bytes": 7170,
+      "sha256": "3057a77dbffed206d58038f40850c1f7920665e63bd2fd29dc8b0937d0bde920"
     },
     {
       "path": "frontend/operations.js",
-      "bytes": 22628,
-      "sha256": "d27e33591b6f437b88bc2e59557fa744cecf35badb574de2631623bb78f645f2"
+      "bytes": 23052,
+      "sha256": "0b8e264c7255fb872859852fb96a93342526b7c4369ac0324d1d4c8a7e703588"
+    },
+    {
+      "path": "frontend/register.html",
+      "bytes": 4632,
+      "sha256": "d213b1190bbc7f3af5bb0cef9094e6a936012a39c644bc1c2119dfca49582557"
+    },
+    {
+      "path": "frontend/session.js",
+      "bytes": 2711,
+      "sha256": "6221acf8c55eceed8896a63661ecdba512410c1d18a6308fd5611182780cf675"
     },
     {
       "path": "frontend/style.css",
@@ -524,13 +739,13 @@
     },
     {
       "path": "pyproject.toml",
-      "bytes": 181,
-      "sha256": "0fed4f6be0b7422601dd2db0b9af657f4180f8a1a438eeadf41b96a7aab48f39"
+      "bytes": 230,
+      "sha256": "57104785119112d4aa523cf26c996712eff45daaa0bc41d544e05666ff0bde85"
     },
     {
       "path": "README.md",
-      "bytes": 8344,
-      "sha256": "4808dddf670dd83c9da21c2700d1df03c50116b2284681007615bfaa6735a19a"
+      "bytes": 10030,
+      "sha256": "d14ab09dd282e476733bcc76ecd3fffcfffe4d3778912a6443e40295436a64ba"
     },
     {
       "path": "requirements.txt",
@@ -549,8 +764,8 @@
     },
     {
       "path": "scripts/build_material_pdfs.py",
-      "bytes": 8034,
-      "sha256": "174095f6e68a02fc43fe2c9aee9f1a6bcea270ce567588a7503b7e6d171151c4"
+      "bytes": 9350,
+      "sha256": "ec3a8139d853fd82c047a152dfcb5450db39cbaa1abdfa58558523a04ba71b3f"
     },
     {
       "path": "scripts/export_data.py",
@@ -564,8 +779,8 @@
     },
     {
       "path": "scripts/package_submission.py",
-      "bytes": 2268,
-      "sha256": "388842810d67eb0d48dc8fccc81e40a2bf15a1ba16294db48a26633c8dbd9408"
+      "bytes": 2301,
+      "sha256": "a1e656a1f2dded6cc548414003660bbac7cbb701f646f44b96c868aafe72c591"
     },
     {
       "path": "scripts/probe_llm.py",
@@ -574,8 +789,8 @@
     },
     {
       "path": "scripts/run_due.py",
-      "bytes": 1176,
-      "sha256": "3a5fb612b770de54fac2574ad144ddc5395adc80b1f680701f9c4a871f415e46"
+      "bytes": 1355,
+      "sha256": "bdfc668bad5004e3fa19aa6ad510f744779fcca0f8cd0a34f50e45b4c06461d6"
     },
     {
       "path": "tests/test_agent.py",
@@ -583,14 +798,19 @@
       "sha256": "b0047aea9134cdd931fa23a9f039e2a3ce621c1d2202d1f0ea4c7f41177c63ce"
     },
     {
+      "path": "tests/test_auth_digital.py",
+      "bytes": 14520,
+      "sha256": "2e7535b515ebf757f58a3fd0a7b6b706c1efcd1c9b07c20d1a5752174e36de04"
+    },
+    {
       "path": "tests/test_http.py",
-      "bytes": 3972,
-      "sha256": "0ac770ed03a2fd0fee42de787d601be8aca4d61d50f1a3ea3367284172d3d89e"
+      "bytes": 4259,
+      "sha256": "a3a161d53b6d314b1439717212d14ef1bd83164bdc2a6cfde7fd72ee61b86c5d"
     },
     {
       "path": "tests/test_mysql_ops.py",
-      "bytes": 15021,
-      "sha256": "1b1aa73faf383047be0acaec2b6e741623c3ebdf19084967cfafed2c61c42ac4"
+      "bytes": 16133,
+      "sha256": "d82f689d85176967e12cec40d3670531c392dec3ffa18efd1b88a2142b506dbb"
     },
     {
       "path": "tests/test_ops_ui.mjs",
@@ -599,13 +819,13 @@
     },
     {
       "path": "启动_MYSQL.ps1",
-      "bytes": 1459,
-      "sha256": "6da40c3e6cebad9f995f38154286d0338be8b0ab3989962f79c96157e4f8c95e"
+      "bytes": 2148,
+      "sha256": "8da1a2ff7fba65431a40a9a98150cfd29df0acee78997b42367dfb1160bd068f"
     },
     {
       "path": "提交入口.html",
-      "bytes": 3254,
-      "sha256": "168b095063dfc78bc2f1c8abe8dace37d9b0dd1fde08c5533054f0be61fb6854"
+      "bytes": 3628,
+      "sha256": "1ca928cb0879ba1eab4bb92500d42d832a729a074f4038bd1388f45e20bad55d"
     }
   ]
 }

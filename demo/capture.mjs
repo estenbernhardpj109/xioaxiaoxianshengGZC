@@ -1,3 +1,4 @@
+// Legacy financial-flow capture helper. Current v4 delivery uses frames_v4 and build_video_v4.py.
 import {createRequire} from 'node:module';import fs from 'node:fs/promises';import path from 'node:path';import {spawn} from 'node:child_process';import {fileURLToPath} from 'node:url';
 const require=createRequire(import.meta.url);const {chromium}=require('playwright');const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');const root=path.dirname(project);process.chdir(root);await fs.mkdir('.build/video',{recursive:true});
 const py=process.env.PYTHON || 'python';const proc=spawn(py,['参赛作品/backend/server.py','--port','8012','--storage','json'],{cwd:root,env:{...process.env,BANK_STATE_FILE:path.join(root,'.build/video-state-'+Date.now()+'.json'),BANK_AUDIT_FILE:path.join(root,'.build/video-audit-'+Date.now()+'.jsonl')},stdio:'ignore'});
@@ -5,6 +6,7 @@ let browser;const scenes=[];
 try{
  browser=await chromium.launch({channel:'msedge',headless:true});const p=await browser.newPage({viewport:{width:1280,height:912}});
  for(let i=0;i<50;i++){try{await p.goto('http://127.0.0.1:8012');break;}catch{await new Promise(r=>setTimeout(r,100));}}
+ await p.getByRole('button',{name:'进入演示体验 ↗'}).click();
  await p.waitForFunction(()=>document.querySelector('#statusDot').textContent.includes('在线'));
  await p.evaluate(()=>{document.body.style.paddingTop='112px';const style=document.createElement('style');style.textContent='.shell{min-height:calc(100vh - 112px)}aside{height:calc(100vh - 112px)}.workspace{height:calc(100vh - 224px)}.modal{top:112px}.modal-card{max-height:calc(100vh - 140px)}';document.head.append(style);const c=document.createElement('div');c.id='video-caption';c.style.cssText='position:fixed;top:0;left:0;right:0;height:112px;background:#15363e;color:white;z-index:1000;padding:20px 30px;pointer-events:none';document.body.append(c);});
  async function cap(title,description,seconds){await p.evaluate(({title,description})=>{const e=document.getElementById('video-caption');e.replaceChildren();const h=document.createElement('div');h.style.cssText='font-size:23px;font-weight:600';h.textContent=title;const d=document.createElement('div');d.style.cssText='font-size:13px;color:#bcdbcf;margin-top:5px';d.textContent=description;e.append(h,d);},{title,description});const file=path.join(root,'.build/video',String(scenes.length+1).padStart(2,'0')+'.png');await p.screenshot({path:file});scenes.push({title,description,seconds,file});}

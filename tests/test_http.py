@@ -22,6 +22,8 @@ with tempfile.TemporaryDirectory() as td:
             try:_,h=req(a,'/api/health');break
             except OSError:time.sleep(.1)
         _,hb=req(b,'/api/health')
+        _,login_a=req(a,'/api/auth/demo',{},h['csrf']);h['csrf']=login_a['csrf']
+        _,login_b=req(b,'/api/auth/demo',{},hb['csrf']);hb['csrf']=login_b['csrf']
         def check(name,ok):checks.append({'name':name,'pass':bool(ok)})
         check('health and CSRF issued',h['status']=='ok' and bool(h['csrf']))
         check('no CSRF rejected',req(a,'/api/chat',{'text':'查余额'})[0]==403)
@@ -44,6 +46,7 @@ with tempfile.TemporaryDirectory() as td:
         for _ in range(50):
             try:req(a,'/api/health');break
             except OSError:time.sleep(.1)
+        _,h=req(a,'/api/health');req(a,'/api/auth/demo',{},h['csrf'])
         check('restart restores balance',req(a,'/api/dashboard')[1]['observation']['balance']==86032.5)
     finally:proc.terminate();proc.wait()
     result={'suite':'http_integration','run':len(checks),'passed':sum(x['pass'] for x in checks),'checks':checks}

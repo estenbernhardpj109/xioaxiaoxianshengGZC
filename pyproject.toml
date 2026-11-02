@@ -1,6 +1,6 @@
 [project]
 name = "zhixing-banking-agent"
-version = "2.0.0"
+version = "4.0.0"
 description = "Policy-controlled digital banking agent competition sandbox"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["mysql-connector-python==26.10.0", "psutil==7.2.2"]
